@@ -2,7 +2,7 @@ name: FIA press conference watch
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -17,6 +17,34 @@ env:
 
 jobs:
   check:
+    runs-on: ubuntu-latest
+    outputs:
+      has_new: ${{ steps.check.outputs.has_new }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache node_modules (incl. Puppeteer's bundled Chromium)
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node_modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - run: npm install
+
+      - name: Cheap check — is there a new transcript at all?
+        id: check
+        run: |
+          result=$(npx tsx scripts/check-new.ts)
+          echo "has_new=$result" >> "$GITHUB_OUTPUT"
+          echo "Result: $result"
+
+  generate:
+    needs: check
+    if: needs.check.outputs.has_new == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,7 +74,7 @@ jobs:
           for i in $(seq 1 30); do curl -sf http://localhost:11434/ && break; sleep 1; done
           ollama pull "$OLLAMA_MODEL"
 
-      - name: Check for new transcripts and generate + send stories
+      - name: Generate + send stories
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -61,6 +89,7 @@ jobs:
           git add data/telegram-seen.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: mark transcripts as seen [skip ci]"
+            git pull --rebase origin main
             git push
           else
             echo "No state change, nothing to commit."
