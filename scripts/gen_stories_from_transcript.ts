@@ -1,12 +1,17 @@
 // Turns one FIA press-conference transcript URL into a batch of quote-card
 // story PNGs — one per Q&A pair whose speaker is a known driver/principal.
-// Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir] [--pick 3,7,12]
+// Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir] [--pick 3,7,12] [--no-telegram]
 //
 // --pick takes the numbers straight off a Telegram digest message (sent by
 // scripts/cloud-digest.ts): both scripts derive their list from the same
 // src/digest.ts eligibleEntries(), in the same order, so "digest said #3
 // and #7" maps directly to --pick 3,7 without re-deriving anything by hand.
 // Omit --pick to generate cards for every eligible pair in the transcript.
+//
+// Each rendered PNG is sent straight to Telegram (TELEGRAM_BOT_TOKEN /
+// TELEGRAM_CHAT_ID from .env) as soon as it's rendered, so the finished
+// story lands on the phone without digging through output/ — pass
+// --no-telegram to skip that and just write the files locally.
 //
 // Pipeline: fetch → parse (transcript.ts, deterministic) → resolve speaker
 // to a manifest portrait (asset-manifest.ts) → condense to FR context+quote
@@ -29,6 +34,16 @@ const CHROME = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const HANDLE = "@SaD_F1";
 
 const HEADERS = { "User-Agent": "Mozilla/5.0 (compatible; F1-Stories-Generator/1.0)" };
+
+async function sendTelegramPhoto(token: string, chatId: string, filePath: string, caption: string): Promise<void> {
+  const form = new FormData();
+  form.append("chat_id", chatId);
+  form.append("caption", caption);
+  form.append("photo", new Blob([readFileSync(filePath)], { type: "image/png" }), filePath.split(/[\\/]/).pop());
+  const res = await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, { method: "POST", body: form });
+  const data = (await res.json()) as { ok: boolean; description?: string };
+  if (!data.ok) throw new Error(`Telegram sendPhoto failed: ${data.description ?? res.status}`);
+}
 
 function slugify(s: string): string {
   return s
@@ -165,6 +180,14 @@ async function main() {
 
   if (noRender) return;
 
+  const noTelegram = process.argv.includes("--no-telegram");
+  const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+  const tgChatId = process.env.TELEGRAM_CHAT_ID;
+  const sendToTelegram = !noTelegram && !!tgToken && !!tgChatId;
+  if (!noTelegram && !sendToTelegram) {
+    console.warn("TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID absents de .env — cartes générées localement seulement.");
+  }
+
   const templateSrc = readFileSync(TEMPLATE_PATH, "utf-8");
 
   let written = 0;
@@ -190,6 +213,16 @@ async function main() {
     renderCard(templateSrc, data, outPath);
     written++;
     console.log(`  [${written}] ${fileName} — ${qa.speaker}: "${text.quote.slice(0, 60)}${text.quote.length > 60 ? "…" : ""}"`);
+
+    if (sendToTelegram) {
+      try {
+        const caption = `${person.name} (${person.team})\n${text.quote}`.slice(0, 1024);
+        await sendTelegramPhoto(tgToken!, tgChatId!, outPath, caption);
+        console.log(`      -> envoyée sur Telegram`);
+      } catch (e) {
+        console.error(`      -> échec envoi Telegram: ${e instanceof Error ? e.message : e}`);
+      }
+    }
   }
 
   console.log(`\n${written} stories générées dans output/${outSubdir}/.`);
