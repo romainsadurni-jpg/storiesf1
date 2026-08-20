@@ -67,7 +67,13 @@ dans le cloud).
    dans le titre) plutôt que de tronquer le contenu.
 
 5. Envoie via l'API Telegram : `POST https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/sendMessage`
-   avec `chat_id=<TELEGRAM_CHAT_ID>`, `text=...`, `parse_mode=Markdown`.
+   avec `chat_id`, `text`, `parse_mode=Markdown`. **Important** : envoie un
+   corps JSON (`Content-Type: application/json`), pas de form-encoding —
+   `curl -d "text=..."` casse l'UTF-8 sur les accents français et Telegram
+   répond alors `400 strings must be encoded in UTF-8`. Exemple fiable :
+   `curl -s -X POST "https://api.telegram.org/bot<TOKEN>/sendMessage" -H "Content-Type: application/json" -d @payload.json`
+   où `payload.json` est écrit sur disque (pas construit inline dans la
+   commande shell) pour éviter tout problème d'échappement.
    Le token et le chat_id sont fournis dans le prompt de la routine — ne pas
    les logger ni les afficher en clair dans les commits.
 

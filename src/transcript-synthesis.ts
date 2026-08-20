@@ -127,7 +127,7 @@ async function mapWithConcurrency<T, R>(items: T[], limit: number, fn: (item: T)
 // local model answered in English despite the system prompt (observed with
 // qwen2.5:7b under load). Checked on the actual output text, not on any
 // fixed phrase list from the source transcript.
-const ENGLISH_LEAK_RE = /\b(the|and|was|were|you|your|don't|didn't|wasn't|isn't|it's|with|really|going to|for|is|so|have|has|this|that|what|know|think|life)\b/i;
+const ENGLISH_LEAK_RE = /\b(the|and|was|were|you|your|don't|didn't|wasn't|isn't|it's|with|really|going to|for|is|so|have|has|this|that|what|know|think|life|during|before|after|when|team's|driver's)\b/i;
 
 function looksEnglish(text: string): boolean {
   return ENGLISH_LEAK_RE.test(text);
@@ -175,6 +175,29 @@ function mentionsInventedPerson(text: string, qa: TranscriptQA): boolean {
   );
 }
 
+// Bigrams that read as a capitalized "Firstname Lastname" but are actually
+// common F1 phrases, not a person — never flagged even if their second word
+// doesn't literally appear in the source text.
+const BIGRAM_ALLOWLIST = new Set(["formula 1", "red bull", "grand prix", "world championship", "power unit"].map(normalizeForMatch));
+const CAPITALIZED_BIGRAM_RE = /\b[A-ZÀ-Þ][a-zà-ÿ]+ [A-ZÀ-Þ][a-zà-ÿ]+\b/g;
+
+/** Catches the broader case mentionsInventedPerson can't: a fabricated full
+ * name for someone NOT in our manifest at all (e.g. "Liam Sargeant" pulled
+ * from the model's own F1 knowledge when the source transcript only ever
+ * said "Liam") — any capitalized two-word phrase in `text` whose second
+ * word never appears in the source question/answer (or the speaker's own
+ * name) is treated as invented, unless it's a known non-person phrase. */
+function mentionsInventedFullName(text: string, qa: TranscriptQA): boolean {
+  const normalizedSource = normalizeForMatch(`${qa.question} ${qa.answer} ${qa.speaker}`);
+  const bigrams = text.match(CAPITALIZED_BIGRAM_RE) ?? [];
+  return bigrams.some((raw) => {
+    const normalized = normalizeForMatch(raw);
+    if (BIGRAM_ALLOWLIST.has(normalized)) return false;
+    const second = normalized.split(" ")[1];
+    return second && second.length > 2 && !containsWord(normalizedSource, second);
+  });
+}
+
 function parseExtractionItem(p: Record<string, unknown>, qa: TranscriptQA): ExtractionOutcome {
   if (p.real !== true) return { kind: "not-real" };
   const context = nullableString(p.context);
@@ -185,6 +208,9 @@ function parseExtractionItem(p: Record<string, unknown>, qa: TranscriptQA): Extr
   if (!context || candidates.length === 0) return { kind: "invalid" };
   if (looksEnglish(context) || candidates.some((c) => looksEnglish(c.quote))) return { kind: "invalid" };
   if (mentionsInventedPerson(context, qa) || candidates.some((c) => mentionsInventedPerson(c.quote, qa))) {
+    return { kind: "invalid" };
+  }
+  if (mentionsInventedFullName(context, qa) || candidates.some((c) => mentionsInventedFullName(c.quote, qa))) {
     return { kind: "invalid" };
   }
   return { kind: "ok", context, candidates };
