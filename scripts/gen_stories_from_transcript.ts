@@ -24,7 +24,7 @@ import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { extractContentBodyHtml, parseTranscriptBody } from "../src/transcript";
-import { backgroundFor } from "../src/asset-manifest";
+import { randomBackgroundFor, randomPortraitFor } from "../src/asset-manifest";
 import { eligibleEntries, type EligibleEntry } from "../src/digest";
 import { synthesizeCardTexts } from "../src/transcript-synthesis";
 
@@ -204,8 +204,8 @@ async function main() {
       isDriver: person.isDriver,
       team: person.team,
       handle: HANDLE,
-      portrait: person.portrait,
-      background: backgroundFor(person.team, digestNumbers[i]),
+      portrait: randomPortraitFor(person),
+      background: randomBackgroundFor(person.team),
     };
 
     const fileName = `${String(digestNumbers[i]).padStart(3, "0")}-${slugify(person.name)}.png`;

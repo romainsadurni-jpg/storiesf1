@@ -3,10 +3,11 @@
 // source of truth for card assets, so a transcript speaker and a hand-typed
 // story use identical portraits/roles/colors.
 
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-const MANIFEST_PATH = join(__dirname, "..", "assets", "manifest.json");
+const ASSETS_DIR = join(__dirname, "..", "assets");
+const MANIFEST_PATH = join(ASSETS_DIR, "manifest.json");
 
 type ManifestPerson = { file: string; name: string; role: string; team: string; aliases: string[] };
 type Manifest = { drivers: Record<string, ManifestPerson>; principals: Record<string, ManifestPerson> };
@@ -32,6 +33,9 @@ export type ResolvedPerson = {
   isDriver: boolean;
   /** Path relative to templates/, ready to drop into the card's `portrait` field. */
   portrait: string;
+  /** Folder relative to assets/, e.g. "drivers/max_verstappen" — used by
+   * randomPortraitFor to discover every portrait*.jpg variant on disk. */
+  folder: string;
 };
 
 /** Matches a transcript speaker name (full name as parsed, e.g. "Max Verstappen")
@@ -46,11 +50,30 @@ export function resolvePerson(speakerName: string): ResolvedPerson | null {
     for (const entry of Object.values(table)) {
       const candidates = [entry.name, ...(entry.aliases ?? [])].map(normalize);
       if (candidates.includes(key)) {
-        return { name: entry.name, role: entry.role, team: entry.team, isDriver, portrait: `../assets/${entry.file}` };
+        const folder = entry.file.replace(/\/[^/]+$/, "");
+        return { name: entry.name, role: entry.role, team: entry.team, isDriver, portrait: `../assets/${entry.file}`, folder };
       }
     }
   }
   return null;
+}
+
+/** Every file directly inside assets/<subdir> whose name matches `pattern`,
+ * sorted for determinism. Returns [] (not a throw) for a missing/unreadable
+ * directory, so callers can fall back gracefully — same philosophy as the
+ * template's own "no asset yet -> placeholder" behavior (see STYLE.md). */
+function listAssetVariants(subdir: string, pattern: RegExp): string[] {
+  try {
+    return readdirSync(join(ASSETS_DIR, subdir))
+      .filter((f) => pattern.test(f))
+      .sort();
+  } catch {
+    return [];
+  }
+}
+
+function pickRandom<T>(items: T[]): T | null {
+  return items.length > 0 ? items[Math.floor(Math.random() * items.length)] : null;
 }
 
 let allSurnames: { surname: string; fullName: string }[] | null = null;
@@ -74,12 +97,25 @@ export function allKnownSurnames(): string[] {
   return loadAllSurnames().map((s) => s.surname);
 }
 
-const CONTEXT_VARIANTS = 4;
+/** Picks a random background photo among every context_*.jpg actually
+ * present for a team — not hardcoded to a fixed count, so dropping a new
+ * assets/teams/<team>/context_5.jpg (etc.) in later adds variety immediately
+ * with no code change. Falls back to context_1.jpg (template shows a plain
+ * gradient if even that's missing — see STYLE.md's graceful fallback). */
+export function randomBackgroundFor(team: string): string {
+  const variants = listAssetVariants(`teams/${team}`, /^context_\d+\.(jpe?g|png)$/i);
+  const chosen = pickRandom(variants) ?? "context_1.jpg";
+  return `../assets/teams/${team}/${chosen}`;
+}
 
-/** A team's background context photo, rotating deterministically across the
- * 4 available variants per team so consecutive cards for the same team don't
- * all reuse the identical background. */
-export function backgroundFor(team: string, seed: number): string {
-  const variant = (Math.abs(seed) % CONTEXT_VARIANTS) + 1;
-  return `../assets/teams/${team}/context_${variant}.jpg`;
+/** Picks a random portrait among every portrait*.jpg actually present for a
+ * person (portrait.jpg, portrait_2.jpg, ...) — same "discover what's on
+ * disk" approach as randomBackgroundFor, so cards for someone with several
+ * quotes in one run don't all reuse the identical photo, and adding more
+ * variants later needs no code change. Falls back to the manifest's default
+ * `portrait` path if the person's folder has nothing else (or is missing). */
+export function randomPortraitFor(person: ResolvedPerson): string {
+  const variants = listAssetVariants(person.folder, /^portrait(_\d+)?\.(jpe?g|png)$/i);
+  const chosen = pickRandom(variants);
+  return chosen ? `../assets/${person.folder}/${chosen}` : person.portrait;
 }

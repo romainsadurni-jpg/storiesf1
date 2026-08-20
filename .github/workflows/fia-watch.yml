@@ -12,6 +12,9 @@ concurrency:
   group: fia-watch
   cancel-in-progress: false
 
+env:
+  OLLAMA_MODEL: qwen2.5:7b
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -22,12 +25,33 @@ jobs:
         with:
           node-version: 20
 
+      - name: Cache node_modules (incl. Puppeteer's bundled Chromium)
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node_modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - run: npm install
 
-      - name: Check for new transcripts and send Telegram digest
+      - name: Cache Ollama model
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama
+          key: ollama-${{ env.OLLAMA_MODEL }}
+
+      - name: Install and start Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve &
+          for i in $(seq 1 30); do curl -sf http://localhost:11434/ && break; sleep 1; done
+          ollama pull "$OLLAMA_MODEL"
+
+      - name: Check for new transcripts and generate + send stories
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LLM_PROVIDER: ollama
+          OLLAMA_BASE_URL: http://localhost:11434
         run: npx tsx scripts/cloud-digest.ts
 
       - name: Commit updated seen-state

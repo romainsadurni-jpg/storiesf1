@@ -1,13 +1,16 @@
 // Entry point for the GitHub Actions workflow (.github/workflows/fia-watch.yml).
-// Fully unattended, no LLM/agent usage: fetches new FIA press conference
-// transcripts, translates every eligible Q&A pair literally (MyMemory, free,
-// keyless — src/translate.ts, deliberately NOT an editorial LLM rewrite),
+// Fully unattended: fetches new FIA press conference transcripts, condenses
+// every eligible Q&A pair into a French context+quote via the same LLM
+// pipeline as the local tool (src/transcript-synthesis.ts — Ollama, running
+// in-runner, see the workflow's "Start Ollama" step; no Claude API usage),
 // renders each as a quote-card PNG (Puppeteer-bundled Chromium, works the
 // same in CI as locally), and sends them straight to Telegram as photo
-// albums. Every eligible quote becomes a card — no manual picking step.
+// albums. Every "real" Q&A (per the LLM's own judgment) becomes a card — no
+// manual picking step.
 //
 // Usage: npx tsx scripts/cloud-digest.ts
-// Requires env vars TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID.
+// Requires env vars TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID, plus whatever
+// LLM_PROVIDER/OLLAMA_*/ANTHROPIC_* synthesis.ts's resolveProvider() needs.
 
 import "dotenv/config";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -16,8 +19,8 @@ import { determineCurrentEventName } from "../src/stories-data";
 import { fetchTranscriptsForEvent } from "../src/fia";
 import { extractContentBodyHtml, parseTranscriptBody } from "../src/transcript";
 import { eligibleEntries, type EligibleEntry } from "../src/digest";
-import { backgroundFor } from "../src/asset-manifest";
-import { translateToFrench, truncateWords } from "../src/translate";
+import { randomBackgroundFor, randomPortraitFor } from "../src/asset-manifest";
+import { synthesizeCardTexts } from "../src/transcript-synthesis";
 import { renderCardPuppeteer, closeBrowser } from "../src/puppeteer-render";
 
 const BASE = join(__dirname, "..");
@@ -27,18 +30,7 @@ const SEEN_PATH = join(BASE, "data", "telegram-seen.json");
 const HANDLE = "@SaD_F1";
 const HTTP_HEADERS = { "User-Agent": "Mozilla/5.0 (compatible; F1-Stories-Generator/1.0)" };
 
-// Pre-translation caps keep each MyMemory request under its ~500-char
-// anonymous-tier limit; post-translation caps keep the card readable.
-const ANSWER_SOURCE_CAP = 420;
-const QUESTION_SOURCE_CAP = 220;
-const QUOTE_DISPLAY_CAP = 280;
-const CONTEXT_DISPLAY_CAP = 120;
-const TRANSLATE_DELAY_MS = 300; // be polite to a free, shared, keyless API
 const MEDIA_GROUP_SIZE = 10; // Telegram's max per sendMediaGroup call
-
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
 
 function loadSeen(): Set<string> {
   if (!existsSync(SEEN_PATH)) return new Set();
@@ -106,19 +98,6 @@ async function sendPhotosInBatches(token: string, chatId: string, items: PhotoIt
   }
 }
 
-/** Translates `text` (truncated to stay under MyMemory's request cap) to
- * French, then truncates the result to `displayCap` for the card. */
-async function translateForCard(text: string, sourceCap: number, displayCap: number): Promise<string> {
-  const source = truncateWords(text, sourceCap);
-  const translated = await translateToFrench(source);
-  return truncateWords(translated, displayCap);
-}
-
-function buildContext(translatedQuestion: string): string {
-  const stripped = translatedQuestion.replace(/[?.!…]+$/, "").trim();
-  return stripped ? `${stripped[0].toUpperCase()}${stripped.slice(1)} :` : "";
-}
-
 async function main() {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
@@ -156,9 +135,9 @@ async function main() {
     }
 
     let entries: EligibleEntry[] = eligibleEntries(parseTranscriptBody(bodyHtml));
-    console.log(`  ${entries.length} eligible Q&A pair(s).`);
+    console.log(`  ${entries.length} candidate Q&A pair(s) (known speakers).`);
     // Debug-only cap for local testing (never set in the GitHub Actions
-    // workflow) — production always processes every eligible entry.
+    // workflow) — production always processes every candidate entry.
     const debugLimit = process.env.DIGEST_DEBUG_LIMIT ? parseInt(process.env.DIGEST_DEBUG_LIMIT, 10) : null;
     if (debugLimit) {
       entries = entries.slice(0, debugLimit);
@@ -170,33 +149,32 @@ async function main() {
       continue;
     }
 
+    console.log("  Condensation FR (LLM)...");
+    const { texts: cardTexts, stats } = await synthesizeCardTexts(entries.map((e) => e.qa));
+    console.log(`  ${stats.ok} retenues, ${stats.notReal} écartées (pas substantielles), ${stats.failed} échecs techniques.`);
+
     const eventSlug = slugify(t.title);
     const outDir = join(BASE, "output", eventSlug);
     mkdirSync(outDir, { recursive: true });
 
     const items: PhotoItem[] = [];
-    let failures = 0;
 
     for (let i = 0; i < entries.length; i++) {
+      const text = cardTexts[i];
+      if (!text) continue;
       const digestNumber = i + 1;
-      const { qa, person } = entries[i];
+      const { person } = entries[i];
       try {
-        const quote = await translateForCard(qa.answer, ANSWER_SOURCE_CAP, QUOTE_DISPLAY_CAP);
-        await sleep(TRANSLATE_DELAY_MS);
-        const translatedQuestion = await translateForCard(qa.question, QUESTION_SOURCE_CAP, CONTEXT_DISPLAY_CAP + 20);
-        await sleep(TRANSLATE_DELAY_MS);
-        const context = buildContext(translatedQuestion);
-
         const data = {
-          context,
-          quote,
+          context: text.context,
+          quote: text.quote,
           name: person.name,
           role: person.role,
           isDriver: person.isDriver,
           team: person.team,
           handle: HANDLE,
-          portrait: person.portrait,
-          background: backgroundFor(person.team, digestNumber),
+          portrait: randomPortraitFor(person),
+          background: randomBackgroundFor(person.team),
         };
         const dataBlock = "const DATA = " + JSON.stringify(data) + ";";
         const src = templateSrc.replace(/const DATA = \{[\s\S]*?\};/, dataBlock);
@@ -205,17 +183,16 @@ async function main() {
         const outPath = join(outDir, fileName);
         await renderCardPuppeteer(src, TEMPLATES_DIR, outPath);
 
-        items.push({ path: outPath, caption: `${person.name} (${person.team})\n${quote}` });
+        items.push({ path: outPath, caption: `${person.name} (${person.team})\n${text.quote}` });
         console.log(`  [${digestNumber}/${entries.length}] ${fileName} rendered`);
       } catch (e) {
-        failures++;
-        console.error(`  [${digestNumber}/${entries.length}] failed, skipping: ${e instanceof Error ? e.message : e}`);
+        console.error(`  [${digestNumber}/${entries.length}] render failed, skipping: ${e instanceof Error ? e.message : e}`);
       }
     }
 
     if (items.length > 0) {
       try {
-        await sendTelegramMessage(token, chatId, `🏁 *${t.title}*\n${items.length} story(ies)${failures ? ` (${failures} échec(s))` : ""} — ${t.url}`);
+        await sendTelegramMessage(token, chatId, `🏁 *${t.title}*\n${items.length} story(ies) — ${t.url}`);
         await sendPhotosInBatches(token, chatId, items);
         console.log(`  sent ${items.length} photo(s) to Telegram`);
         seen.add(t.url);
