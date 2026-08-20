@@ -1,0 +1,43 @@
+name: FIA press conference watch
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fia-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - name: Check for new transcripts and send Telegram digest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: npx tsx scripts/cloud-digest.ts
+
+      - name: Commit updated seen-state
+        run: |
+          git config user.name "fia-watch-bot"
+          git config user.email "actions@github.com"
+          git add data/telegram-seen.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: mark transcripts as seen [skip ci]"
+            git push
+          else
+            echo "No state change, nothing to commit."
+          fi
