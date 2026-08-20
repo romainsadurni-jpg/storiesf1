@@ -1,0 +1,81 @@
+# F1 Team Asset Download Log
+
+Generated 2026-08-18. Sources: Wikimedia Commons (commons.wikimedia.org) and English Wikipedia (en.wikipedia.org, non-free logo uploads). All context photos are recent (mostly 2026-season) real photographs; no AI-generated images were used.
+
+**Trademark notice:** every `logo.png` below is an official team trademark/registered mark. The *file* license (Commons "Public domain" tag or Wikipedia "non-free use" rationale) covers the digital image asset only — it does **not** waive trademark rights in the logo mark itself. Do not use any logo in a way that implies endorsement, and do not repost logos publicly without separate trademark clearance.
+
+**License key:**
+- **Commons — Public domain (PD-ineligible/simple logo)**: Wikimedia Commons has determined the graphic is too simple to attract its own copyright. Free to use for this private asset library; logo is still a trademark (see above).
+- **Commons — CC BY 4.0 / CC BY-SA 4.0**: genuinely free-licensed photo from Wikimedia Commons. Attribution required if ever reposted publicly (see photographer credit).
+- **en.wikipedia — non-free (fair use)**: uploaded under Wikipedia's non-free-content policy for illustrating the Wikipedia article only. **Not freely licensed** — technically not licensed for reuse outside Wikipedia at all. Included here only because the user has explicitly accepted this risk for a private asset library; do not repost publicly.
+- **Official/press site**: source — official team/press site — license not verified, do not repost publicly without checking.
+
+All 55 target files (11 teams × 5 files) were downloaded successfully. Every context photo turned out **landscape** orientation (noted per row) — no genuinely vertical/portrait shots of sufficient quality and recency were found on Commons for these teams; landscape is an acceptable fallback per the brief. One exception: the Red Bull `context_4.jpg` source file is vertical in display orientation (EXIF-rotated).
+
+| Team | File | Source URL | Orientation | License note |
+|---|---|---|---|---|
+| McLaren | logo.png | https://commons.wikimedia.org/wiki/File:McLaren_Racing_logo.png | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** |
+| McLaren | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_McLaren_-_Lando_Norris_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (photographer: Liauzh). 2026 Chinese GP, car 3/4 shot. |
+| McLaren | context_2.jpg | https://commons.wikimedia.org/wiki/File:MTC_(55372215974).jpg | landscape | Commons — CC BY-SA 4.0 (photographer: Andrew Eaton). McLaren Technology Centre — used as garage/facility substitute. |
+| McLaren | context_3.jpg | https://commons.wikimedia.org/wiki/File:Mclaren_MCL40_-_Lando_Norris_approaches_Spoon_Curve_at_Suzuka_during_the_2026_Japanese_GP_(55195326398).jpg | landscape | Commons — CC BY-SA 4.0 (photographer: Martin Lee). 2026 Japanese GP action shot. No genuine podium photo found for McLaren's 2026 season on Commons; used as third variety shot instead — gap noted. |
+| McLaren | context_4.jpg | https://commons.wikimedia.org/wiki/File:McLaren_(55371085187).jpg | landscape | Commons — CC BY-SA 4.0 (photographer: Andrew Eaton). General team/livery shot. |
+| Ferrari | logo.png | https://en.wikipedia.org/wiki/File:Scuderia_Ferrari_HP_logo_24.svg | n/a | en.wikipedia — non-free (fair use). **Logo is a trademark.** Not licensed for reuse outside Wikipedia. |
+| Ferrari | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Ferrari_-_Charles_Leclerc_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). 2026 Chinese GP, car 3/4 shot. |
+| Ferrari | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Ferrari_-_Lewis_Hamilton_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). FP1 track action, used as garage/pit-lane substitute. |
+| Ferrari | context_3.jpg | https://commons.wikimedia.org/wiki/File:Ferrari_SF-26_-_Charles_Leclerc_approaches_Spoon_Curve_at_Suzuka_during_the_2026_Japanese_GP_(55194289242).jpg | landscape | Commons — CC BY-SA 4.0 (Martin Lee). No genuine podium photo found on Commons for 2026 Ferrari — gap noted, used as variety shot. |
+| Ferrari | context_4.jpg | https://commons.wikimedia.org/wiki/File:Ferrari_SF-26.jpg | landscape | Commons — CC BY-SA 4.0 (Rjcastillo). Studio car-only shot — good livery close-up. |
+| Red Bull | logo.png | https://en.wikipedia.org/wiki/File:Red_Bull_Racing_Logo_2026.svg | n/a | en.wikipedia — non-free (fair use). **Logo is a trademark.** Not licensed for reuse outside Wikipedia. 2026 logo. |
+| Red Bull | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Red_Bull_-_Max_Verstappen_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Red Bull | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Red_Bull_-_Isack_Hadjar_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Used as garage/pit substitute. |
+| Red Bull | context_3.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Red_Bull_-_Max_Verstappen_-_Sprint_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). No genuine podium photo found — gap noted, used as variety shot. |
+| Red Bull | context_4.jpg | https://commons.wikimedia.org/wiki/File:Max_Verstappen_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk,_Melbourne_(028A7677).jpg | vertical (EXIF-rotated) | Commons — CC BY-SA 4.0 (Yu Chu Chin). Fan-zone driver portrait, not strictly livery — best vertical option found. |
+| Mercedes | logo.png | https://commons.wikimedia.org/wiki/File:Mercedes-AMG_Petronas_F1_Team_logo_(2026).svg | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** 2026 logo. |
+| Mercedes | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_George_Russell_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Mercedes | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_Kimi_Antonelli_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver/car variety. |
+| Mercedes | context_3.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_Kimi_Antonelli_-_Post_Race_Celebration.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Genuine 2026 post-race celebration shot — best podium/celebration match found across all 11 teams. |
+| Mercedes | context_4.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_W17.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car-only studio-style shot — livery close-up. |
+| Aston Martin | logo.png | https://en.wikipedia.org/wiki/File:Aston_Martin_Aramco_2024_logo.png | n/a | en.wikipedia — non-free (fair use). **Logo is a trademark.** Note: only 488×204px available (original file's max size), just under the 500px target — best available. |
+| Aston Martin | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Aston_Martin_-_Fernando_Alonso_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Aston Martin | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Aston_Martin_-_Lance_Stroll_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Used as garage/pit substitute. |
+| Aston Martin | context_3.jpg | https://commons.wikimedia.org/wiki/File:AMR_26_montmelo_2026.jpg | landscape | Commons — CC BY 4.0 (Angelmersaenz). Barcelona testing shot. No genuine podium photo found — gap noted. |
+| Aston Martin | context_4.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Aston_Martin_-_AMR26.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car-only shot — livery close-up. |
+| Williams | logo.png | https://commons.wikimedia.org/wiki/File:Atlassian_Williams_F1_Team_logo.svg | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** |
+| Williams | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Williams_-_Alex_Albon_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Williams | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Williams_-_Carlos_Sainz_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver/session variety. |
+| Williams | context_3.jpg | https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._23_Albon_(1).jpg | landscape | Commons — CC BY-SA 4.0 (Lukas Raich). FIA paddock/grid photo, used as garage substitute. No genuine podium photo found — gap noted. |
+| Williams | context_4.jpg | https://commons.wikimedia.org/wiki/File:Williams_FW48_of_Alexander_Albon_(028A8065).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car-only shot — livery close-up. |
+| Audi | logo.png | https://commons.wikimedia.org/wiki/File:Audif1.com_logo17_(cropped).svg | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** New 2026 entrant. |
+| Audi | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Audi_-_Nico_Hulkenberg_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. Good 2026-season coverage despite being a new entrant. |
+| Audi | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Audi_-_Gabriel_Bortoleto_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver variety. |
+| Audi | context_3.jpg | https://commons.wikimedia.org/wiki/File:Gabriel_Bortoleto_British_Grand_Prix_2026.jpg | landscape | Commons — CC BY-SA 4.0 (Hraynor). Different GP, used as garage/variety substitute. No genuine podium photo found — gap noted (early-season new entrant). |
+| Audi | context_4.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Audi_-_R26.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car-only shot — livery close-up. |
+| Alpine | logo.png | https://commons.wikimedia.org/wiki/File:BWT_Alpine_F1_Team_Logo.png | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** |
+| Alpine | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Alpine_-_Pierre_Gasly_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Alpine | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Alpine_-_Franco_Colapinto_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver variety. |
+| Alpine | context_3.jpg | https://commons.wikimedia.org/wiki/File:Alpine_A526_of_Pierre_Gasly_(028A8074).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car shot, used as garage/pit substitute. No genuine podium photo found — gap noted. |
+| Alpine | context_4.jpg | https://commons.wikimedia.org/wiki/File:Alpine_A526_of_Franco_Colapinto_(028A8063).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car shot — livery close-up. |
+| Haas | logo.png | https://commons.wikimedia.org/wiki/File:TGR_Haas_F1_Team_Logo_(2026).svg | n/a | Commons — Public domain (PD-ineligible). **Logo is a trademark.** 2026 logo. |
+| Haas | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Haas_-_Esteban_Ocon_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Haas | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Haas_-_Oliver_Bearman_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver variety. |
+| Haas | context_3.jpg | https://commons.wikimedia.org/wiki/File:Haas_VF-26_of_Oliver_Bearman_(028A8486).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car shot, used as garage/pit substitute. No genuine podium photo found — gap noted. |
+| Haas | context_4.jpg | https://commons.wikimedia.org/wiki/File:Haas_VF-26_of_Esteban_Ocon_(028A8071).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car shot — livery close-up. |
+| Racing Bulls | logo.png | https://en.wikipedia.org/wiki/File:VCARB_F1_logo.svg | n/a | en.wikipedia — non-free (fair use). **Logo is a trademark.** Not licensed for reuse outside Wikipedia. |
+| Racing Bulls | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Racing_Bulls_-_Liam_Lawson_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. |
+| Racing Bulls | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Racing_Bulls_-_Liam_Lawson_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Same driver, different session — only two Racing-Bulls-specific 2026 race-weekend shots of Lawson were found on Commons. |
+| Racing Bulls | context_3.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Racing_Bulls_-_Arvid_Lindblad_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver variety. No genuine podium photo found — gap noted. |
+| Racing Bulls | context_4.jpg | https://commons.wikimedia.org/wiki/File:RB_VCARB_03_of_Liam_Lawson_(028A8054).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Close car shot of the 2026 VCARB 03 — livery close-up. Coverage for this team was the thinnest of the 11 (team-name searches kept colliding with parent "Red Bull" results). |
+| Cadillac | logo.png | https://en.wikipedia.org/wiki/File:Cadillac_Formula_1_Team_Logo_(2025).svg | n/a | en.wikipedia — non-free (fair use). **Logo is a trademark.** New 2026 entrant. |
+| Cadillac | context_1.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Cadillac_-_Valtteri_Bottas_-_Qualifying.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car 3/4 shot. Good 2026-season coverage despite being a new entrant. |
+| Cadillac | context_2.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Cadillac_-_Sergio_Perez_-_FP1.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Second driver variety. |
+| Cadillac | context_3.jpg | https://commons.wikimedia.org/wiki/File:Cadillac_at_the_2026_Australian_Grand_Prix_(028A7895).jpg | landscape | Commons — CC BY-SA 4.0 (Yu Chu Chin). Paddock-area shot, used as garage substitute. No genuine podium photo found — gap noted. |
+| Cadillac | context_4.jpg | https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Cadillac_-_MAC-26.jpg | landscape | Commons — CC BY 4.0 (Liauzh). Car-only shot — livery close-up. |
+
+## Summary / gaps
+
+- **55/55 files downloaded** (11 teams × [1 logo + 4 context photos]), all verified as real photographs/official logos (no HTML error pages, no AI generation).
+- **No genuinely vertical (portrait) context photos** were found for any team except one Red Bull shot (EXIF-rotated portrait). All other context photos are landscape; acceptable per brief but note this means the current-format 1080×1920 story templates will need to crop/pad these.
+- **No authentic podium/trophy-celebration photograph** was found on Commons for the 2026 season for 10 of the 11 teams — the season is still early (mid-August, roughly a third of the way through) and Commons' 2026 F1 photo coverage skews toward qualifying/FP1 grid-and-track shots plus a large "FIA F1 Austria 2026" batch. Only **Mercedes** had a genuine "Post Race Celebration" shot. For all other teams, `context_3.jpg` is a second/alternate race or testing photo used as a stand-in — flagged per row above.
+- **Racing Bulls** had the thinnest source material: only 3 team-specific 2026 photos existed before a targeted "VCARB 03" search turned up a 4th (car close-up). No dedicated garage or podium shot exists for this team yet.
+- **Audi and Cadillac** (the two new 2026 entrants) actually had solid photo coverage — both already have multiple qualifying/FP1/paddock shots from the 2026 season, so no major gap there beyond the podium-shot issue shared by nearly all teams.
+- **Aston Martin logo.png** is 488×204px — the largest version Wikipedia has — just under the 500px-width target.
+- **Logos**: 6 of 11 (McLaren, Mercedes, Williams, Audi, Alpine, Haas) came from Wikimedia Commons tagged Public Domain (simple/text logo, copyright-ineligible). The other 5 (Ferrari, Red Bull, Aston Martin, Racing Bulls, Cadillac) are English Wikipedia non-free "fair use" uploads — these are **not freely licensed for reuse outside Wikipedia at all**; they're included only because the user explicitly accepted this risk for a private, non-public asset library. Every logo remains a protected trademark regardless of the file's copyright license.

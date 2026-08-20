@@ -5,6 +5,4 @@ data/fulltext/
 data/cache/
 data/fia/
 output/
-assets/*
-!assets/manifest.json
 .claude/scheduled_tasks.lock

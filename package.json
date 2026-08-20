@@ -12,6 +12,7 @@
     "@mozilla/readability": "^0.6.0",
     "dotenv": "^16.4.5",
     "jsdom": "^29.1.1",
+    "puppeteer": "^25.8.0",
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
