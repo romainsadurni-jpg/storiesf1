@@ -8,9 +8,13 @@ import { resolvePerson, type ResolvedPerson } from "./asset-manifest";
 import type { TranscriptQA } from "./transcript";
 
 // Deliberately not an LLM "is this substantive" judgment — see cloud-digest.ts's
-// header comment. Just long enough to drop the unambiguous non-answers
-// ("It doesn't matter.", "Can I go now?").
-export const MIN_ANSWER_LEN = 50;
+// header comment. A length floor is a blunt proxy for "worth a card": raised
+// to 300 (from an initial 50, then 150) after the first real runs sent
+// 62 then 55 cards for one transcript — still no editorial judgment, but
+// this cuts closer to what a curated batch would look like (~39 on the
+// transcript this was tuned against) at the cost of dropping some short-but-
+// punchy answers.
+export const MIN_ANSWER_LEN = 300;
 
 export type EligibleEntry = { qa: TranscriptQA; person: ResolvedPerson };
 
