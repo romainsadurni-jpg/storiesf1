@@ -2,7 +2,7 @@ name: FIA press conference watch
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *" # repo is public -> unlimited free Actions minutes, so this is GitHub's practical floor
   workflow_dispatch: {}
 
 permissions:
