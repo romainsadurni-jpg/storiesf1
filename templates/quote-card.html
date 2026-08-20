@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Story — Quote Card</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1920px;
+    background: #000;
+    font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  #stage {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+  }
+
+  #bg-gradient {
+    position: absolute;
+    inset: 0;
+  }
+
+  #bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 1080px;
+    height: 1920px;
+    object-fit: cover;
+  }
+
+  #bg-overlay {
+    position: absolute;
+    inset: 0;
+  }
+
+  #vignette {
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 260px 90px rgba(0,0,0,0.75);
+  }
+
+  #content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+    box-sizing: border-box;
+  }
+
+  #portrait-ring {
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
+  }
+
+  #portrait-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,0.9);
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  #portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    display: block;
+  }
+
+  #portrait-fallback {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 175px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+
+  #name {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+    margin-bottom: 24px;
+  }
+
+  #role {
+    margin-top: 4px;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.85);
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  }
+
+  #context-rule {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 22px;
+    border-radius: 2px;
+  }
+
+  #context {
+    max-width: 860px;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.85);
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.35;
+    text-align: center;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  }
+
+  #quote {
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.18;
+    text-shadow: 0 6px 30px rgba(0,0,0,0.65);
+  }
+
+  #watermark {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(255,255,255,0.55);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <svg id="bg-gradient" width="1080" height="1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop id="grad-a" offset="0%" stop-color="#00A19C"/>
+        <stop id="grad-b" offset="100%" stop-color="#04100e"/>
+      </linearGradient>
+    </defs>
+    <rect width="1080" height="1920" fill="url(#grad)"/>
+  </svg>
+
+  <img id="bg-photo" src="" alt="" onerror="this.style.display='none';">
+
+  <svg id="bg-overlay" width="1080" height="1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="overlay-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#04100e" stop-opacity="0.55"/>
+        <stop offset="45%" stop-color="#04100e" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#04100e" stop-opacity="0.92"/>
+      </linearGradient>
+    </defs>
+    <rect width="1080" height="1920" fill="url(#overlay-grad)"/>
+  </svg>
+
+  <div id="vignette"></div>
+
+  <div id="content">
+    <div id="portrait-ring">
+      <div id="portrait-inner">
+        <img id="portrait-img" src="" alt="" onerror="this.style.display='none'; document.getElementById('portrait-fallback').style.display='flex';">
+        <div id="portrait-fallback">?</div>
+      </div>
+    </div>
+    <div id="name">Name</div>
+    <div id="role">Role</div>
+    <div id="context-rule"></div>
+    <div id="context">Context</div>
+    <div id="quote">Quote</div>
+  </div>
+
+  <div id="watermark">TON COMPTE F1</div>
+</div>
+
+<script>
+  // ---- DATA: à remplacer pour chaque story ----
+  const DATA = {
+    context: "Après les critiques de Verstappen sur les algorithmes moteur 2026, Norris répond :",
+    quote: "Si tu es un meilleur pilote, il reste des virages où tu peux essayer de prendre l'avantage sur tout le monde.",
+    name: "Lando Norris",
+    role: "Pilote — McLaren",
+    isDriver: true,
+    team: "mclaren",
+    handle: "@SaD_F1",
+    portrait: "../assets/drivers/lando_norris/portrait.jpg",
+    background: "../assets/teams/mclaren/context_1.jpg"
+  };
+
+  const TEAM_COLORS = {
+    ferrari:     { a: "#E8002D", b: "#1a0305" },
+    redbull:     { a: "#1E3A8A", b: "#03070f" },
+    mclaren:     { a: "#FF8000", b: "#1a0d00" },
+    mercedes:    { a: "#00A19C", b: "#04100e" },
+    astonmartin: { a: "#00594F", b: "#020e0c" },
+    williams:    { a: "#00A0DE", b: "#020c14" },
+    audi:        { a: "#BB0A30", b: "#0d0203" },
+    alpine:      { a: "#0090D0", b: "#020c14" },
+    haas:        { a: "#B10F1D", b: "#0d0303" },
+    racingbulls: { a: "#364C9C", b: "#04070f" },
+    cadillac:    { a: "#B08D57", b: "#0a0805" },
+    generic:     { a: "#12213A", b: "#03060c" }
+  };
+
+  function autoSize(text) {
+    const len = text.length;
+    if (len < 60) return 68;
+    if (len < 100) return 58;
+    if (len < 150) return 50;
+    if (len < 200) return 42;
+    return 38;
+  }
+
+  function initials(name) {
+    return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  }
+
+  function render(data) {
+    const colors = TEAM_COLORS[data.team] || TEAM_COLORS.generic;
+
+    document.getElementById('grad-a').setAttribute('stop-color', colors.a);
+    document.getElementById('grad-b').setAttribute('stop-color', colors.b);
+    document.getElementById('portrait-ring').style.background = colors.a;
+    document.getElementById('portrait-fallback').style.background = colors.a;
+    document.getElementById('context-rule').style.background = colors.a;
+
+    document.getElementById('watermark').textContent = data.handle;
+
+    document.getElementById('bg-photo').src = data.background || '';
+    document.getElementById('portrait-img').src = data.portrait || '';
+    document.getElementById('portrait-fallback').textContent = initials(data.name);
+
+    const contextEl = document.getElementById('context');
+    if (data.context) {
+      contextEl.textContent = data.context;
+      contextEl.style.display = 'block';
+    } else {
+      contextEl.style.display = 'none';
+    }
+    document.getElementById('context-rule').style.display = data.context ? 'block' : 'none';
+
+    const quoteEl = document.getElementById('quote');
+    quoteEl.textContent = '“' + data.quote + '”';
+    quoteEl.style.fontSize = autoSize(data.quote) + 'px';
+
+    const roleEl = document.getElementById('role');
+    if (data.role && !data.isDriver) {
+      roleEl.textContent = data.role;
+      roleEl.style.display = 'block';
+    } else {
+      roleEl.style.display = 'none';
+    }
+
+    document.getElementById('name').textContent = data.name;
+  }
+
+  render(DATA);
+</script>
+</body>
+</html>

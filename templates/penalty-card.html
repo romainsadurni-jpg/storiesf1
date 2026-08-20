@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Story — Penalty Card</title>
+<style>
+  @font-face {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    src: url('../assets/fonts/titillium-700.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Titillium Web';
+    font-weight: 900;
+    src: url('../assets/fonts/titillium-900.woff2') format('woff2');
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1920px;
+    background: #131313;
+    font-family: 'Titillium Web', 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  #canvas {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    background: #131313;
+  }
+
+  #canvas-glow {
+    position: absolute;
+    inset: 0;
+  }
+
+  #caption {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 1080px;
+    text-align: center;
+    color: rgba(255,255,255,0.92);
+    font-size: 40px;
+    font-weight: 900;
+    padding: 0 80px;
+    box-sizing: border-box;
+    text-shadow: 0 3px 14px rgba(0,0,0,0.5);
+  }
+
+  #card {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    width: 920px;
+    height: 1430px;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.55);
+    background: #0a0a0a;
+  }
+
+  #photo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #photo-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 920px;
+    height: 1050px;
+    overflow: hidden;
+  }
+
+  #portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 4%;
+    display: block;
+  }
+
+  #portrait-fallback {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(0,0,0,0.2);
+  }
+
+  #photo-fade {
+    position: absolute;
+    inset: 0;
+  }
+
+  #vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 920px;
+    height: 1050px;
+    box-shadow: inset 0 0 160px 60px rgba(0,0,0,0.6);
+  }
+
+  #stripes {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 380px;
+    height: 240px;
+    opacity: 0.5;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.05) 12px,
+      transparent 12px,
+      transparent 24px
+    );
+    -webkit-mask-image: linear-gradient(to top right, black, transparent 70%);
+            mask-image: linear-gradient(to top right, black, transparent 70%);
+  }
+
+  #top-badges {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  #team-logo {
+    height: 54px;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.6));
+  }
+
+  #headline-wrap {
+    position: absolute;
+    top: 1050px;
+    left: 0;
+    width: 920px;
+    padding: 40px 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #headline {
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.08;
+    letter-spacing: 1px;
+    text-shadow: 0 6px 24px rgba(0,0,0,0.7);
+  }
+
+  #reason-band {
+    margin: 36px 0 0;
+    border-radius: 16px;
+    padding: 24px 50px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+  }
+
+  #reason-text {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  #watermark {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div id="canvas">
+  <svg id="canvas-glow" width="1080" height="1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="glow" cx="50%" cy="18%" r="60%">
+        <stop id="glow-a" offset="0%" stop-color="#3a1010" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#131313" stop-opacity="1"/>
+      </radialGradient>
+    </defs>
+    <rect width="1080" height="1920" fill="url(#glow)"/>
+  </svg>
+
+  <div id="caption">Caption</div>
+
+  <div id="card">
+    <svg id="photo-bg" width="920" height="1050" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="studio-grad" cx="46%" cy="22%" r="80%">
+          <stop offset="0%" stop-color="#f7f7f6"/>
+          <stop offset="40%" stop-color="#e6e6e6"/>
+          <stop offset="72%" stop-color="#c3c4c6"/>
+          <stop offset="100%" stop-color="#8d8e91"/>
+        </radialGradient>
+        <radialGradient id="studio-grad-2" cx="60%" cy="12%" r="55%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="grain">
+          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+          <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.045 0"/>
+        </filter>
+      </defs>
+      <rect width="920" height="1050" fill="url(#studio-grad)"/>
+      <rect width="920" height="1050" fill="url(#studio-grad-2)"/>
+      <rect width="920" height="1050" filter="url(#grain)"/>
+    </svg>
+
+    <div id="photo-wrap">
+      <img id="portrait-img" src="" alt="" onerror="this.style.display='none'; document.getElementById('portrait-fallback').style.display='flex';">
+      <div id="portrait-fallback">?</div>
+    </div>
+
+    <svg id="photo-fade" width="920" height="1430" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fade-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#0a0a0a" stop-opacity="0"/>
+          <stop offset="65%" stop-color="#0a0a0a" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#0a0a0a" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="920" height="1050" fill="url(#fade-grad)"/>
+    </svg>
+
+    <div id="vignette"></div>
+    <div id="stripes"></div>
+
+    <div id="top-badges">
+      <img id="team-logo" src="" alt="" onerror="this.style.display='none';">
+    </div>
+
+    <div id="headline-wrap">
+      <div id="headline">Headline</div>
+      <div id="reason-band">
+        <div id="reason-text">Reason</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="watermark">TON COMPTE F1</div>
+</div>
+
+<script>
+  // ---- DATA: à remplacer pour chaque story ----
+  const DATA = {
+    name: "Lewis Hamilton",
+    team: "ferrari",
+    handle: "@SaD_F1",
+    caption: "",
+    portrait: "../assets/drivers/lewis_hamilton/portrait.png",
+    headline: "Pénalité de\n5 places sur la grille",
+    reason: "Non-ralentissement sous drapeaux jaunes"
+  };
+
+  const TEAM_COLORS = {
+    ferrari:     { a: "#E8002D", b: "#1a0305" },
+    redbull:     { a: "#1E3A8A", b: "#03070f" },
+    mclaren:     { a: "#FF8000", b: "#1a0d00" },
+    mercedes:    { a: "#00A19C", b: "#04100e" },
+    astonmartin: { a: "#00594F", b: "#020e0c" },
+    williams:    { a: "#00A0DE", b: "#020c14" },
+    audi:        { a: "#BB0A30", b: "#0d0203" },
+    alpine:      { a: "#0090D0", b: "#020c14" },
+    haas:        { a: "#B10F1D", b: "#0d0303" },
+    racingbulls: { a: "#364C9C", b: "#04070f" },
+    cadillac:    { a: "#B08D57", b: "#0a0805" },
+    generic:     { a: "#12213A", b: "#03060c" }
+  };
+
+  function autoSize(text) {
+    const len = text.length;
+    if (len < 20) return 78;
+    if (len < 35) return 66;
+    if (len < 50) return 56;
+    return 48;
+  }
+
+  function initials(name) {
+    return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  }
+
+  function shade(hex, percent) {
+    const num = parseInt(hex.slice(1), 16);
+    let r = (num >> 16) + Math.round(255 * (percent / 100));
+    let g = ((num >> 8) & 0xff) + Math.round(255 * (percent / 100));
+    let b = (num & 0xff) + Math.round(255 * (percent / 100));
+    r = Math.max(0, Math.min(255, r));
+    g = Math.max(0, Math.min(255, g));
+    b = Math.max(0, Math.min(255, b));
+    return '#' + (0x1000000 + r * 0x10000 + g * 0x100 + b).toString(16).slice(1);
+  }
+
+  function escapeHtml(s) {
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  function render(data) {
+    const colors = TEAM_COLORS[data.team] || TEAM_COLORS.generic;
+
+    document.getElementById('glow-a').setAttribute('stop-color', colors.a);
+    document.getElementById('reason-band').style.background =
+      'linear-gradient(90deg, ' + shade(colors.a, -30) + ' 0%, ' + shade(colors.a, 18) + ' 50%, ' + shade(colors.a, -30) + ' 100%)';
+    document.getElementById('watermark').textContent = data.handle;
+    const logoExt = (data.team === 'mercedes') ? 'svg' : 'png';
+    document.getElementById('team-logo').src = '../assets/teams/' + data.team + '/logo.' + logoExt;
+
+    document.getElementById('portrait-img').src = data.portrait || '';
+    document.getElementById('portrait-fallback').textContent = initials(data.name);
+
+    const captionEl = document.getElementById('caption');
+    if (data.caption) {
+      captionEl.textContent = data.caption;
+      captionEl.style.display = 'block';
+    } else {
+      captionEl.style.display = 'none';
+    }
+
+    const headlineEl = document.getElementById('headline');
+    headlineEl.innerHTML = data.headline.split('\n').map(line => escapeHtml(line)).join('<br>');
+    headlineEl.style.fontSize = autoSize(data.headline.replace('\n', ' ')) + 'px';
+
+    const reasonEl = document.getElementById('reason-text');
+    reasonEl.textContent = data.reason;
+    fitOneLine(reasonEl, reasonEl.parentElement, 34, 16);
+  }
+
+  function fitOneLine(el, container, maxSize, minSize) {
+    let size = maxSize;
+    el.style.fontSize = size + 'px';
+    const available = container.clientWidth - 2 * parseFloat(getComputedStyle(container).paddingLeft || 0);
+    while (el.scrollWidth > available && size > minSize) {
+      size -= 1;
+      el.style.fontSize = size + 'px';
+    }
+  }
+
+  render(DATA);
+</script>
+</body>
+</html>

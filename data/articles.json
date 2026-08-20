@@ -1,0 +1,1591 @@
+[
+  {
+    "title": "What the teams said – Race day in Hungary",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-hungary-2026.40qHMaNrP6jNXwrULAwt9J",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-20T14:00:24.503Z",
+    "teamsSynthesis": [
+      {
+        "teamSlug": "mclaren",
+        "teamName": "McLaren",
+        "context": "Norris recorded his first Grand Prix victory of the year in Budapest, but he had to work hard for the win. After leading off the line, he ran a little wide through Turn 2 and that enabled Piastri to jump him for the lead. From there, Norris harried and hustled his team mate but could not find a way through. That situation continued through the second stint, but then McLaren pulled Piastri in for his second stop.\nThat released Norris, who put in a series of quick laps. Piastri meanwhile got bogged down in traffic with the backmarkers, and banged wheels with Sainz to boot. As a result, Norris jumped ahead after he did pit, and picked off Antonelli too for the lead of the race. Piastri began to fade, the fight going out of the Australian before he had to park up with a gearbox issue late on.\nLando Norris, 1st\n”,",
+        "drivers": [],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "redbull",
+        "teamName": "Red Bull",
+        "context": "Considering Verstappen was frustrated with various things on his RB22 all race long, to finish second was a strong result for the Dutchman. The Red Bull driver was fighting with Hamilton for much of it, and came out of his first pit stop just behind. Verstappen then put in the move of the day to dive down the inside of his rival and take the position. Putting the softs on for his final stint was inspired, as was the team’s decision not to pit again under the VSC. That jumped him ahead of some cars, and he was able to hold onto those tyres to the end.",
+        "drivers": [
+          {
+            "driver": "Max Verstappen",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "2nd"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a really strong day and positive for us to finish in P2 today, although I’m quite surprised with the result given the problems we had this weekend. We really hung in there, made some good calls and brought it home in the second half of the race, especially with our older tyres. We were trying to make the best of what we had, and it was quite tough for a long period of the race, but everyone contributed to securing this podium.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We were trying to make the best of what we had, and it was quite tough for a long period of the race, but everyone contributed to securing this podium.",
+            "sentiment": null
+          },
+          {
+            "driver": "Isack Hadjar",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "6th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a bit of a lonely and tough race today. I enjoyed a decent start, which we've definitely tidied up over the last two races, but after the first few laps the guys ahead just pulled away. The opening stint on the Medium probably cost us getting anything more out of today. We just didn't have the performance in that tyre, which we have to take a closer look at. Once we switched onto the Hard, the pace really came back and I was able to find consistency that we lacked earlier on. We definitely maximised what was available this afternoon; another P6 is a decent return on what was a challenging weekend. We can be proud of this run we’re on heading into the summer break, seven top-six finishes in a row is a solid reflection of the work we’ve put in to get here.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We definitely maximised what was available this afternoon; another P6 is a decent return on what was a challenging weekend.",
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "mercedes",
+        "teamName": "Mercedes",
+        "context": "Antonelli had a decent start to run sixth early on, with Mercedes rolling the dice on strategy and seeing if they could make a one-stop work for him. That shook out with the youngster in second, and matching Piastri behind for pace. But he was brought in for a second stop, the team checking the data and not believing his tyres would last. With fresher rubber than those around him, Antonelli did not need to pit under the late VSC and thus picked up some places to finish a decent third and extend his Championship advantage.\n\nAs for Russell, his race could not have started worse. Anti-stall off the grid dropped him to P18, and he did well to recover back to the points. That limited his losses in the standings somewhat, but he still finds himself 59 points behind his team mate heading into the summer break.",
+        "drivers": [
+          {
+            "driver": "Kimi Antonelli",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "3rd"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was not an easy race today. It was very difficult to overtake, even when we had significantly more pace than the cars ahead. We knew it might be like that today and so it proved. We did well to build a decent tyre offset to those ahead though throughout the race and that enabled us to get up into the podium positions.",
+                "verbatim": true
+              },
+              {
+                "text": "I initially wanted to target a one-stop race. It seemed like it might be possible in the opening stint but then we started to suffer with the rears. We made the call to go onto the two-stop and in the final stint, had really good pace. The Virtual Safety Car made our lives a little more difficult with Lewis (Hamilton) getting fresh tyres and being right behind us, but we were able to bring home P3.",
+                "verbatim": true
+              },
+              {
+                "text": "We have had a much better first half of the season than we perhaps expected at the very start. This is where we are at now though and we need to keep going, keep pushing on and doing the best job we can. It is going to be an intense second half of the year, but we are ready for it.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "positif"
+          },
+          {
+            "driver": "George Russell",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "7th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "That was another tough race. We lost lots of positions off the line and that ruined our chances of fighting for the podium. We're not sure exactly what happened just yet. We did all the procedures as we normally do but it didn't behave as we expected. The anti-stall then kicked in, and we dropped to the back of the field. The positive is that our pace across the rest of the race was strong and we were able to fight back to P7. That is not where we want to be finishing but is still points.",
+                "verbatim": true
+              },
+              {
+                "text": "It has not been a smooth first half of the season. I am looking forward to this break so we can reset and come back stronger after the summer shutdown. It has been a bit of a rollercoaster on my side so far and I am hoping the second half of the year can be much better.",
+                "verbatim": true
+              }
+            ],
+            "problem": "anti-stall",
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "négatif"
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Toto Wolff",
+            "role": "Head of Mercedes-Benz Motorsport",
+            "quote": "Both drivers put in strong races today. Kimi did well to get onto the podium and P3 and George did brilliantly to fight back after the opening lap. His problem at the start was fully on us as a team and it isn't good enough. He has suffered too many of these problems; we are doing everything we can to get on top of them, but it is unfortunately another issue that has cost him again today.\n\nWe nearly got very unlucky with yet another ill-timed Virtual Safety Car, but Kimi defended well to hold off Lewis (Hamilton). It was good damage limitation after a difficult day yesterday.\n\nWe go into the summer shutdown with a points gap in both championships that we would have taken at the start of the season. That is good but we know we need to keep pushing after the break, keep developing and improve our reliability. That will be the key if we are to not only fight for both championships but win them."
+          },
+          {
+            "name": "Andrew Shovlin",
+            "role": "Trackside Engineering Director",
+            "quote": "Today was the first race of the season where we were starting further back with both cars and therefore was about damage limitation. Kimi delivered a very measured race, and we used the flexibility of the two-stop strategy well. By managing the first two stints carefully, we were able to build a significant tyre life advantage over the cars ahead, and that gave him the pace he needed to move into podium contention in the final part of the race. The Virtual Safety Car was not ideal as it reduced that advantage and brought Lewis onto our gearbox, but Kimi managed the situation well and defended strongly to secure P3.\n\nOn George's side, we are obviously disappointed by the issue at the start. The anti-stall activation dropped him to the back of the field and made what was always going to be a challenging race even more difficult. We need to understand exactly why that happened, but once he recovered from the opening lap, his pace was very competitive, and he fought back through the field to salvage important points.\n\nWe head into the summer break leading both championships, which is a good position to be in, but we know there are areas where we need to improve. Reliability remains a key focus, and we will use the shutdown to analyse the first half of the season and ensure we return after the break ready for a very competitive run to the end of the year."
+          }
+        ],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "ferrari",
+        "teamName": "Ferrari",
+        "context": "Hamilton got past his team mate at the start, Leclerc a little sluggish off the line. From there the seven-time World Champion was in a fight with Verstappen for third, with the two McLarens managing to stay out front. But Ferrari brought him in early for his second stop, and Hamilton was not too impressed with that call. He lost the place to Verstappen and another to Antonelli after pitting a third time under the late VSC, had an entertaining fight with his Mercedes replacement but ultimately came home fourth.\n\nThat became fifth thanks to a five-second time penalty for speeding in the pit lane, which promoted his team mate a place, Leclerc not quite on his team mate’s pace in race trim.",
+        "drivers": [
+          {
+            "driver": "Lewis Hamilton",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "5th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I’m really grateful to everyone in the team for the work they’ve put in over the first half of the season. We‚ve made some genuine progress, and the car was good again this weekend, which is very positive.\n\nIt’s obviously frustrating to come away with so little when the potential was there. Everyone back at the factory and here at the track has worked incredibly hard to keep moving us forward, so it’s disappointing not to convert that into the result we were capable of.\n\nThe last few races have been costly on my side, with too many points left on the table. But I’m still second in the championship, there’s a long way to go, and there are plenty of opportunities ahead.\n\nThe summer break is a chance to reset, recharge and come back with the same determination. We’ll keep pushing, keep improving, and I’m confident we can come back strong for the second part of the season.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "racingbulls",
+        "teamName": "Racing Bulls",
+        "context": "Lindblad started okay, but Lawson started better. That jumped the Kiwi racer ahead of his team mate, and then Racing Bulls opted to split their strategies to cover off the Audi cars. Lawson two-stopped, and was able to come back through late on to be the pick of the midfield runners. Lindblad one-stopped, running out of tyres late on and doing well to hold on to P10. The double points score jumped them ahead of Alpine in the standings.",
+        "drivers": [
+          {
+            "driver": "Arvid Lindblad",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "8th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a good race for us today. The first corner and lap one was obviously very important for me given I had a challenging Qualifying yesterday. Following a strong start, we knew we had a long race ahead, but the car just felt super strong throughout. A huge thanks to the team who made the right call on the two-stop strategy. To have two cars in the points is a great way to round off the first half of the season. To be heading into summer break fifth in the Constructors–9 Championship is a reflection of all the hard work the team has put in so far this year. While I’m looking forward to recharging over the next few weeks, I’m excited to carry this momentum forward into Zandvoort.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Liam Lawson",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "8th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a good race for us today. The first corner and lap one was obviously very important for me given I had a challenging Qualifying yesterday. Following a strong start, we knew we had a long race ahead, but the car just felt super strong throughout. A huge thanks to the team who made the right call on the two-stop strategy. To have two cars in the points is a great way to round off the first half of the season. To be heading into summer break fifth in the Constructors–9 Championship is a reflection of all the hard work the team has put in so far this year. While I’m looking forward to recharging over the next few weeks, I’m excited to carry this momentum forward into Zandvoort.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "audi",
+        "teamName": "Audi",
+        "context": "Hulkenberg finally scored for Audi in the 11th Grand Prix of the season, to open up his points tally for the year. He ran in the points in the opening stages having started on the medium tyre. Like Racing Bulls, the team split strategies to cover all bases, with Bortoleto starting on the softs and running a long first stint. He one-stopped which initially looked like the way forward, but the Brazilian could not hold onto his tyres late on and Hulkenberg was able to climb back into the points after his second stop, coming home ninth.",
+        "drivers": [
+          {
+            "driver": "Nico Hulkenberg",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "9th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It’s a great feeling to finally get those first points of the season. There have been a few races this year where we had the pace to score but, for different reasons, things just didn’t come together. We always knew the potential was there, so it’s really satisfying to finally put everything together across the weekend and come away with the reward.",
+                "verbatim": true
+              },
+              {
+                "text": "We maximised what we had in qualifying yesterday and followed it up with a strong race today. Everyone executed well all weekend and it’s rewarding to head into the summer break with points on the board. We’ll take the opportunity to reset, look through everything we’ve learned over the opening part of the season, and come back ready to build on this in Zandvoort.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We’ll take the opportunity to reset, look through everything we’ve learned over the opening part of the season, and come back ready to build on this in Zandvoort.",
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Gabriel Bortoleto",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "11th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I gave it everything today, and it was definitely not an easy race. We tried to make the one-stop strategy work, and with the hard tyre being quite a difficult compound compared to the soft, I had to manage a lot throughout the race. But in the end, I finished less than a second behind Arvid Lindblad, so to come that close to the points feels like a good result for the race we had.",
+                "verbatim": true
+              },
+              {
+                "text": "These are very positive signs heading into the summer break. The team has been doing an incredible job, and I’m very happy with what we’ve achieved so far this season. Hopefully we can keep building on this momentum in the second half of the year.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "Hopefully we can keep building on this momentum in the second half of the year.",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Allan McNish",
+            "role": "Racing Director",
+            "quote": "Scoring points for the third race in a row is another positive step forward for us as a team. Nico delivered an excellent drive all weekend and converted a strong performance into ninth place. Gabriel fought his way back to eleventh and came very close to making it a double points finish. The pace of the car was competitive, and we executed a clean race to maximise the opportunities available to us. We leave this weekend encouraged by the progress we are making and the way the team is continuing to develop. Now we head into the summer break with positive momentum and valuable lessons from the first part of the season. We will use this period to recharge, keep building on our foundations and come back ready to continue our development in the second half of the year."
+          }
+        ],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "alpine",
+        "teamName": "Alpine",
+        "context": "Alpine are another team in need of some upgrades, as they continue to fall behind their rivals. They lost P5 in the standings today too to Racing Bulls, who scored with both cars. Gasly was the pick of the two Alpine drivers despite three-stopping, the team bringing him in under the VSC. They left Colapinto out to try and roll the dive but to no avail, the Argentine racer spending much of his afternoon bogged down in traffic.",
+        "drivers": [
+          {
+            "driver": "Pierre Gasly",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "12th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "Looking at the end result, as a team, we weren",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We need to bring more performance to the car.",
+            "sentiment": "négatif"
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Flavio Briatore",
+            "role": "Executive Advisor",
+            "quote": "Coming away from a race without scoring any points is disappointing, especially since we lost fifth position in the Constructors' Championship."
+          }
+        ],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "astonmartin",
+        "teamName": "Aston Martin",
+        "context": "The verdict is in for Aston Martin’s upgrades, and they have definitely made a difference to the team in green. Both drivers were able to beat an Alpine, both Haas cars and the Williams pair which is big progress. Stroll managed to pip his team mate after undercutting Alonso, who had a much later second stop. They also avoided the hard tyre, which was an interesting decision and showing the team are willing to be bold on strategy calls – something that was not the case when they were only able to race each other in the past few Grands Prix.",
+        "drivers": [
+          {
+            "driver": "Fernando Alonso",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "14th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a good step forward for us this weekend, so it’s a solid baseline for us to build on when we return after the summer break. The car was performing well in the race, and we were able to fight with those around us, which was great after some difficult weekends. We’ll keep pushing, and we’ll see how things come together in Zandvoort, especially with Honda’s update.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Adrian Newey",
+            "role": "Team Principal",
+            "quote": "It's clear we've taken a very encouraging first step forward with the upgrade, and the progress made is a huge credit to the hard work of the entire team at Silverstone. The other positive is that performance was in line with our data predictions, showing good correlation between our updated simulation tools and the track. This is a strong indication we are on the right development path for the short and longer term. With valuable learnings gathered today, we now have a solid baseline to build on when we return from the summer break, with further upgrades planned for Zandvoort."
+          }
+        ],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "haas",
+        "teamName": "Haas",
+        "context": "Haas continue to struggle for pace, fighting towards the back of the field as they count down to their next upgrade package. They did not choose an alternate strategy, both cars two-stopping on their way to the flag. Ocon got a good start, but faded as the afternoon wore on, while Bearman had an incident-packed race. He managed to spin at one point and was also penalised five-seconds for ignoring blue flags, which meant he propped up the field in P19.",
+        "drivers": [
+          {
+            "driver": "Oliver Bearman",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "P19"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a very long day, as we were anticipating. The lack of qualifying pace was exacerbated in race trim as there was so much sliding and degradation. Apart from that, I just couldn’t overtake so I got stuck and didn’t have any pace anyways. We need to understand why Spa was so good and this weekend was so bad, because the feeling has been the complete opposite and I’ve lost all confidence in the car. I haven’t done a lap in the car this weekend and felt good, so we need to understand why and take a long and hard look at things.",
+                "verbatim": true
+              },
+              {
+                "text": "We had a good start once again, we were almost in the points positions, which was very good, but we can’t keep the cars behind. We are in fact not quick enough unfortunately to keep them behind. The tyres degraded quite a lot as well, so we need to look at putting more performance on the car. We need to look at the next upgrades and hope that they’ll make a difference – the team will be on it. There’s a lot of positives to take away from this weekend on my side, I’m quite happy we were able to extract the maximum out of the car and that we got the consistency from Friday through to Sunday, now we just need more performance.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Ayao Komatsu",
+            "role": "Team Principal",
+            "quote": "It was a very difficult day. Ultimately the car hasn’t got the pace, we tried everything really. We know where we need to improve, and that’s coming. I think this is the longest period in the last two and a half seasons that we’ve not had a car that we can do something with, or be challenging for the points. That’s not where we want to be, everybody knows that, and everyone is working hard to find the solution. There’s some solutions in the pipeline, but honestly, we will only see what they do when it comes, so up until that point we just have to do our best with what we’ve got. The pit stops were good, the previous few races we were a bit up and down with them on the operational side, so having clean stops was good to sign off before summer shutdown. We just have to focus on the areas that we have control of and do the best job we can, and then when we improve the car, we will make sure we turn it around."
+          }
+        ],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "williams",
+        "teamName": "Williams",
+        "context": "Albon was celebrating his 100th Grand Prix for Williams, but in the end all he had in terms of positives was the fact he beat his team mate. The team split strategies, Albon starting on the mediums, Sainz the softs. But the Spaniard’s race will be remembered for a blue flag moment with Piastri, as the two banged wheels when the Australian was trying to lap the Williams man. That earned him a five-second time penalty, to cap a difficult weekend for the team.",
+        "drivers": [
+          {
+            "driver": "Alex Albon",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "17th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "This has been a tough weekend for us - it was a real battle out there. We knew the track wouldn’t suit us, and that it would expose our weaknesses. We’ve had balance issues all weekend, and we were very wind-affected today, with understeer and a lack of consistency throughout. I struggled to find a rhythm with the wind changing and the gusts. We know what we need to fix, and I think the work that’s being done back at the factory is the biggest team effort I’ve seen to fight these issues. I believe we’re doing the right things to get back on track - it’s just a shame to be in this position in the first place. Hopefully we can take a good rest as a team and come back stronger post summer break.",
+                "verbatim": true
+              },
+              {
+                "text": "I was having a strong race today, racing with the Haas cars which were half a second quicker yesterday. There was an issue all race receiving information about blue flags and, during my battle with Fernando, Oscar appeared in my blind spot and unfortunately we made contact. The subsequent penalty and then double stacking during the VSC meant I lost some positions towards the last laps, but overall there wasn’t much more in it for us.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": "Blue flag moment with Piastri",
+            "teammateComparison": "Carlos Sainz was beaten by Alex Albon, but Sainz was having a strong race and was racing with the Haas cars which were half a second quicker yesterday.",
+            "outlook": "We will reset during the summer break and come back stronger!",
+            "sentiment": "négatif"
+          },
+          {
+            "driver": "Carlos Sainz",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "18th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "Reflecting on this first half of the season, I’m happy with the consistency and pace I’m extracting from the car every weekend despite our struggles and, ultimately, we have a lot of homework for the second half of the year. The most important thing is to keep pushing together as a team like we are doing. We will reset during the summer break and come back stronger!",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": "Blue flag moment with Piastri",
+            "teammateComparison": "Carlos Sainz was beaten by Alex Albon, but Sainz was having a strong race and was racing with the Haas cars which were half a second quicker yesterday.",
+            "outlook": "We will reset during the summer break and come back stronger!",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      },
+      {
+        "teamSlug": "cadillac",
+        "teamName": "Cadillac",
+        "context": "Cadillac’s reliability woes returned in Hungary, with neither driver able to make it to the chequered flag. Bottas was the first to retire, limping back to the pits with a brake fire. The Finn had said on Thursday that overheating brakes here might be an issue, and so it proved. As for Perez, his afternoon was undone by a front suspension issue. Work to do for Cadillac on reliability and pace, given they have now been jumped by Aston Martin on performance.",
+        "drivers": [
+          {
+            "driver": "Sergio Perez",
+            "sessions": [
+              {
+                "session": "Race day",
+                "position": "DNF"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a challenging race. In the first stint I was struggling a lot with the balance and sliding around, but I was able to adapt my driving, and the second stint was much stronger. I still felt there was something not quite right with the car, so it’s important that we understand exactly what was happening. As a new team, we expect to face some challenges, but it’s frustrating that we’ve had a few issues recently. We’ll use next week before the shutdown period to work hard across all areas and make sure we come back stronger for the second half of the season.",
+                "verbatim": true
+              }
+            ],
+            "problem": "front suspension issue",
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We’ll use next week before the shutdown period to work hard across all areas and make sure we come back stronger for the second half of the season.",
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Race day"
+      }
+    ]
+  },
+  {
+    "title": "What the teams said – Friday in Hungary",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-hungary-2026.7kcx4JhVRG7YBAlyxu9DnD",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-20T14:51:47.715Z",
+    "teamsSynthesis": [
+      {
+        "teamSlug": "ferrari",
+        "teamName": "Ferrari",
+        "context": "Leclerc was fastest in the opening session for Ferrari by quite come margin, nearly half a second quicker than Verstappen. It was not trouble-free for the Monegasque racer though, as he parked in the pit lane late on with an issue. As for Hamilton, he nearly spun out of the final corner early on, and then complained about his gear shifts. But he was much happier in the second session, coming out on top and beating his team mate by over a tenth. Leclerc ran him close, with those two head and shoulders ahead of the rest at the moment.",
+        "drivers": [
+          {
+            "driver": "Charles Leclerc",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P1"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "Our overall performance seems to be quite good, which is a positive. There is still a long way to go this weekend, so we have to be on it and work hard to make sure we stay on top tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "There is still a long way to go this weekend, so we have to be on it and work hard to make sure we stay on top tomorrow.",
+            "sentiment": null
+          },
+          {
+            "driver": "Lewis Hamilton",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P3"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a solid day overall. The conditions were quite challenging, with the wind making things a bit tricky and the track feeling quite bumpy in some places. The car felt better in FP2 and we made some good progress between the sessions, although there are still a few areas we need to improve. We'll go through all the data overnight, keep working on the balance and hopefully find a bit more performance for tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": "He beat me by over a tenth in FP2.",
+            "outlook": "We'll go through all the data overnight, keep working on the balance and hopefully find a bit more performance for tomorrow.",
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Charles Leclerc",
+            "role": "Driver",
+            "quote": "Our overall performance seems to be quite good, which is a positive. There is still a long way to go this weekend, so we have to be on it and work hard to make sure we stay on top tomorrow."
+          },
+          {
+            "name": "Lewis Hamilton",
+            "role": "Driver",
+            "quote": "It was a solid day overall. The conditions were quite challenging, with the wind making things a bit tricky and the track feeling quite bumpy in some places. The car felt better in FP2 and we made some good progress between the sessions, although there are still a few areas we need to improve. We'll go through all the data overnight, keep working on the balance and hopefully find a bit more performance for tomorrow."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "redbull",
+        "teamName": "Red Bull",
+        "context": "It was a good opening hour for Red Bull in terms of lap time, less so in terms of incidents. Verstappen was baulked by Sainz early on whilst on a hot lap, and retaliated by pulling in front of the Spaniard and slowing. That earned him a trip to the stewards, who opted to take no further action. Hadjar at least had a quieter FP1, running aero rakes early on and finishing in the top four. It was much of the same for the team in the second session, Verstappen slightly the faster of the two, with both in the mix heading into the weekend proper. The only small incident was Verstappen hitting some debris, but he was able to continue running.",
+        "drivers": [
+          {
+            "driver": "Max Verstappen",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P2"
+              },
+              {
+                "session": "Friday",
+                "position": "P4"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a bit difficult to find a good balance in the car today. We just need to try to tidy that up a little bit and make sure we can get a good lap out of the car for Qualifying and then for the long runs as well. We will need to look into what we can do overnight and how we can find more performance in the car. We will analyse everything with the team and see if we can make some positive changes. Hopefully, that will help us find some improvements going into FP3 and Qualifying tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Pierre Wache",
+            "role": "Technical Director",
+            "quote": "A more challenging day today. The grip is very low, it’s dusty and very bumpy. The massive change in the wind in the afternoon made it even more complicated and it was a tough session for the drivers. We have to run the car quite stiff here and that leads to a similar feeling to the ground effect cars of the last generation. The drivers were not happy with the balance, we are not where we want to be yet and it’s clear that we are not yet quick enough. When the cars are on the edge, like they are for everyone, then the smallest perturbation can upset things. On a more positive note, we ran the new iteration of the rear wing here all day without any issue.\nWe have a lot of work to do tonight, but we already know where we can improve. We will go step by step and see where we get to tomorrow in FP3. I think the wind will once again make things challenging for everyone, so adapting to the conditions will be key."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "mclaren",
+        "teamName": "McLaren",
+        "context": "Norris took part in FP1 but he did not get a representative lap time on the softs after running wide through Turn 11. He was partnered by Fornaroli, who had a tidy session in the other McLaren. With the team running their new rear wing, the rookie got a taste of it in FP1 and Norris then had that in FP2. This time around he did set a representative lap time and looked quick, winding up a very decent third. Piastri took a little longer to get going, ran wide and was a little bit further back, so he needs to assess the data and see where the discrepancies are overnight.",
+        "drivers": [
+          {
+            "driver": "Lando Norris",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P3"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "A tricky day, not the easiest two sessions for us. While we took a step forward this afternoon, we\\u2019ve still got some work to do. We\\u2019ve introduced some new bits on the car today, and we need to understand those a bit better and how we can get them dialled in. We know we\\u2019re not going to catch the guys ahead immediately, so we need to keep working hard, but we\\u2019re making steps in the right direction in a few areas. We\\u2019ll work hard overnight to get more out of this package and see what we can do tomorrow.",
+                "verbatim": true
+              },
+              {
+                "text": "It was a very challenging session for us. The track conditions were difficult with the high winds, and the newer sections of the circuit are quite worn with very low grip, which made finding a rhythm tough. Only running for one session today meant it took a little more for me to get into FP2, but thank you to Leo for his support this morning. We gathered as much data as we could under the circumstances and will work this evening and into FP3 tomorrow to find improvements.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          },
+          {
+            "driver": "Oscar Piastri",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P8"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a very challenging session for us. The track conditions were difficult with the high winds, and the newer sections of the circuit are quite worn with very low grip, which made finding a rhythm tough. Only running for one session today meant it took a little more for me to get into FP2, but thank you to Leo for his support this morning. We gathered as much data as we could under the circumstances and will work this evening and into FP3 tomorrow to find improvements.",
+                "verbatim": true
+              },
+              {
+                "text": "The new parts seem to be working as expected on Lando\\u2019s car, and I\\u2019m looking forward to having them on mine tomorrow. The Ferraris look strong, but we feel we are in the mix. If we can put everything together and execute a clean Quali, we believe there is a good opportunity to make a lot of progress and be in the fight for a strong result.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "mercedes",
+        "teamName": "Mercedes",
+        "context": "Antonelli sat out FP1 for Vesti, who had a composed session and wound up a credible four tenths back on Russell. Speaking of Russell, he had a slightly scrappy first flying lap and locked up on his second attempt, so left some time out there in FP1. Interestingly, Russell did not manage much more in FP2, still struggling for grip around the Hungaroring. Antonelli’s first session did not go to plan either, as he repeatedly locked up and ran wide too. That led to a fair few complaints over the radio, with the Silver Arrows left scratching their heads overnight to see where they can find some more pace.",
+        "drivers": [
+          {
+            "driver": "Kimi Antonelli",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P13"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "That was a tricky first day here in Budapest and that was likely true for everyone. I sat out FP1 with Fred doing a good job in the car; when I got in the cockpit for FP2, I was struggling with the balance. That was more obvious with our single lap work. I had to abandon my first effort due to the red flag but tried to put a time together once the session resumed. I didn’t finish that lap as I had traffic and then was struggling with the rears locking.",
+                "verbatim": true
+              },
+              {
+                "text": "The long run was better, and I think we had the tyres in a better window. We also have lots of data and learnings we can take from today which we will work through overnight. I am looking forward to getting back on track tomorrow. FP3 will be an important hour so we can hopefully get the car in a better place and try and get ourselves in the fight for pole position. We know it won’t be easy with the gap we saw today but we will give it our best.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We know it won’t be easy with the gap we saw today but we will give it our best.",
+            "sentiment": "positif"
+          },
+          {
+            "driver": "George Russell",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P5"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a strange day out there and I think that was true for everybody up and down the field. The Hungaroring is an amazing track to drive but the resurfacing of the track made things quite challenging today. It was quite bumpy in places, and we were struggling with the ride. It also had an impact on tyre degradation which was higher than expected.",
+                "verbatim": true
+              },
+              {
+                "text": "Our single lap pace didn’t look great, but our long run looked more competitive. The Ferraris look very strong though and they will be hard to beat this weekend. We thought that would be the case coming into the weekend and so it’s proved up to this point. They are a good step ahead of everyone so we will have to work hard overnight if we are to close that gap.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We thought that would be the case coming into the weekend and so it’s proved up to this point. They are a good step ahead of everyone so we will have to work hard overnight if we are to close that gap.",
+            "sentiment": "négatif"
+          },
+          {
+            "driver": "Fred Vesti",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P7"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was great to be back in the W17 having driven the car last in Barcelona. It was a positive session on my side. I felt comfortable in the car, worked through our programme and completed all our work. I felt there was more time to come on the single lap but that is obviously not our key focus. The more important thing is that we learnt a lot and that will be useful both for our work this weekend but also for correlation with the simulator and wind tunnel at the factory back in Brackley.",
+                "verbatim": true
+              },
+              {
+                "text": "I’m now looking forward to helping George, Kimi, and the team over the rest of the weekend here in Hungary. We’ve got work to do to get ourselves in the fight for victory and will be putting in the effort to do that. After that, we will be back in the simulator next week to connect our work from here at the track with what we are doing back there.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "I’m now looking forward to helping George, Kimi, and the team over the rest of the weekend here in Hungary. We’ve got work to do to get ourselves in the fight for victory and will be putting in the effort to do that.",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "racingbulls",
+        "teamName": "Racing Bulls",
+        "context": "Lawson is now running the latest upgrades, to bring his car in line with his team mate Lindblad. Both were quick in FP1, finishing in the top 10 – but they were jumped by Audi in that session. Lawson then was the fastest midfield runner in the latter session, winding up a few places and two tenths ahead of his team mate. Once again, Audi were their nearest competitors, so it looks like a fun fight is brewing between those two teams for Q3 berths tomorrow.",
+        "drivers": [
+          {
+            "driver": "Arvid Lindblad",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P10"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I think today was pretty decent overall. There are still a few things to work on, but we’re not in a bad place. On my side, there are a couple of areas I need to improve ahead of Qualifying, but we’ve got a clear direction for tomorrow. We expected Audi to be a step ahead this weekend as this circuit suits their car well, so we knew it would be more challenging than the last few races. That said, we’ve been competitive here before, and if we execute everything well in qualifying, I think Q3 is definitely within reach.",
+                "verbatim": true
+              },
+              {
+                "text": "I'm feeling good having wrapped up Friday here in Budapest. The car seems pretty quick, however it's a very challenging track, so can be difficult to put a lap together. We'll be working on making the necessary changes overnight in order to give ourselves the best possible chance to reach Q3 in Qualifying. I really enjoy racing at the Hungaroring, so I'm excited to get back out there tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Alan Permane",
+            "role": "Team Principal",
+            "quote": "It’s not been as straight forward for us today compared to the last couple of races; the car was quite tricky in FP1 and we made more changes than we normally would in-between sessions, but we got on top of things for FP2. As ever here, things close up, with the shorter lap. There's a lot of medium speed, which we’re focusing on and making sure we’ve got a stable car on entries with good traction in the last sector, which is especially important. Liam made a change for the final lap on softs today and that worked well, helping the rear end. It’s difficult to know exactly where we sit performance-wise but it looks like we are in decent shape and will refine things further in FP3."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "audi",
+        "teamName": "Audi",
+        "context": "Audi brought both cars back into the pits early in FP1, seemingly with an issue. But any fears of reliability concerns proved unfounded, as they sent both back out quite swiftly. On the soft tyres, the car looked very quick, with Bortoleto shading his team mate as they wound up at the top of the midfield. They were not too much further back in FP2, Hulkenberg this time the pick of the duo. All of which bodes very well for Audi who are chasing a third straight points finish.",
+        "drivers": [
+          {
+            "driver": "Nico Hulkenberg",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P9"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a fairly straightforward Friday. We worked our way through the different tyre compounds, learned a bit more about the balance and made some progress with the setup between the two sessions. Overall, I'd say it was a decent day. As expected, the midfield is incredibly close again, so every little detail is going to make a difference tomorrow. There's still plenty to play for, and we'll look to put everything together in qualifying.",
+                "verbatim": false
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Christian Horner",
+            "role": "Team Principal",
+            "quote": "null"
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "haas",
+        "teamName": "Haas",
+        "context": "Hirakawa was in for Bearman in the opening practice session, and kept his outing clean and tidy. Ocon put his car near the top 10 in an encouraging start for the team, and was in the same position in the second session. That bodes well for Haas, whose weaknesses perhaps are neutralised by the track characteristics. Bearman only had the one hour of action, and had a steady session as he started to get to grips with the Hungaroring.",
+        "drivers": [
+          {
+            "driver": "Ryo Hirakawa",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P17"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was nice to be back in the car today. I started with some aero testing, but it was less than the previous FP1 session, so I had more laps to run the car on track. The conditions were tricky and the car was a bit difficult to handle. I put some lap times in at the end, but had to abort a couple with traffic, so it was a bit tricky – but I was finally able to do a proper lap to use the tyre, so I'm happy about that.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Ayao Komatsu",
+            "role": "Team Principal",
+            "quote": "It's been a mixed Friday. Esteban had a very good day, he built it up very well in both FP1 and FP2 and he was happy with the car. It was similar to where he got to in FP2 at Spa, so the car has done a good job and Esteban has gained confidence from the consistency. The issue is on the other side of the garage – when Ollie jumped in, he wasn't happy with the car. Many of the components are the same from Spa, however certain components are different, but the feeling in the car is very different for Ollie. We've had this with Esteban before, going from Friday to Saturday in Spa, so we continue to have this consistency issue that we haven't got to the bottom of. That's the main thing we're tackling."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "alpine",
+        "teamName": "Alpine",
+        "context": "Aron was in for Colapinto in FP1, and he nearly came a cropper through the final corner where grip was at a premium. Other than that, he had an okay hour before handing the cockpit back to Colapinto. But the Argentine racer could not say the same thing, as he spun out at the final corner himself and hit the barriers to end his session. That leaves him very short of laps heading into the weekend. Gasly gathered some good data for the team, but he complained about how his car felt in FP2 and was not as near to the top 10 as he would have liked.",
+        "drivers": [
+          {
+            "driver": "Pierre Gasly",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P14"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "Overall, it was a tricky day on track with conditions not easy or favourable for anyone, particularly while trying to test items and finding the optimum set up for the weekend. We know this track can be relatively dirty and low on grip on the first day of running, so we should see performance ramp up tomorrow and across the weekend. We haven't got the car in a balanced window that we're happy with yet on either car and the drivers have fed that back. Pierre and Franco gave similar feedback, and Paul did a good job in the morning, so we'll digest the data overnight and hopefully see some improvement in FP3. We have shown in recent weekends that by Sunday when things truly matter the race pace is there. We know we need to improve on our single lap pace but it's proving to be a challenge and we're working hard to rectify that. Thankfully Franco was OK after his off in the afternoon. He got caught out by the wind and difficult conditions and didn't have the benefit of the morning session to get used to them. He was on a really good lap up until that point and was on course to set a competitive time relative to those around us. We'll make sure the team gets the car back together and he'll bounce back in the morning and get more laps under his belt.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Dave Greenwood",
+            "role": "Racing Director",
+            "quote": "Overall, it was a tricky day on track with conditions not easy or favourable for anyone, particularly while trying to test items and finding the optimum set up for the weekend. We know this track can be relatively dirty and low on grip on the first day of running, so we should see performance ramp up tomorrow and across the weekend. We haven't got the car in a balanced window that we're happy with yet on either car and the drivers have fed that back. Pierre and Franco gave similar feedback, and Paul did a good job in the morning, so we'll digest the data overnight and hopefully see some improvement in FP3. We have shown in recent weekends that by Sunday when things truly matter the race pace is there. We know we need to improve on our single lap pace but it's proving to be a challenge and we're working hard to rectify that. Thankfully Franco was OK after his off in the afternoon. He got caught out by the wind and difficult conditions and didn't have the benefit of the morning session to get used to them. He was on a really good lap up until that point and was on course to set a competitive time relative to those around us. We'll make sure the team gets the car back together and he'll bounce back in the morning and get more laps under his belt."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "astonmartin",
+        "teamName": "Aston Martin",
+        "context": "Aston Martin’s big upgrade package broke cover in Budapest, and initially looked good with the drivers sitting around P13 on the hard tyre. Which was positive, given some cars behind were on mediums. Alonso wound up in exactly that position on the softs too, which is progress. But Stroll spun and had to park up with a suspected rear suspension failure. That could not be fixed in time for the Canadian to take part in FP2, which leaves him and his team short on laps and data. Alonso at least completed the session, running plenty of flow-vis paint as the team began to learn what they could of their new car.",
+        "drivers": [
+          {
+            "driver": "Fernando Alonso",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P13"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It felt better today and more or less what we expected with our new package. This correlation shows things are working properly and we can take positives from that.",
+                "verbatim": true
+              },
+              {
+                "text": "It’s the first step for us and there are more to come over the next few races. We’re trying to understand the new parts and there is more potential to unlock overnight in the car setup.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Pedro de la Rosa",
+            "role": "Team Ambassador",
+            "quote": "It’s been a promising first day with the upgrade package, and the initial signs are encouraging despite losing valuable track time on Lance’s car due to a suspension failure."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "williams",
+        "teamName": "Williams",
+        "context": "Sainz had a very busy FP1 session, locking up heavily at Turn 1 and nearly hitting the barriers. When he was on the track itself, he got into hot water twice – both for driving erratically, once with Verstappen and once with Aron. He got away with a warning from the stewards. As for Albon, he also locked up as Williams seemed to encounter a few braking issues. The Thai driver had a big snap in FP2 but managed to hold his car on track, but Williams seemed to struggle for pace and might be hoping conditions come back towards them tomorrow, lest they face down a potential Q1 exit.",
+        "drivers": [
+          {
+            "driver": "Alex Albon",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P16"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was tough conditions out there today. We made some good steps forward between sessions and our low-fuel pace looks reasonable, but between the temperature and the tarmac, it's hard to separate what's setup-related and what's due to the change in conditions. Aston have made a big step this weekend - they're the ones we need to try to beat, and that's going to make Q1 challenging. We've still got some work to do overnight to maximise the opportunities tomorrow.",
+                "verbatim": true
+              },
+              {
+                "text": "Carlos Sainz of Spain driving the (55) Williams FW48 Mercedes on track during practice ahead of the F1 Grand Prix of Hungary at Hungaroring on July 24, 2026 in Budapest, Hungary.",
+                "verbatim": false
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Richard Frith",
+            "role": "Head of Performance Systems",
+            "quote": "A productive day today, with a lot of the usual challenges that come with this track. The wind always makes things difficult here and tyre management is a key focus. Getting rear-end stability through the high-speed corners is tricky, and it's hard to stop the rear tyres overheating while still getting the front tyres into a good window, so it’s something we’re working to find a good compromise on.\nThat said, we were more consistent today than we were at Spa, and we made good progress within the session. There's still a bit to do tonight and time left on the table before qualifying. Aston Martin's upgrades add an extra challenge for us tomorrow, so we'll be going through the data carefully, particularly looking at the floor tests we ran on Carlos’ car to see if there's anything more we can find overnight."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      },
+      {
+        "teamSlug": "cadillac",
+        "teamName": "Cadillac",
+        "context": "Cadillac had a steady opening session, with no real issues. Herta was in for Bottas and had a clean hour as he continues to try and impress the team. When Bottas returned to the fray, the Finn looked fast and got the beating of his team mate as he continued his fine form from Spa. With no obvious reliability issues, it was a solid opening day for the American team.",
+        "drivers": [
+          {
+            "driver": "Valtteri Bottas",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P18"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It’s good to be back in Budapest; it’s a fun track to drive. We started FP2 with quite a challenging balance, but we made good progress throughout the session and managed to calm the car down. By the end, I was relatively happy with both the low-fuel runs and the high-fuel running, and the car was feeling quite consistent. We have a good base to build on for tomorrow and it looks like we’re going to be in the mix again, very close to the midfield. I’m confident we can do something tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Sergio Perez",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P18"
+              },
+              {
+                "session": "Friday",
+                "position": "P20"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was an interesting day overall. The track conditions evolved quite a bit, particularly with the wind in FP2, which allowed us to explore different directions with the car. I think we have a good understanding of what we need to do with the balance for tomorrow. Now the focus is on putting everything together for Qualifying.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "neutre"
+          },
+          {
+            "driver": "Colton Herta",
+            "sessions": [
+              {
+                "session": "Friday",
+                "position": "P20"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It’s been very enjoyable to be able to drive the car again and work with everyone in the team. We got through everything in our run plan during the session with a lot learned on a personal level and for the team. I’ve been able to build on my understating of the characteristics of the car since my last outing in Barcelona. I feel more comfortable in the car every time I drive it, which is positive. I can’t wait for the next one.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Graeme Lowdon",
+            "role": "Team Principal",
+            "quote": "Track evolution and gusty winds were both factors today as we worked through our program. We’ve focused on ride and balance, and we made good progress throughout the day. We also managed to get some decent long running in FP2 that has provided very useful information for race day. It was great to have Colton back in the car for FP1 and he has again done a really good job for the team, delivering everything that we asked of him."
+          }
+        ],
+        "upgrade": null,
+        "session": "Friday"
+      }
+    ]
+  },
+  {
+    "title": "What the teams said – Qualifying in Hungary",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-qualifying-in-hungary-2026.3feA3778bfyv3miQvTeRha",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-20T14:51:47.715Z",
+    "teamsSynthesis": [
+      {
+        "teamSlug": "mclaren",
+        "teamName": "McLaren",
+        "context": "Norris was fast on Friday, and he was even quicker when it really mattered. In the mix all the way through, the Brit nailed his final flying lap in Q3 to pip Hamilton by the narrowest of margins. He got a little lucky to avoid two sets of yellow flags, but was the only driver to properly improve as conditions began to change around the Hungaroring as the World Champion sealed his maiden Grand Prix pole of the season.\nPiastri can count himself unlucky, as he was getting better and better as the session wore on but had to settle for fifth after aborting his final lap. He found the slow-moving Ferrari of Hamilton on the racing line, and gave his rival a rather sarcastic thumbs up for that moment afterwards. Hamilton was penalised post-session, promoting Piastri up the order.\nLando Norris, 1st, 1;17.207\n“It’s a fantastic feeling to be back on Pole - it’s been a while, but I’ve felt confident all weekend. The car was performing very well, and the team has done a brilliant job with the new upgrades, we certainly wouldn’t be here without them. While my final laps in Q3 weren’t perfect, we had the pace when it mattered, and securing Pole is a huge boost for everyone. This result is a testament to the hard work at the factory and the progress we’re making.”\n“Looking to the race, we’re in the best position we’ve been in all season, but I’m expecting a very tough fight tomorrow. The Ferraris have shown incredible pace, and tyre degradation will be a major factor. Starting from the front is obviously an advantage here, but we need a good start and excellent race management. Beating them tomorrow will definitely not be easy. We need a few more results like this to feel a bit more confident about our performance, but today is certainly a good start.”\nOscar Piastri, 5th, 1:17.684\n“We had more in us and we had good performance in the car but were impeded by Hamilton at Turn 1, so I didn’t get to do my final flying lap. I felt like we had made good progress throughout FP3 and into each Qualifying session, especially with the new package, so it was a shame to not be able to show our full potential. It’s encouraging to see Lando on Pole, so congratulations to him, and to see that we are making progress with performance, so we can take positives from that. The team have done a great job with the latest package, so we will keep pushing on that front to keeping find more and more lap time.”\n“Looking ahead to tomorrow, we will try and get a good start and see what we can do. Overtaking here is tricky, but we will give it everything and aim for the podium.”\nAndrea Stella, Team Principal\n“Securing Pole position was a fantastic and somewhat surprising result for the whole team. The new upgrades we brought to the track performed exactly as we had anticipated, and this outcome is a testament to the months of relentless effort from everyone back at the factory in developing and delivering these parts. While we have a lot of progress to still make, today confirms that our development direction seems the right one, and I am incredibly proud of what we have achieved. My thanks go to the team, both at the factory and trackside, for their hard work and commitment.”\n“On Lando’s side, the team were able to maximise everything which enabled him to deliver a great final lap. On Oscar’s side, he made good progress throughout the whole of Friday after he had missed FP1 to give Leo the chance to run his second free practice of the year. Oscar ran the new upgrade package for the first time in FP3, however he was not able to show his full potential in Qualifying today as his final lap was impeded.”\n“While we will certainly aim for victory starting from the front, we remain realistic about the challenge ahead. Our competitors, especially Ferrari, have shown very strong pace all weekend, and we believe they are still the favourites for the race. We know we have more work to do to be in this position consistently, but the good news is that we are in the fight. We hope to capitalise on this opportunity and deliver a strong performance for both drivers.”",
+        "drivers": [
+          {
+            "driver": "Lando Norris",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "1st"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It’s a fantastic feeling to be back on Pole - it’s been a while, but I’ve felt confident all weekend. The car was performing very well, and the team has done a brilliant job with the new upgrades, we certainly wouldn’t be here without them. While my final laps in Q3 weren’t perfect, we had the pace when it mattered, and securing Pole is a huge boost for everyone. This result is a testament to the hard work at the factory and the progress we’re making.",
+                "verbatim": true
+              },
+              {
+                "text": "Looking to the race, we’re in the best position we’ve been in all season, but I’m expecting a very tough fight tomorrow. The Ferraris have shown incredible pace, and tyre degradation will be a major factor. Starting from the front is obviously an advantage here, but we need a good start and excellent race management. Beating them tomorrow will definitely not be easy. We need a few more results like this to feel a bit more confident about our performance, but today is certainly a good start.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We will try and get a good start and see what we can do. Overtaking here is tricky, but we will give it everything and aim for the podium.",
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Oscar Piastri",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "5th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "We had more in us and we had good performance in the car but were impeded by Hamilton at Turn 1, so I didn’t get to do my final flying lap. I felt like we had made good progress throughout FP3 and into each Qualifying session, especially with the new package, so it was a shame to not be able to show our full potential. It’s encouraging to see Lando on Pole, so congratulations to him, and to see that we are making progress with performance, so we can take positives from that. The team have done a great job with the latest package, so we will keep pushing on that front to keeping find more and more lap time.",
+                "verbatim": true
+              },
+              {
+                "text": "Looking ahead to tomorrow, we will try and get a good start and see what we can do. Overtaking here is tricky, but we will give it everything and aim for the podium.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": "Lando Norris was able to maximise everything which enabled him to deliver a great final lap. Oscar made good progress throughout the whole of Friday after he had missed FP1 to give Leo the chance to run his second free practice of the year. Oscar ran the new upgrade package for the first time in FP3, however he was not able to show his full potential in Qualifying today as his final lap was impeded.",
+            "outlook": "We will try and get a good start and see what we can do. Overtaking here is tricky, but we will give it everything and aim for the podium.",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": "The new upgrades we brought to the track performed exactly as we had anticipated, and this outcome is a testament to the months of relentless effort from everyone back at the factory in developing and delivering these parts.",
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "ferrari",
+        "teamName": "Ferrari",
+        "context": "Hamilton was fast in FP3, narrowly pipped by Norris but definitely in the mix for pole. He was rapid throughout Qualifying, making it through Q1 on the mediums – as did his team mate – to open up some strategic options for tomorrow’s Grand Prix. In Q3, Hamilton grabbed provisional pole, but the grip went away from him and he could not improve on his second run, agonisingly waiting to see if someone would beat his time.\n\nNorris did just that, by 0.012s, with Leclerc grabbing third in the session. But Hamilton was pinged for impeding Piastri, the Ferrari man caught on the racing line into Turn 1 on his cooldown lap. The stewards handed him a three-place grid drop for the Grand Prix, so he will start fifth.\n\nLewis Hamilton, 2nd, 1:17.219\n\n“I always enjoy this track, and I’ve felt comfortable in the car all weekend, so today’s result is frustrating. Pole felt within reach but I didn’t quite have the grip I needed on my final Q3 run, and a three-place penalty from a communication issue has left me in a starting position that isn’t ideal. We’ve been competitive from the first session, so I’m hopeful we have the pace to make up ground tomorrow. Tonight, we’ll keep working hard as a team to fine-tune everything and give ourselves the best possible chance in the race.”\n\nCharles Leclerc, 3rd, 1 :17.445\n\n“My qualifying was about maximising the result and I think I did that today. There was quite a bit of wind change throughout the sessions, so it was tricky to find grip on certain parts of the track.\n\nOur long run pace looked good so far, but it’s difficult to rely on the pecking order we saw yesterday as everyone seems to have made a step forward overnight. I expect it to be much tighter in tomorrow’s race.”\n\nFred Vasseur, Team Principal\n\n“The positive aspect of today is the level of competitiveness we have shown. Of course, losing pole by one hundredth of a second and then receiving a three-place grid penalty with Lewis for impeding is frustrating. Charles also had a far from straightforward session, with his lap deleted for track limits in Q1 and then having to deal with yellow flags after (Isack) Hadjar spun. That said, we’ve shown good pace throughout the weekend and tomorrow will be a long race where tyre management, strategy and execution will all be decisive. Charles starts from the front row and Lewis is still close enough to fight, so our objective remains the same: to maximise every opportunity and bring home the best possible result.”",
+        "drivers": [
+          {
+            "driver": "Lewis Hamilton",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "2nd"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I always enjoy this track, and I’ve felt comfortable in the car all weekend, so today’s result is frustrating. Pole felt within reach but I didn’t quite have the grip I needed on my final Q3 run, and a three-place penalty from a communication issue has left me in a starting position that isn’t ideal. We’ve been competitive from the first session, so I’m hopeful we have the pace to make up ground tomorrow. Tonight, we’ll keep working hard as a team to fine-tune everything and give ourselves the best possible chance in the race.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": "impeding Piastri",
+            "teammateComparison": null,
+            "outlook": "We’ve been competitive from the first session, so I’m hopeful we have the pace to make up ground tomorrow.",
+            "sentiment": null
+          },
+          {
+            "driver": "Charles Leclerc",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "3rd"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "My qualifying was about maximising the result and I think I did that today. There was quite a bit of wind change throughout the sessions, so it was tricky to find grip on certain parts of the track.\n\nOur long run pace looked good so far, but it’s difficult to rely on the pecking order we saw yesterday as everyone seems to have made a step forward overnight. I expect it to be much tighter in tomorrow’s race.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "Our long run pace looked good so far, but it’s difficult to rely on the pecking order we saw yesterday as everyone seems to have made a step forward overnight.",
+            "sentiment": null
+          },
+          {
+            "driver": "Fred Vasseur",
+            "sessions": [],
+            "quotes": [],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "mercedes",
+        "teamName": "Mercedes",
+        "context": "Antonelli improved hugely in FP3, and for the first time all weekend looked a contender for pole. He had to work hard to make Q3 after losing a lap time for track limits, but once there looked in the mix. The track was going away from most of the field at the end of Q3, and then disaster struck when Antonelli had to lift late on in his second flying lap for a spinning Verstappen, and could only manage fourth. Did he lift enough? The stewards had a look, and decided to impose a three-place grid drop.\n\nAs for Russell, he looked half a step behind his team mate all day. And he was not helped by a water leak on his final fast lap at the end of Qualifying, which forced him to park up down at Turn 1 after his flying run. The team believe they can repair his car without incurring any grid penalties, and Russell also inherits a place thanks to his team mate's grid drop.\n\nKimi Antonelli, 4th, 1:17.479\n\nWe knew this weekend would be challenging as this track suits other teams and we've seen others bring more upgrades. We were in the ballpark to fight for pole position though, but we didn't have our cleanest qualifying session of the year. My final lap was strong, probably my best of the weekend so far. I lifted on the final corner because of the yellow flag for Max (Verstappen) and I lost just under two tenths of a second. Unfortunately, that wasn't deemed sufficient by the stewards.\n\nTomorrow is not going to be easy. Overtaking is going to be difficult, and we are now starting much further back that we could have been. Our long run pace on Friday was good too so we will be doing everything we can to fight for the win.\n\nGeorge Russell, 7th, 1:17.760\n\nWe expected Ferrari to be strong here this weekend and McLaren, with their upgrades, have taken a step forward. So it proved today where we couldn't quite get ourselves consistently in the mix. It certainly wasn't the easiest of sessions. We suffered a water leak on our final lap, and we stopped as a precaution once we'd finished our effort. Unfortunately, once we got the car back to the garage, we found that the damage was quite severe and we will have to take a new Power Unit ahead of tomorrow's race.\n\nWe made progress with our pace from Friday to Saturday, but it wasn't enough to get ourselves in the fight for pole. There were clues as to why we were struggling more on the single lap yesterday as our race pace was strong. That suggested it was more tyre driven than the performance of the car itself but we will only find that out tomorrow.\n\nToto Wolff, Head of Mercedes-Benz Motorsport\n\nWe had an underwhelming qualifying session today. Both drivers were unlucky on their final laps: Kimi with the yellow flag and George with the water leak. Our pace wasn't likely strong enough to fight for pole position today though. It's not been our smoothest weekend, and we've not managed to get the tyres working as we would want. When you are running either too hot or too cold, that is where you lose the sweet spot of the car and struggle to get the most out of it.\n\nTomorrow will be a challenging race. Overtaking is difficult around here and starting from P6 and P7 is far from ideal. Our race pace was strong on Friday though and hopefully we can create opportunities where we can utilise that.\n\nAndrew Shovlin, Trackside Engineering Director\n\nOverall it's not been an easy day here in Budapest. We made decent progress from Friday through final practice with Kimi just over one tenth adrift of the best time. By qualifying though, it was clear that we didn't have the pace to fight for pole.\n\nIt was quite difficult to get the car in a sweet spot with the changing track temperatures. That had us changing plans between a preparation lap to bring the tyres in and going for our efforts on the first lap. In the end we settled on no preparation lap but for George, the tyres weren't really biting, and he was losing time with understeer. Kimi also had understeer but was slightly happier and would have been on for at least P3 but for a yellow flag on his final lap. Sadly, the stewards judged that he didn't lift enough for that yellow and he will now start P7 after being handed a grid drop.\n\nThe race pace was strong on Friday which will hopefully give us opportunity to move forward tomorrow. Given the difficulty in overtaking, we expect it will be very difficult to fight for podium positions though.",
+        "drivers": [
+          {
+            "driver": "Kimi Antonelli",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "4th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "4th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "We knew this weekend would be challenging as this track suits other teams and we've seen others bring more upgrades. We were in the ballpark to fight for pole position though, but we didn't have our cleanest qualifying session of the year. My final lap was strong, probably my best of the weekend so far. I lifted on the final corner because of the yellow flag for Max (Verstappen) and I lost just under two tenths of a second. Unfortunately, that wasn't deemed sufficient by the stewards.\nTomorrow is not going to be easy. Overtaking is going to be difficult, and we are now starting much further back that we could have been. Our long run pace on Friday was good too so we will be doing everything we can to fight for the win.",
+                "verbatim": true
+              },
+              {
+                "text": "We expected Ferrari to be strong here this weekend and McLaren, with their upgrades, have taken a step forward. So it proved today where we couldn't quite get ourselves consistently in the mix. It certainly wasn't the easiest of sessions. We suffered a water leak on our final lap, and we stopped as a precaution once we'd finished our effort. Unfortunately, once we got the car back to the garage, we found that the damage was quite severe and we will have to take a new Power Unit ahead of tomorrow's race.\nWe made progress with our pace from Friday to Saturday, but it wasn't enough to get ourselves in the fight for pole. There were clues as to why we were struggling more on the single lap yesterday as our race pace was strong. That suggested it was more tyre driven than the performance of the car itself but we will only find that out tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We will be doing everything we can to fight for the win.",
+            "sentiment": "négatif"
+          },
+          {
+            "driver": "George Russell",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "7th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "7th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "We expected Ferrari to be strong here this weekend and McLaren, with their upgrades, have taken a step forward. So it proved today where we couldn't quite get ourselves consistently in the mix. It certainly wasn't the easiest of sessions. We suffered a water leak on our final lap, and we stopped as a precaution once we'd finished our effort. Unfortunately, once we got the car back to the garage, we found that the damage was quite severe and we will have to take a new Power Unit ahead of tomorrow's race.\nWe made progress with our pace from Friday to Saturday, but it wasn't enough to get ourselves in the fight for pole. There were clues as to why we were struggling more on the single lap yesterday as our race pace was strong. That suggested it was more tyre driven than the performance of the car itself but we will only find that out tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": "négatif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "redbull",
+        "teamName": "Red Bull",
+        "context": "Not to be for Red Bull, who struggled on Saturday to remain competitive with the likes of Ferrari and McLaren. Both drivers made it through Q1 with relative ease, but Hadjar then spun in Q2 and had to nail his final run to even make it into the top 10. Verstappen then repeated that trick, spinning on his second flying run as the rear end got away from him. That left the Bulls a little down the order, with Hadjar already proclaiming he needed an alternative strategy tomorrow to stand any chance of progression.",
+        "drivers": [
+          {
+            "driver": "Max Verstappen",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "6th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "6th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "The whole weekend has been tricky for us so far. Unfortunately, from FP3 onwards, we started having problems that were out of our control and quite unexpected. We have a lot to look at overnight, and really understand what caused these problems. We saw aerodynamic losses, which is especially difficult in Qualifying, and we were struggling with degradation as well as the rear. The car was oversteering a lot and each lap it wasn’t improving. Hopefully we can fix our problems ahead of the race and see what we can improve starting from P6 tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": "Isack Hadjar",
+            "outlook": "Hopefully we can fix our problems ahead of the race and see what we can improve starting from P6 tomorrow.",
+            "sentiment": "négatif"
+          },
+          {
+            "driver": "Isack Hadjar",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "8th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "This weekend has been a challenging one so far. We hoped we would have made a step forward going into Qualifying compared to yesterday, but we just couldn’t deliver this time around. The balance of the car has been the main issue here. It’s been tricky for us to find the sweet spot, and that makes putting a strong lap together difficult. There’s always tomorrow, but overtaking at this track is not easy. I’m starting near Max, so we can work together, and with a strong strategy, hopefully we can make up a few places.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": "Max Verstappen",
+            "outlook": "There’s always tomorrow, but overtaking at this track is not easy. I’m starting near Max, so we can work together, and with a strong strategy, hopefully we can make up a few places.",
+            "sentiment": "négatif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "racingbulls",
+        "teamName": "Racing Bulls",
+        "context": "Lindblad had a difficult time of it in FP3, a late precautionary PU change meaning he spent most of the session on the sidelines. Crucially, Racing Bulls did get him out for a couple of laps late on, so he did not go into Qualifying completely at a loss as to how the track conditions had changed. The rookie made it all the way to Q3 and out-qualified his midfield rival once there in an impressive effort. Lawson could not quite join him today, he was a touch frustrated with his car at the end of Q2 but is not far away from the points in P11. He missed out by a tenth of a second in the end.",
+        "drivers": [
+          {
+            "driver": "Arvid Lindblad",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "9th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "1:18.281"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I think today was really positive. We made a good step forward from yesterday, despite missing most of FP3 this morning. It put me on the back foot but we managed to get the car in a good place. A massive thank you to the mechanics for getting the car ready in time to give me those two laps before Qualifying, they were really valuable in helping me get back up to speed. Credit also to the engineers for giving me the confidence in the car when it mattered most. It was a real team effort. It’s a really enjoyable circuit to drive, and we’ve put ourselves in a strong position for tomorrow. We know Audi will be quick over the race distance, but we’ve done the job today to make sure we’re starting ahead, and now the focus is on converting that into a good result.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Dan Fallows",
+            "role": "Technical Director",
+            "quote": "With the Hungaroring being one of the more difficult circuits for overtaking in the race, we came into today looking to maximise our starting positions and we go away pleased to be starting 9th and 11th tomorrow. We saw some minor issues on the power units for both cars yesterday and today, so we elected to change them as a precautionary measure. This meant a late night on Liam's car and a push to get Arvid's car ready for the end of P3. Despite the work involved, the garage team did a fantastic job to get the cars in great shape for Qualifying today. We allocated 5 new sets of soft tyres to use in the three Qualifying sessions, planning to keep two new sets for both Q2 and Q3. As we expected, both drivers made it safely through Q1 with one new and one used set and could enjoy new tyres for each run after that. Arvid overcame his lack of P3 running to put in a strong drive to secure 9th on the grid, with Liam also showing good pace and only missing out on Q3 by the smallest of margins. With our practice long runs looking competitive, we are aiming for a strong race tomorrow against Audi and hoping to come away with more valuable Championship points."
+          }
+        ],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "audi",
+        "teamName": "Audi",
+        "context": "Audi have been quick all weekend, and were in a tight fight with Racing Bulls for the top 10. In the end Hulkenberg was the one to make it through. With only one set of fresh softs, he could not quite fight with Lindblad and had to settle for P10. Bortoleto had a significantly harder time of it though at the Hungaroring. He lost his first lap time in Q1 to track limits, so had a highly-pressurised last lap to make it through. He then lost his first flying run in Q2 to yellow flags, as he was first on the scene as Hadjar spun. With it all to do on his second run, he could not quite stick a good time in when it mattered and thus looks a little out of position.",
+        "drivers": [
+          {
+            "driver": "Nico Hulkenberg",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "10th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "10th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "I’m pleased to be back in Q3 after a clean qualifying. I think we maximised everything we had today. That’s satisfying, even if the gap to the cars ahead was a bit bigger than we” hoped.",
+                "verbatim": true
+              },
+              {
+                "text": "It’s been very close all weekend and the windy conditions made it difficult to find consistency, especially through the middle sector. Still, we executed well when it counted and starting from P10 gives us a solid platform for tomorrow. Our long-run pace looked encouraging on Friday, so hopefully we can challenge the cars around us and fight for points.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "Our long-run pace looked encouraging on Friday, so hopefully we can challenge the cars around us and fight for points.",
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Gabriel Bortoleto",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "14th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a disappointing qualifying from my side. I didn’t put everything together and made a few mistakes, so I didn’t maximize the package we had today. We’ve been in the top ten throughout the weekend, so I think there was definitely more potential. Starting from P14 makes tomorrow more challenging, but we’ll do our best to move forward and see what we can achieve’.",
+                "verbatim": true
+              },
+              {
+                "text": "I didn’t put everything together and made a few mistakes, so I didn’t maximize the package we had today.",
+                "verbatim": true
+              },
+              {
+                "text": "We’ve been in the top ten throughout the weekend, so I think there was definitely more potential.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "Starting from P14 makes tomorrow more challenging, but we’ll do our best to move forward and see what we can achieve’.",
+            "sentiment": "négatif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "alpine",
+        "teamName": "Alpine",
+        "context": "Colapinto missed much of FP2 after crashing out, so he had a busy final practice session playing catch up. Considering that he missed FP1 as well – sitting out for Paul Aron – the fact the Argentine racer kept his team mate honest in Qualifying was impressive. Both Colapinto and Gasly left it late in the first segment, the last two to cross the line with both making Q2. But they could go no further, with Alpine now in need of some more upgrades as Racing Bulls and Audi continue to sweep up those Q3 berths.",
+        "drivers": [
+          {
+            "driver": "Pierre Gasly",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "12th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "If you take where we started the weekend and the relative pace compared to the others, you'd have to say being two-tenths off the top-10 and beating one Audi is probably better than we expected going into the session. We managed that time only using one set of Soft tyres, so in some way we can be pleased with how we have progressed since yesterday. On the other hand, I'm struggling a lot and the feeling in the car isn't great. We're just lacking pace at the moment and we're too far back from the top of the midfield fight, which is where we need to aim for. Here on a single lap in particular, I'm not able to drive the way I like and don't have the balance right and am drifting a lot which costs lap time and also stresses the tyres. The wind is expected to increase tomorrow which might make things interesting and we have kept one fresh set of Hard tyres for the race. With the speed of those around us, we will have to make a good start and try something different if we're to beat them over a race distance. It can be quite difficult to overtake here, but we'll give it our all and see where we eventually end up.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "haas",
+        "teamName": "Haas",
+        "context": "Ocon out-qualified Bearman for the first time since Monaco in Hungary – which considering the similarities between the two tracks, perhaps should not have been a surprise. But neither could get near the top 10 as the Haas continues to fall back from their midfield rivals. They might have a tough Grand Prix from those positions, but Ocon knows well just how chaotic this race can be and he will be keen to take advantage of any opportunities that might crop up tomorrow.",
+        "drivers": [
+          {
+            "driver": "Oliver Bearman",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "17th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "To be honest I felt like I’ve been hanging on all weekend ever since I jumped back in the car in FP2, it’s been a real struggle. The balance has been really unpredictable, and honestly it’s disappointing because all that progress I felt we made in Spa, it feels like we’re back to square one now. I’ve just been really struggling to feel any confidence with this car and it’s shown in the result today.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [
+          {
+            "name": "Ayao Komatsu",
+            "role": "Team Principal",
+            "quote": "Today’s similar to yesterday with a mixed result. An absolute qualifying position of P15 and P17 isn’t great, but if you look into the details, it’s positive that Esteban was happy with the car from FP1 and the car’s been consistent. Sometimes we have days like Spa where he was happy on Friday, but Saturday and Sunday he wasn’t. This weekend since FP1 to qualifying his car’s been consistent and he was happy with the characteristics, so he’s been able to build up to it. I believe he got the most out of the car in Q1 and Q2, so P15 is the reflection of the performance we’ve got – so that’s what we need to improve.\n\nOn the flip side, you’ve got Ollie taking over the car from Ryō in FP2, and immediately he wasn’t happy with the car compared to Spa. We haven’t really been able to make progress on that today in FP3 or qualifying. It’s been a bit better than yesterday, but he’s still really struggling on that, and he was out in Q1. We all know what he’s capable of, it’s the car that’s preventing him from getting to the limit. We really need to understand that one, that’s the ongoing issue we’ve been having lately. Unfortunately, it’s nothing new, but it confirms that we’ve got this balance migration issue. For the race it’s going to be very hot, possibly 50 degrees track temperature, so I think we need to look at different tyre usage, and people may have different strategies as well, so we’ll do our best to get the most out of the car. We’ve just got to be there to take advantage if anything happens in front of us. Overnight we’ll be working on trying to get the car balance as best as possible for tomorrow, and looking to go forwards."
+          }
+        ],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "astonmartin",
+        "teamName": "Aston Martin",
+        "context": "Progress for Aston Martin and their upgrades, with Alonso making it out of Q1 for the first time this season. Yes, he only qualified one place higher than his previous best of P17, but considering he has been on the back row for the last five events, 16th is a huge improvement. Stroll couldn’t quite match his team mate, but is on the second to last row which is also progress.",
+        "drivers": [
+          {
+            "driver": "Fernando Alonso",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "16th"
+              },
+              {
+                "session": "Qualifying",
+                "position": "16th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It has been a more competitive weekend for us and getting into Q2 is a step in the right direction. We are still optimising this package and there is more potential to unlock in the car. The car seems more consistent and predictable, so it’s a bit easier to drive. We are going to keep learning about this car tomorrow and we’ll see what we can do in the race.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We are going to keep learning about this car tomorrow and we’ll see what we can do in the race.",
+            "sentiment": "positif"
+          },
+          {
+            "driver": "Lance Stroll",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "20th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "The car feels like a step forward with more downforce and more grip, so that's positive. We were up on the final lap and I think Q2 was possible, but I got caught out by a tailwind into Turn 12 and the car just wouldn't turn, so I couldn't complete it. We're still missing some power and there are things to improve with the balance, especially after losing so much running yesterday. It's encouraging that we've made progress, though, and hopefully we can keep building on it tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "Hopefully we can keep building on it tomorrow.",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": "We came into this weekend with an objective to be in the fight with other cars, so securing our first Q2 position is an encouraging step in that direction. Fernando got everything he could out of the car today, and Lance, despite limited running yesterday, was also improving on his final run before a tailwind sent him into the gravel. We still have work to do to develop the upgrade package, and we know there is more to come.",
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "williams",
+        "teamName": "Williams",
+        "context": "Williams have struggled for pace here all weekend long, so it was no surprise to see both drivers exit in Q1. Team boss James Vowles was quick to console both drivers on the radio, telling Sainz and Albon that the positions are due to the car not their driving. But as it stands, Albon in particular is set for a tricky time of it as he celebrates his 100th race as a Williams driver.",
+        "drivers": [
+          {
+            "driver": "Carlos Sainz",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "18th"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "Tough weekend. The balance of the car was different in each session, and on my side of the garage, we had some issues at the rear of the car which made the car unpredictable and difficult to find the optimal setup. Even if we had optimised everything, I think this is the maximum that was possible today in terms of grid position for tomorrow’’",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": null,
+            "sentiment": null
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      },
+      {
+        "teamSlug": "cadillac",
+        "teamName": "Cadillac",
+        "context": "Perez missed nearly the entirety of FP3 as he suffered a brake issue on his way out of the pits. He managed just one corner before pulling to a halt with smoke pouring from the back of his car. As such, he was on the back foot heading into Qualifying, so it was no surprise to see him qualify last. Bottas fared better, beating his team mate by over four tenths of a second but with Aston Martin’s improvement, Cadillac find themselves as the slowest team out there.",
+        "drivers": [
+          {
+            "driver": "Sergio Perez",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "22nd"
+              },
+              {
+                "session": "FP3",
+                "position": "DNF"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "It was a challenging session after missing most of FP3, and everything was quite rushed going into Qualifying. The car didn’t feel as expected, particularly in the high-speed sections, so we need to understand what was affecting us today. We know there is more performance in the car, and the focus now is on putting ourselves in a stronger position tomorrow.",
+                "verbatim": true
+              }
+            ],
+            "problem": "Brake issue",
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We need to understand what was affecting us today.",
+            "sentiment": "négatif"
+          },
+          {
+            "driver": "Valtteri Bottas",
+            "sessions": [
+              {
+                "session": "Qualifying",
+                "position": "21st"
+              }
+            ],
+            "quotes": [
+              {
+                "text": "A straightforward Qualifying for us with clean laps. We got into a decent window with the setup, and I felt good in the car. Aston Martin have taken a step forward with their car at least on one lap pace, but the positive thing is that we are pretty close to Williams. We have to focus on ourselves as we continue to improve and maximize our package. It’s going to be a test for us in the race with it set to be warmer. Let’s see how tomorrow pans out.",
+                "verbatim": true
+              }
+            ],
+            "problem": null,
+            "incident": null,
+            "teammateComparison": null,
+            "outlook": "We have to focus on ourselves as we continue to improve and maximize our package.",
+            "sentiment": "positif"
+          }
+        ],
+        "staffQuotes": [],
+        "upgrade": null,
+        "session": "Qualifying"
+      }
+    ]
+  }
+]
