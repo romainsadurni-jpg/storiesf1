@@ -1,6 +1,12 @@
 // Turns one FIA press-conference transcript URL into a batch of quote-card
 // story PNGs — one per Q&A pair whose speaker is a known driver/principal.
-// Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir]
+// Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir] [--pick 3,7,12]
+//
+// --pick takes the numbers straight off a Telegram digest message (sent by
+// scripts/cloud-digest.ts): both scripts derive their list from the same
+// src/digest.ts eligibleEntries(), in the same order, so "digest said #3
+// and #7" maps directly to --pick 3,7 without re-deriving anything by hand.
+// Omit --pick to generate cards for every eligible pair in the transcript.
 //
 // Pipeline: fetch → parse (transcript.ts, deterministic) → resolve speaker
 // to a manifest portrait (asset-manifest.ts) → condense to FR context+quote
@@ -12,8 +18,9 @@ import "dotenv/config";
 import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { extractContentBodyHtml, parseTranscriptBody, type TranscriptQA } from "../src/transcript";
-import { resolvePerson, backgroundFor } from "../src/asset-manifest";
+import { extractContentBodyHtml, parseTranscriptBody } from "../src/transcript";
+import { backgroundFor } from "../src/asset-manifest";
+import { eligibleEntries, type EligibleEntry } from "../src/digest";
 import { synthesizeCardTexts } from "../src/transcript-synthesis";
 
 const BASE = join(__dirname, "..");
@@ -72,17 +79,16 @@ function renderCard(templateSrc: string, data: CardData, outPath: string): void 
 
 function writeTextDump(
   outDir: string,
-  eligible: { qa: TranscriptQA; person: NonNullable<ReturnType<typeof resolvePerson>> }[],
+  eligible: EligibleEntry[],
   cardTexts: (import("../src/transcript-synthesis").CardText | null)[],
+  digestNumbers: number[],
 ): void {
   const lines: string[] = [];
-  let n = 0;
   for (let i = 0; i < eligible.length; i++) {
     const text = cardTexts[i];
     if (!text) continue;
     const { qa, person } = eligible[i];
-    n++;
-    lines.push(`## ${n}. ${person.name} (${person.team})`);
+    lines.push(`## ${digestNumbers[i]}. ${person.name} (${person.team})`);
     lines.push("");
     lines.push(`**Question (source, EN) :** ${qa.question}`);
     lines.push(`**Réponse (source, EN) :** ${qa.answer}`);
@@ -95,16 +101,30 @@ function writeTextDump(
   }
   const path = join(outDir, "stories.md");
   writeFileSync(path, lines.join("\n"), "utf-8");
-  console.log(`Dump texte écrit dans ${path} (${n} entrées).`);
+  const written = cardTexts.filter((t) => t !== null).length;
+  console.log(`Dump texte écrit dans ${path} (${written} entrées).`);
+}
+
+function parsePickArg(argv: string[]): number[] | null {
+  const idx = argv.indexOf("--pick");
+  if (idx === -1) return null;
+  const raw = argv[idx + 1];
+  if (!raw) throw new Error("--pick requiert une liste d'indices, ex: --pick 3,7,12");
+  return raw.split(",").map((s) => {
+    const n = parseInt(s.trim(), 10);
+    if (!Number.isInteger(n) || n < 1) throw new Error(`Indice invalide dans --pick: "${s}"`);
+    return n;
+  });
 }
 
 async function main() {
   const url = process.argv[2];
   if (!url) {
-    console.error("Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir] [--no-render]");
+    console.error("Usage: npx tsx scripts/gen_stories_from_transcript.ts <transcript-url> [output-subdir] [--pick 3,7,12] [--no-render]");
     process.exit(1);
   }
   const noRender = process.argv.includes("--no-render");
+  const pick = parsePickArg(process.argv);
 
   console.log(`Fetching ${url} ...`);
   const pageHtml = await fetchTranscriptHtml(url);
@@ -114,24 +134,34 @@ async function main() {
   const qas = parseTranscriptBody(bodyHtml);
   console.log(`${qas.length} paires Q/R extraites.`);
 
-  const eligible: { qa: TranscriptQA; person: NonNullable<ReturnType<typeof resolvePerson>> }[] = [];
-  for (const qa of qas) {
-    const person = resolvePerson(qa.speaker);
-    if (person) eligible.push({ qa, person });
+  const allEligible = eligibleEntries(qas);
+  console.log(`${allEligible.length} paires éligibles (même numérotation que le digest Telegram).`);
+
+  let eligible: EligibleEntry[];
+  let digestNumbers: number[];
+  if (pick) {
+    const invalid = pick.filter((n) => n > allEligible.length);
+    if (invalid.length > 0) {
+      throw new Error(`Indice(s) hors limites (max ${allEligible.length}): ${invalid.join(", ")}`);
+    }
+    eligible = pick.map((n) => allEligible[n - 1]);
+    digestNumbers = pick;
+    console.log(`--pick appliqué : ${pick.join(", ")} (${eligible.length} carte(s) sélectionnée(s)).`);
+  } else {
+    eligible = allEligible;
+    digestNumbers = allEligible.map((_, i) => i + 1);
   }
-  const skipped = qas.length - eligible.length;
-  console.log(`${eligible.length} avec un intervenant reconnu (portrait dispo)${skipped ? `, ${skipped} ignorées (inconnu du manifest)` : ""}.`);
 
   console.log("Condensation FR (LLM) ...");
   const { texts: cardTexts, stats } = await synthesizeCardTexts(eligible.map((e) => e.qa));
   console.log(`${stats.ok} retenues, ${stats.notReal} écartées (pas une vraie question/réponse de fond), ${stats.failed} échecs techniques.`);
 
-  const positional = process.argv.slice(3).filter((a) => !a.startsWith("--"));
+  const positional = process.argv.slice(3).filter((a, i, arr) => !a.startsWith("--") && arr[i - 1] !== "--pick");
   const outSubdir = positional[0] ?? slugify(new URL(url).pathname.replace(/^\/news\//, ""));
   const outDir = join(BASE, "output", outSubdir);
   mkdirSync(outDir, { recursive: true });
 
-  writeTextDump(outDir, eligible, cardTexts);
+  writeTextDump(outDir, eligible, cardTexts, digestNumbers);
 
   if (noRender) return;
 
@@ -152,10 +182,10 @@ async function main() {
       team: person.team,
       handle: HANDLE,
       portrait: person.portrait,
-      background: backgroundFor(person.team, i),
+      background: backgroundFor(person.team, digestNumbers[i]),
     };
 
-    const fileName = `${String(i + 1).padStart(3, "0")}-${slugify(person.name)}.png`;
+    const fileName = `${String(digestNumbers[i]).padStart(3, "0")}-${slugify(person.name)}.png`;
     const outPath = join(outDir, fileName);
     renderCard(templateSrc, data, outPath);
     written++;

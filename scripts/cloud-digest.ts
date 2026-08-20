@@ -14,18 +14,12 @@ import { join } from "node:path";
 import { determineCurrentEventName } from "../src/stories-data";
 import { fetchTranscriptsForEvent } from "../src/fia";
 import { extractContentBodyHtml, parseTranscriptBody } from "../src/transcript";
-import { resolvePerson } from "../src/asset-manifest";
+import { eligibleEntries } from "../src/digest";
 
 const SEEN_PATH = join(__dirname, "..", "data", "telegram-seen.json");
 const HEADERS = { "User-Agent": "Mozilla/5.0 (compatible; F1-Stories-Generator/1.0)" };
 const MAX_MESSAGE_LEN = 3500;
 const MAX_ANSWER_LEN = 400;
-// No LLM in this pipeline (deliberately — see AUTOMATION notes in the repo
-// README), so there's no "is this substantive" judgment call. This length
-// floor only catches the unambiguous empty ones ("It doesn't matter.", "Can
-// I go now?") — everything longer is sent as-is, unfiltered and in English;
-// curation happens when the user picks quotes to turn into cards.
-const MIN_ANSWER_LEN = 50;
 
 function loadSeen(): Set<string> {
   if (!existsSync(SEEN_PATH)) return new Set();
@@ -123,13 +117,13 @@ async function main() {
       continue;
     }
 
-    const qas: EligibleQa[] = parseTranscriptBody(bodyHtml)
-      .map((qa) => {
-        if (qa.answer.length < MIN_ANSWER_LEN) return null;
-        const person = resolvePerson(qa.speaker);
-        return person ? { speaker: person.name, role: person.role, team: person.team, question: qa.question, answer: qa.answer } : null;
-      })
-      .filter((x): x is EligibleQa => x !== null);
+    const qas: EligibleQa[] = eligibleEntries(parseTranscriptBody(bodyHtml)).map(({ qa, person }) => ({
+      speaker: person.name,
+      role: person.role,
+      team: person.team,
+      question: qa.question,
+      answer: qa.answer,
+    }));
 
     if (qas.length === 0) {
       console.log(`  no eligible speakers, marking seen with nothing to send`);
