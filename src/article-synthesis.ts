@@ -43,7 +43,12 @@ Le texte source est presque toujours en anglais — ta réponse, elle, ne doit J
    - Si le texte contient une citation entre guillemets attribuée à ce sujet et qui répond bien au sujet du titre, traduis-la fidèlement EN FRANÇAIS (même si l'original est en anglais — ne recopie jamais l'anglais tel quel) et mets "verbatim": true.
    - Sinon, condense en UNE phrase percutante, EN FRANÇAIS, le fait principal du texte qui répond au titre (jamais une citation inventée, une vraie paraphrase factuelle) et mets "verbatim": false.
 
-RAPPEL avant de répondre : "context" et "quote" sont entièrement en français. Aucune trace d'anglais dans ces deux champs. "subjectName" n'est jamais null.
+Exemple FICTIF, uniquement pour montrer le format et le style de traduction attendus — ne réutilise JAMAIS ses mots, son sujet ou son contenu : adapte-toi toujours au TITRE et au TEXTE réels fournis ci-dessous, même s'ils ressemblent à l'exemple.
+Titre : Team completes wind tunnel test for new floor concept
+Texte : "We are still evaluating whether the changes improve consistency over a full stint," a team engineer said. The squad tested a revised floor and sidepod package ahead of the next event.
+Sortie : {"subjectName": "l'écurie", "context": "L'écurie a testé un nouveau plancher et une nouvelle configuration de pontons avant la prochaine course.", "quote": "Nous évaluons encore si ces changements améliorent la régularité sur un relais complet.", "verbatim": true}
+
+RAPPEL avant de répondre : l'exemple ci-dessus est fictif, il ne doit jamais apparaître dans ta réponse — celle-ci doit venir exclusivement du TITRE et du TEXTE réels fournis. "context" et "quote" sont entièrement en français — TRADUITS, jamais recopiés en anglais. Aucune trace d'anglais dans ces deux champs. "subjectName" n'est jamais null.
 
 Réponds UNIQUEMENT avec ce JSON, sans texte autour, sans bloc de code :
 {"subjectName": "...", "context": "...", "quote": "...", "verbatim": true | false}`;
@@ -51,7 +56,7 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour, sans bloc de code :
 const OLLAMA_BASE = (process.env.OLLAMA_BASE_URL ?? "http://localhost:11434").replace(/\/$/, "");
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "llama3.2:latest";
 
-async function callLlm(prompt: string): Promise<string> {
+async function callLlm(system: string, prompt: string): Promise<string> {
   const provider = resolveProvider();
   if (provider === "anthropic") {
     const { default: Anthropic } = await import("@anthropic-ai/sdk");
@@ -61,7 +66,7 @@ async function callLlm(prompt: string): Promise<string> {
       model,
       max_tokens: 1000,
       temperature: 0.1,
-      system: [{ type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
+      system: [{ type: "text", text: system, cache_control: { type: "ephemeral" } }],
       messages: [{ role: "user", content: prompt }],
     });
     const block = msg.content.find((b) => b.type === "text");
@@ -77,7 +82,7 @@ async function callLlm(prompt: string): Promise<string> {
       format: "json",
       options: { temperature: 0.1, num_predict: 1000 },
       messages: [
-        { role: "system", content: SYSTEM_PROMPT },
+        { role: "system", content: system },
         { role: "user", content: prompt },
       ],
     }),
@@ -123,6 +128,71 @@ function looksEnglish(text: string): boolean {
   return hits / wordCount > 0.12;
 }
 
+// Defense-in-depth against the exact failure mode that motivated the
+// worked examples above: qwen2.5:7b was observed, on a real article about
+// Aston Martin aero upgrades, to return the fictional example's quote
+// verbatim instead of extracting anything from the real 2800-char article
+// text it was given — a fabricated "quote" attributed to a real person is
+// far worse than a skipped card, so any output matching the fictional
+// example's wording (case/whitespace-insensitive) is treated as a failure
+// and retried/translated again rather than shipped.
+const EXAMPLE_ECHO_STRINGS = [
+  "l'écurie a testé un nouveau plancher et une nouvelle configuration de pontons avant la prochaine course",
+  "l'écurie teste un nouveau réglage de suspension avant la prochaine course",
+  "nous évaluons encore si ces changements améliorent la régularité sur un relais complet",
+].map((s) => s.toLowerCase());
+
+function echoesExample(text: string): boolean {
+  const normalized = text.trim().toLowerCase();
+  return EXAMPLE_ECHO_STRINGS.includes(normalized);
+}
+
+// Dedicated translate-only pass, used both as a same-attempt fallback when
+// the combined extraction+translation above still comes back English, and
+// by article-story.ts's deterministic (no-LLM-extraction) fallback. A weak
+// local model (qwen2.5:7b) that struggles to translate WHILE also finding
+// the right quote in a long article, extracting a subject, and producing
+// valid JSON reliably succeeds at the much smaller task of translating two
+// already-short sentences — splitting the two tasks recovers most of the
+// cases the combined prompt above misses.
+//
+// The worked example below is load-bearing, not decorative: without it,
+// qwen2.5:7b was observed to just echo the English input back verbatim
+// inside valid-looking JSON (same field names, same structure, zero
+// translation) on both plain-text and format:"json" calls alike — an
+// instruction-following gap that repeating "translate, don't copy" in
+// prose didn't fix, but one concrete input/output pair did, every time,
+// across repeated live tests.
+const TRANSLATE_SYSTEM_PROMPT = `Tu es un traducteur professionnel anglais → français, spécialisé dans le journalisme Formule 1.
+
+On te donne deux phrases courtes, en anglais (ou déjà en français). Tu dois les TRADUIRE en français — ne jamais les recopier telles quelles. Garde les chiffres, unités, dates et noms propres tels quels.
+
+Exemple FICTIF, uniquement pour montrer le format et le style de traduction attendus — ne réutilise JAMAIS ses mots ni son sujet : traduis toujours le Contexte et la Citation réels fournis ci-dessous, même s'ils ressemblent à l'exemple.
+Entrée :
+Contexte : The team is testing a new suspension setup ahead of the next race.
+Citation : We are still evaluating whether the changes improve consistency over a full stint.
+Sortie : {"context": "L'écurie teste un nouveau réglage de suspension avant la prochaine course.", "quote": "Nous évaluons encore si ces changements améliorent la régularité sur un relais complet."}
+
+Réponds UNIQUEMENT avec ce JSON, sans texte autour, sans bloc de code, à partir du Contexte et de la Citation réels donnés dans le message suivant (pas de l'exemple) :
+{"context": "...", "quote": "..."}`;
+
+async function translateContextQuote(context: string, quote: string): Promise<{ context: string; quote: string } | null> {
+  const prompt = `Contexte : ${context}\n\nCitation : ${quote}\n\nRéponds uniquement avec le JSON demandé.`;
+  try {
+    const raw = await callLlm(TRANSLATE_SYSTEM_PROMPT, prompt);
+    const parsed = extractJson(raw) as { context?: unknown; quote?: unknown };
+    const translatedContext = typeof parsed.context === "string" ? parsed.context.trim() : "";
+    const translatedQuote = typeof parsed.quote === "string" ? parsed.quote.trim() : "";
+    if (!translatedContext || !translatedQuote) return null;
+    if (looksEnglish(translatedContext) || looksEnglish(translatedQuote)) return null;
+    if (echoesExample(translatedContext) || echoesExample(translatedQuote)) return null;
+    return { context: translatedContext, quote: translatedQuote };
+  } catch (e) {
+    console.warn(`[article-synthesis] translate-only fallback failed:`, e instanceof Error ? e.message : e);
+    return null;
+  }
+}
+
 /** Returns null only when every attempt failed outright (fetch already
  * happened — this is purely the LLM step) — every article gets a subject
  * per the prompt, so there's no "no subject" skip case to speak of anymore. */
@@ -138,7 +208,7 @@ export async function synthesizeArticleCard(title: string, fullText: string): Pr
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const prompt = attempt === 1 ? basePrompt : basePrompt + correctionSuffix;
     try {
-      const raw = await callLlm(prompt);
+      const raw = await callLlm(SYSTEM_PROMPT, prompt);
       const parsed = extractJson(raw) as {
         subjectName?: unknown;
         context?: unknown;
@@ -148,9 +218,14 @@ export async function synthesizeArticleCard(title: string, fullText: string): Pr
       const subjectName = typeof parsed.subjectName === "string" ? parsed.subjectName.trim() : "";
       const context = typeof parsed.context === "string" ? parsed.context.trim() : "";
       const quote = typeof parsed.quote === "string" ? parsed.quote.trim() : "";
+      const verbatim = parsed.verbatim === true;
       if (!subjectName || !context || !quote) throw new Error("champ manquant dans la réponse du modèle");
-      if (looksEnglish(context) || looksEnglish(quote)) throw new Error("réponse encore en anglais");
-      return { subjectName, context, quote, verbatim: parsed.verbatim === true };
+      if (echoesExample(context) || echoesExample(quote)) throw new Error("réponse = recopie de l'exemple fictif (hallucination)");
+      if (!looksEnglish(context) && !looksEnglish(quote)) return { subjectName, context, quote, verbatim };
+
+      const translated = await translateContextQuote(context, quote);
+      if (translated) return { subjectName, context: translated.context, quote: translated.quote, verbatim };
+      throw new Error("réponse encore en anglais (traduction de secours aussi en échec)");
     } catch (e) {
       lastError = e;
       if (attempt < MAX_ATTEMPTS) {
@@ -161,5 +236,7 @@ export async function synthesizeArticleCard(title: string, fullText: string): Pr
   console.error(`[article-synthesis] LLM failed after ${MAX_ATTEMPTS} attempts:`, lastError instanceof Error ? lastError.message : lastError);
   return null;
 }
+
+export { translateContextQuote };
 
 export type { Provider };

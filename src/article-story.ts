@@ -6,7 +6,7 @@
 import { mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { getArticleFullText } from "./article-fetcher";
-import { synthesizeArticleCard, type ArticleCardText } from "./article-synthesis";
+import { synthesizeArticleCard, translateContextQuote, type ArticleCardText } from "./article-synthesis";
 import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject } from "./asset-manifest";
 import { renderCardPuppeteer } from "./puppeteer-render";
 import { setStoryResult, type StoredNewsArticle } from "./news-store";
@@ -81,18 +81,29 @@ export function resolveSubject(subjectName: string, contextText: string): CardSu
   };
 }
 
-// Deterministic, non-LLM fallback for when article-synthesis.ts couldn't
-// produce anything usable (e.g. a caption-only "Spotlight" brief with too
-// little text for the model to extract a quote from) — the article's own
-// title becomes the "quote" verbatim (no translator available at this
-// point, so it stays in whatever language it was published in) and the
+// Deterministic-subject fallback for when article-synthesis.ts's full
+// extraction couldn't produce anything usable (e.g. a caption-only
+// "Spotlight" brief with too little text for the model to extract a quote
+// from, or every extraction attempt still came back English) — the
 // subject comes from a deterministic scan instead of the model's read of
-// the full text. Keeps the "one card per article, no exceptions" guarantee
-// even on content the LLM step genuinely can't work with.
-function deterministicCardText(article: StoredNewsArticle): ArticleCardText {
+// the full text, and the article's title/summary still get one last,
+// much simpler translate-only pass (see translateContextQuote — a plain
+// two-sentence translation succeeds far more often than the combined
+// extraction+translation that already failed above) so the card isn't
+// left with just the source name as "context" and an English title as
+// "quote". Only degrades to the fully English/source-only version if that
+// last pass also fails or no LLM is available. Keeps the "one card per
+// article, no exceptions" guarantee even on content the LLM step
+// genuinely can't work with.
+async function deterministicCardText(article: StoredNewsArticle): Promise<ArticleCardText> {
   const titleLower = article.title.toLowerCase();
   const subjectName =
     findKnownSubject(article.title) ?? TEAMS.find((t) => titleLower.includes(t.name.toLowerCase()))?.name ?? article.source;
+
+  const rawContext = article.summary?.trim().slice(0, 220) || article.source;
+  const translated = await translateContextQuote(rawContext, article.title);
+  if (translated) return { subjectName, context: translated.context, quote: translated.quote, verbatim: false };
+
   return { subjectName, context: article.source, quote: article.title, verbatim: false };
 }
 
@@ -121,7 +132,7 @@ export async function generateArticleStory(article: StoredNewsArticle): Promise<
 
   let cardText: ArticleCardText;
   try {
-    cardText = (await synthesizeArticleCard(article.title, textForSynthesis)) ?? deterministicCardText(article);
+    cardText = (await synthesizeArticleCard(article.title, textForSynthesis)) ?? (await deterministicCardText(article));
   } catch (e) {
     setStoryResult(article.url, { reason: e instanceof Error ? e.message : String(e) });
     return null;

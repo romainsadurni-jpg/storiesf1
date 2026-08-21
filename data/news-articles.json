@@ -2159,7 +2159,7 @@
     "source": "PlanetF1",
     "sourceCategory": "news",
     "dismissed": false,
-    "storyPath": "articles/planetf1-lewis-hamilton-1787299711398.png",
+    "storyPath": "articles/planetf1-lewis-hamilton-1787301449967.png",
     "storySkipReason": null
   },
   {
@@ -2211,7 +2211,7 @@
     "source": "PlanetF1",
     "sourceCategory": "news",
     "dismissed": false,
-    "storyPath": "articles/planetf1-max-verstappen-1787299732656.png",
+    "storyPath": "articles/planetf1-max-verstappen-1787301454737.png",
     "storySkipReason": null
   },
   {
@@ -2237,7 +2237,7 @@
     "source": "GPFans",
     "sourceCategory": "news",
     "dismissed": false,
-    "storyPath": "articles/gpfans-adrian-newey-1787299748492.png",
+    "storyPath": "articles/gpfans-aston-martin-1787301458269.png",
     "storySkipReason": null
   },
   {
@@ -2303,6 +2303,58 @@
     "sourceCategory": "news",
     "dismissed": false,
     "storyPath": "articles/racefans-max-verstappen-1787299775057.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/zandvoort-memories-our-writers-pick-their-personal-highlights-from-the-dutch-gp/10847699/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Zandvoort memories: Our writers' highlights from the F1 Dutch GP",
+    "summary": "For one final time, Formula 1 cars will race around the sand dunes of Zandvoort this weekend as the seaside circuit prepares to host its final Dutch Grand Prix. After its re-entry into the calendar in 2021, the track announced its exit at the end of 2024. Ahead of the chequered flag flying for the final time, our writers look back on some of their fondest memories from Zandvoort - including ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-21T08:17:59.000Z",
+    "fetchedAt": "2026-08-21T08:37:20.587Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-didier-pironi-1787301462923.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/drive-as-free-as-possible-antonelli-reveals-mindset-in-maiden-title-bid-ahead-of-dutch-grand-prix.5oud7Nc06Wlth6b7RjKabU",
+    "title": "Antonelli reveals title battle mindset for Dutch GP",
+    "summary": "Kimi Antonelli admits he intends to \"drive as free as possible\" despite the pressure of leading this year's Formula 1 Drivers' Championship, and that the Mercedes driver's biggest opponent could be himself.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-21T08:37:20.626Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-kimi-antonelli-1787301467336.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/what-next-for-f1s-driver-market-after-verstappens-new-deal/",
+    "title": "What next for F1's driver market after Verstappen's new deal",
+    "summary": "A big piece of the Formula 1 driver market has fallen into place with Max Verstappen's recommitment to Red Bull until the end of 2030. It's all but ruled out any major changes among F1 2026's top four teams for next year, but there are still some interesting lingering driver market questions. Here are the major outstanding issues to resolve now that Verstappen's decided not to make a bombshell departure. Red Bull&#x2019;s in-house choice is now more complex Now that Verstappen&#x2019;s place is certain for &#x2018;27, Red Bull can turn its attention to the other three seats in its stable. Isac",
+    "author": "Edd Straw",
+    "publishedAt": "2026-08-21T08:32:41.000Z",
+    "fetchedAt": "2026-08-21T08:37:20.671Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-fernando-alonso-1787301471685.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.autosport.com/f1/news/zandvoort-memories-our-writers-pick-their-personal-highlights-from-the-dutch-gp/10847792/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+    "title": "Farewell Zandvoort: Our writers' personal highlights from the F1 Dutch GP",
+    "summary": "For one final time, Formula 1 cars will race around the sand dunes of Zandvoort this weekend as the seaside circuit prepares to host its final Dutch Grand Prix. After its re-entry into the calendar in 2021, the track announced its exit at the end of 2024. Ahead of the chequered flag flying for the final time, our writers look back on some of their fondest memories from Zandvoort - including ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-21T08:17:54.000Z",
+    "fetchedAt": "2026-08-21T08:37:20.691Z",
+    "source": "Autosport — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/autosport-f1-zandvoort-1787301476159.png",
     "storySkipReason": null
   }
 ]
