@@ -98,6 +98,7 @@ jobs:
         run: npx tsx scripts/cloud-digest.ts
 
       - name: Commit updated seen-state
+        if: always() # persist whatever progress was made even if a later transcript/card crashed the run
         run: |
           git config user.name "fia-watch-bot"
           git config user.email "actions@github.com"
