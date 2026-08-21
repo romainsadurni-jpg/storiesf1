@@ -3344,5 +3344,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-esteban-ocon-1787339571450.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/hamilton-baffled-by-completely-different-ferrari-as-leclerc-nails-best-lap-of-2026/10848063/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Lewis Hamilton baffled by \"completely different\" Ferrari as Charles Leclerc nails \"best\" lap of 2026",
+    "summary": "On its F1 swansong, Zandvoort's sprint qualifying session produced a tight three-team battle at the front, with Mercedes' George Russell taking pole ahead of Lando Norris and Charles Leclerc as the top five was covered by just a tenth of a second. Lewis Hamilton was the outlier, who could only muster seventh in the second Ferrari, beaten by home hero Max Verstappen's Red Bull. Hamilton ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-21T19:13:22.000Z",
+    "fetchedAt": "2026-08-21T19:37:29.935Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-lewis-hamilton-1787341206992.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/oscar-piastri-max-verstappen-red-bull-contract-extension",
+    "title": "Oscar Piastri makes defiant statement after Max Verstappen Red Bull extension",
+    "summary": "Oscar Piastri brushes aside McLaren rumours...",
+    "author": null,
+    "publishedAt": "2026-08-21T19:00:23.000Z",
+    "fetchedAt": "2026-08-21T19:37:30.067Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-oscar-piastri-1787341287264.png",
+    "storySkipReason": null
   }
 ]
