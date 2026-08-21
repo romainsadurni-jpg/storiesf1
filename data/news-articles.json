@@ -2408,5 +2408,31 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-alex-albon-et-carlos-sainz-1787306130810.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-live-dutch-grand-prix-2026-fp1-updates",
+    "title": "F1 LIVE: FP1 updates from the Dutch Grand Prix",
+    "summary": "Formula 1 is back! Join us live for FP1 at the Dutch Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-08-21T10:13:16.000Z",
+    "fetchedAt": "2026-08-21T10:17:35.146Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-racing-bulls-1787307565362.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089256/f1-driver-salaries-updated-list-max-verstappen-contract-extension-2026/",
+    "title": "F1 Driver Salaries: Updated list with incredible new Max Verstappen numbers",
+    "summary": "Max Verstappen has reset F1 driver salaries again by becoming the sport's first ever $100m man, according to reports on Friday.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-21T10:57:00.000Z",
+    "fetchedAt": "2026-08-21T10:17:35.161Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1787307643598.png",
+    "storySkipReason": null
   }
 ]
