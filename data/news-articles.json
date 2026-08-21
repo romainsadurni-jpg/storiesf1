@@ -2694,5 +2694,31 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-kimi-antonelli-1787316028192.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-max-verstappen-red-bull-contract-extension-2030",
+    "title": "Lewis Hamilton delivers verdict on Max Verstappen’s decision to stay with Red Bull",
+    "summary": "Does Max Verstappen's Red Bull extension weigh on his greatness status?",
+    "author": null,
+    "publishedAt": "2026-08-21T12:46:32.000Z",
+    "fetchedAt": "2026-08-21T13:31:32.555Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787319263217.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089274/f1-ferrari-upgrades-dutch-grand-prix-lewis-hamilton-title-fight-2026/",
+    "title": "Ferrari unleash multiple upgrades at Dutch GP as Lewis Hamilton steps up F1 title bid",
+    "summary": "Ferrari have introduced multiple upgrades for this weekend's Dutch Grand Prix in a boost to Lewis Hamilton's F1 title hopes.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-21T14:30:00.000Z",
+    "fetchedAt": "2026-08-21T13:31:32.812Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ferrari-1787319340114.png",
+    "storySkipReason": null
   }
 ]
