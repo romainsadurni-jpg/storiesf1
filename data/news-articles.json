@@ -2356,5 +2356,31 @@
     "dismissed": false,
     "storyPath": "articles/autosport-f1-zandvoort-1787301476159.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/ferrari-update-plan-continues-alpine-zandvoort-upgrades",
+    "title": "Ferrari update plan continues in force but Alpine tops Zandvoort upgrades",
+    "summary": "The update list for Zandvoort is in with Ferrari again amongst the teams making the most changes.",
+    "author": null,
+    "publishedAt": "2026-08-21T08:46:46.000Z",
+    "fetchedAt": "2026-08-21T09:00:30.956Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-alpine-1787303005827.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089216/f1-sprint-qualifying-today-dutch-grand-prix-2026-start-time-tv-channel-free-live-stream/",
+    "title": "F1 Sprint Qualifying Today: Dutch Grand Prix start time, TV channel and FREE live stream",
+    "summary": "The fourth Sprint qualifying session of the F1 2026 season takes centre stage later today (Friday August 21) as the final Dutch Grand Prix weekend gets under way at Zandvoort.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-21T09:57:00.000Z",
+    "fetchedAt": "2026-08-21T09:00:30.967Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-f1-dutch-grand-prix-1787303140305.png",
+    "storySkipReason": null
   }
 ]
