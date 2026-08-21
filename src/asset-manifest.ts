@@ -97,13 +97,27 @@ export function allKnownSurnames(): string[] {
   return loadAllSurnames().map((s) => s.surname);
 }
 
+/** Scans free text for any known driver/principal's surname as a whole word
+ * and returns their canonical full name (ready for resolvePerson) — a
+ * deterministic, non-LLM fallback for when an article's own title is the
+ * only signal left to name a subject from (see server.ts's
+ * generateArticleStory, used only after the LLM step has already failed). */
+export function findKnownSubject(text: string): string | null {
+  const norm = normalize(text);
+  for (const { surname, fullName } of loadAllSurnames()) {
+    const re = new RegExp(`\\b${surname.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`);
+    if (re.test(norm)) return fullName;
+  }
+  return null;
+}
+
 /** Picks a random background photo among every context_*.jpg actually
  * present for a team — not hardcoded to a fixed count, so dropping a new
  * assets/teams/<team>/context_5.jpg (etc.) in later adds variety immediately
  * with no code change. Falls back to context_1.jpg (template shows a plain
  * gradient if even that's missing — see STYLE.md's graceful fallback). */
 export function randomBackgroundFor(team: string): string {
-  const variants = listAssetVariants(`teams/${team}`, /^context_\d+\.(jpe?g|png)$/i);
+  const variants = listAssetVariants(`teams/${team}`, /^context_\d+\.(jpe?g|png|webp|avif)$/i);
   const chosen = pickRandom(variants) ?? "context_1.jpg";
   return `../assets/teams/${team}/${chosen}`;
 }
@@ -115,7 +129,7 @@ export function randomBackgroundFor(team: string): string {
  * variants later needs no code change. Falls back to the manifest's default
  * `portrait` path if the person's folder has nothing else (or is missing). */
 export function randomPortraitFor(person: ResolvedPerson): string {
-  const variants = listAssetVariants(person.folder, /^portrait(_\d+)?\.(jpe?g|png)$/i);
+  const variants = listAssetVariants(person.folder, /^portrait(_\d+)?\.(jpe?g|png|webp|avif)$/i);
   const chosen = pickRandom(variants);
   return chosen ? `../assets/${person.folder}/${chosen}` : person.portrait;
 }
