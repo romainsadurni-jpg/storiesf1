@@ -1,0 +1,112 @@
+name: Press article watch
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # repo is public -> unlimited free Actions minutes, so this is GitHub's practical floor
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: articles-watch
+  cancel-in-progress: false
+
+env:
+  OLLAMA_MODEL: qwen2.5:7b
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      has_pending: ${{ steps.check.outputs.has_pending }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache node_modules (incl. Puppeteer's bundled Chromium)
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node_modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - run: npm install
+
+      - name: Cheap check — any article pending a story?
+        id: check
+        run: |
+          result=$(npx tsx scripts/check-new-articles.ts)
+          echo "has_pending=$result" >> "$GITHUB_OUTPUT"
+          echo "Result: $result"
+
+  generate:
+    needs: check
+    if: needs.check.outputs.has_pending == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node_modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - run: npm install
+
+      # Puppeteer's actual Chromium binary lives in ~/.cache/puppeteer, NOT
+      # inside node_modules — caching node_modules alone restores the package
+      # but not the browser, and `npm install` skips the download step when
+      # node_modules is already present, so every cached run after the first
+      # failed with "Could not find Chrome". Cache this dir separately and
+      # always run the install command explicitly (idempotent — no-ops if
+      # this exact Chromium build is already there).
+      - name: Cache Puppeteer's Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-chromium-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - run: npx puppeteer browsers install chrome
+
+      - name: Cache Ollama model
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama
+          key: ollama-${{ env.OLLAMA_MODEL }}
+
+      - name: Install and start Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve &
+          for i in $(seq 1 30); do curl -sf http://localhost:11434/ && break; sleep 1; done
+          ollama pull "$OLLAMA_MODEL"
+
+      - name: Generate + send article stories
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LLM_PROVIDER: ollama
+          OLLAMA_BASE_URL: http://localhost:11434
+        run: npx tsx scripts/articles-digest.ts
+
+      - name: Commit updated article store
+        if: always() # persist whatever progress was made even if a later article crashed the run
+        run: |
+          git config user.name "articles-watch-bot"
+          git config user.email "actions@github.com"
+          git add data/news-articles.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync articles store [skip ci]"
+            git pull --rebase origin main
+            git push
+          else
+            echo "No state change, nothing to commit."
+          fi
