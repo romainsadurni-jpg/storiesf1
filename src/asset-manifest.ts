@@ -3,7 +3,7 @@
 // source of truth for card assets, so a transcript speaker and a hand-typed
 // story use identical portraits/roles/colors.
 
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ASSETS_DIR = join(__dirname, "..", "assets");
@@ -120,6 +120,21 @@ export function randomBackgroundFor(team: string): string {
   const variants = listAssetVariants(`teams/${team}`, /^context_\d+\.(jpe?g|png|webp|avif)$/i);
   const chosen = pickRandom(variants) ?? "context_1.jpg";
   return `../assets/teams/${team}/${chosen}`;
+}
+
+/** Path to a team's badge/logo, for the portrait circle when a story's
+ * subject is the constructor itself rather than a person (server.ts's
+ * resolveSubject) — a wordmark on a light background looks fine "contain"-
+ * fit in a badge, unlike object-fit:cover which was designed for a face and
+ * would crop most of a wide logo down to a sliver. Returns null (caller
+ * falls back to initials) when the team has no logo file on disk at all. */
+export function teamLogoPath(team: string): string | null {
+  for (const ext of ["png", "svg", "jpg", "jpeg", "webp"]) {
+    if (existsSync(join(ASSETS_DIR, "teams", team, `logo.${ext}`))) {
+      return `../assets/teams/${team}/logo.${ext}`;
+    }
+  }
+  return null;
 }
 
 /** Picks a random portrait among every portrait*.jpg actually present for a

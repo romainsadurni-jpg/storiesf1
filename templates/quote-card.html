@@ -85,6 +85,16 @@
     display: block;
   }
 
+  /* Team-badge mode (data.isLogo: true) — a wordmark/crest on a light
+     background needs to be seen in full, not cropped face-style. */
+  #portrait-img.is-logo {
+    object-fit: contain;
+    object-position: center;
+    background: #ffffff;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
   #portrait-fallback {
     position: absolute;
     inset: 0;
@@ -258,7 +268,9 @@
     document.getElementById('watermark').textContent = data.handle;
 
     document.getElementById('bg-photo').src = data.background || '';
-    document.getElementById('portrait-img').src = data.portrait || '';
+    const portraitImg = document.getElementById('portrait-img');
+    portraitImg.src = data.portrait || '';
+    portraitImg.classList.toggle('is-logo', !!data.isLogo);
     document.getElementById('portrait-fallback').textContent = initials(data.name);
 
     const contextEl = document.getElementById('context');

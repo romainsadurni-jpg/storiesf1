@@ -7,7 +7,7 @@ import { mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { getArticleFullText } from "./article-fetcher";
 import { synthesizeArticleCard, translateContextQuote, type ArticleCardText } from "./article-synthesis";
-import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject } from "./asset-manifest";
+import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject, teamLogoPath } from "./asset-manifest";
 import { renderCardPuppeteer } from "./puppeteer-render";
 import { setStoryResult, type StoredNewsArticle } from "./news-store";
 import { TEAMS } from "./teams";
@@ -40,20 +40,24 @@ export type CardSubject = {
   isDriver: boolean;
   team: string;
   portrait: string;
+  /** True when `portrait` is a team badge (teamLogoPath) rather than a
+   * face photo — the template renders these "contain"-fit on a white
+   * backing instead of the face-oriented "cover" crop. */
+  isLogo: boolean;
   background: string;
 };
 
 /** Every article gets a card — no roster filter. Tries, in order: a known
  * driver/principal (asset-manifest.ts, real portrait), then a known
- * constructor (teams.ts, team colors + background but initials instead of a
- * photo), then a fully generic card (still readable, just no team branding)
- * for anyone/anything else (pundits, FIA, other orgs).
+ * constructor (teams.ts — its badge if one exists on disk, initials
+ * otherwise), then a fully generic card (still readable, just no team
+ * branding) for anyone/anything else (pundits, FIA, other orgs).
  *
  * `contextText` (the card's own context+quote, plus the article title) is
  * searched for the team match, not just `subjectName` — a pundit quoted
  * commenting on Verstappen's Red Bull deal is correctly left with no
  * portrait (Karun Chandhok isn't a driver/principal), but the article is
- * still fundamentally about Red Bull, so the background should say so
+ * still fundamentally about Red Bull, so the background/badge should say so
  * instead of falling all the way to a team-less generic card. */
 export function resolveSubject(subjectName: string, contextText: string): CardSubject {
   const person = resolvePerson(subjectName);
@@ -64,6 +68,7 @@ export function resolveSubject(subjectName: string, contextText: string): CardSu
       isDriver: person.isDriver,
       team: person.team,
       portrait: randomPortraitFor(person),
+      isLogo: false,
       background: randomBackgroundFor(person.team),
     };
   }
@@ -71,12 +76,14 @@ export function resolveSubject(subjectName: string, contextText: string): CardSu
   const haystack = `${subjectName} ${contextText}`.toLowerCase();
   const team = TEAMS.find((t) => haystack.includes(t.name.toLowerCase()));
   const teamSlug = team?.slug ?? "generic";
+  const logo = team ? teamLogoPath(team.slug) : null;
   return {
     name: subjectName,
     role: null,
     isDriver: false,
     team: teamSlug,
-    portrait: NO_PORTRAIT_PATH,
+    portrait: logo ?? NO_PORTRAIT_PATH,
+    isLogo: logo !== null,
     background: randomBackgroundFor(teamSlug),
   };
 }
@@ -149,6 +156,7 @@ export async function generateArticleStory(article: StoredNewsArticle): Promise<
     team: subject.team,
     handle: HANDLE,
     portrait: subject.portrait,
+    isLogo: subject.isLogo,
     background: subject.background,
   };
 
