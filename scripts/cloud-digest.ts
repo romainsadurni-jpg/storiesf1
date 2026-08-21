@@ -111,104 +111,121 @@ async function main() {
   console.log(`Current event: ${event}`);
 
   const seen = loadSeen();
-  const transcripts = await fetchTranscriptsForEvent(event);
-  const fresh = transcripts.filter((t) => !seen.has(t.url));
-  console.log(`${transcripts.length} transcript(s) found, ${fresh.length} new.`);
+  // Everything from here down is wrapped so a crash ANYWHERE — including
+  // fetchTranscriptsForEvent itself, or a step inside the per-transcript
+  // loop that isn't already caught below (synthesizeCardTexts had no try/
+  // catch of its own) — still reaches saveSeen() in the finally block.
+  // Observed in production: a mid-loop crash meant saveSeen() was never
+  // called at all, so the seen-state file stayed empty for ~9 hours across
+  // many runs, and the SAME press conference got reprocessed and resent to
+  // Telegram on every run in between instead of being skipped as already-seen.
+  try {
+    const transcripts = await fetchTranscriptsForEvent(event);
+    const fresh = transcripts.filter((t) => !seen.has(t.url));
+    console.log(`${transcripts.length} transcript(s) found, ${fresh.length} new.`);
 
-  const templateSrc = readFileSync(TEMPLATE_PATH, "utf-8");
+    const templateSrc = readFileSync(TEMPLATE_PATH, "utf-8");
 
-  for (const t of fresh) {
-    console.log(`Processing: ${t.title}`);
-    let bodyHtml: string | null = null;
-    try {
-      const res = await fetch(t.url, { headers: HTTP_HEADERS, signal: AbortSignal.timeout(15_000) });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const html = await res.text();
-      bodyHtml = extractContentBodyHtml(html);
-    } catch (e) {
-      console.error(`  fetch/parse failed, will retry next run: ${e instanceof Error ? e.message : e}`);
-      continue;
-    }
-    if (!bodyHtml) {
-      console.error(`  content-body not found, will retry next run`);
-      continue;
-    }
-
-    let entries: EligibleEntry[] = eligibleEntries(parseTranscriptBody(bodyHtml));
-    console.log(`  ${entries.length} candidate Q&A pair(s) (known speakers).`);
-    // Debug-only cap for local testing (never set in the GitHub Actions
-    // workflow) — production always processes every candidate entry.
-    const debugLimit = process.env.DIGEST_DEBUG_LIMIT ? parseInt(process.env.DIGEST_DEBUG_LIMIT, 10) : null;
-    if (debugLimit) {
-      entries = entries.slice(0, debugLimit);
-      console.log(`  DIGEST_DEBUG_LIMIT set: capped to ${entries.length}.`);
-    }
-
-    if (entries.length === 0) {
-      seen.add(t.url);
-      continue;
-    }
-
-    console.log("  Condensation FR (LLM)...");
-    const { texts: cardTexts, stats } = await synthesizeCardTexts(entries.map((e) => e.qa));
-    console.log(`  ${stats.ok} retenues, ${stats.notReal} écartées (pas substantielles), ${stats.failed} échecs techniques.`);
-
-    const eventSlug = slugify(t.title);
-    const outDir = join(BASE, "output", eventSlug);
-    mkdirSync(outDir, { recursive: true });
-
-    const items: PhotoItem[] = [];
-
-    for (let i = 0; i < entries.length; i++) {
-      const text = cardTexts[i];
-      if (!text) continue;
-      const digestNumber = i + 1;
-      const { person } = entries[i];
+    for (const t of fresh) {
+      console.log(`Processing: ${t.title}`);
       try {
-        const data = {
-          context: text.context,
-          quote: text.quote,
-          name: person.name,
-          role: person.role,
-          isDriver: person.isDriver,
-          team: person.team,
-          handle: HANDLE,
-          portrait: randomPortraitFor(person),
-          background: randomBackgroundFor(person.team),
-        };
-        const dataBlock = "const DATA = " + JSON.stringify(data) + ";";
-        const src = templateSrc.replace(/const DATA = \{[\s\S]*?\};/, dataBlock);
+        let bodyHtml: string | null = null;
+        try {
+          const res = await fetch(t.url, { headers: HTTP_HEADERS, signal: AbortSignal.timeout(15_000) });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const html = await res.text();
+          bodyHtml = extractContentBodyHtml(html);
+        } catch (e) {
+          console.error(`  fetch/parse failed, will retry next run: ${e instanceof Error ? e.message : e}`);
+          continue;
+        }
+        if (!bodyHtml) {
+          console.error(`  content-body not found, will retry next run`);
+          continue;
+        }
 
-        const fileName = `${String(digestNumber).padStart(3, "0")}-${slugify(person.name)}.png`;
-        const outPath = join(outDir, fileName);
-        await renderCardPuppeteer(src, TEMPLATES_DIR, outPath);
+        let entries: EligibleEntry[] = eligibleEntries(parseTranscriptBody(bodyHtml));
+        console.log(`  ${entries.length} candidate Q&A pair(s) (known speakers).`);
+        // Debug-only cap for local testing (never set in the GitHub Actions
+        // workflow) — production always processes every candidate entry.
+        const debugLimit = process.env.DIGEST_DEBUG_LIMIT ? parseInt(process.env.DIGEST_DEBUG_LIMIT, 10) : null;
+        if (debugLimit) {
+          entries = entries.slice(0, debugLimit);
+          console.log(`  DIGEST_DEBUG_LIMIT set: capped to ${entries.length}.`);
+        }
 
-        items.push({ path: outPath, caption: `${person.name} (${person.team})\n${text.quote}` });
-        console.log(`  [${digestNumber}/${entries.length}] ${fileName} rendered`);
+        if (entries.length === 0) {
+          seen.add(t.url);
+          continue;
+        }
+
+        console.log("  Condensation FR (LLM)...");
+        const { texts: cardTexts, stats } = await synthesizeCardTexts(entries.map((e) => e.qa));
+        console.log(`  ${stats.ok} retenues, ${stats.notReal} écartées (pas substantielles), ${stats.failed} échecs techniques.`);
+
+        const eventSlug = slugify(t.title);
+        const outDir = join(BASE, "output", eventSlug);
+        mkdirSync(outDir, { recursive: true });
+
+        const items: PhotoItem[] = [];
+
+        for (let i = 0; i < entries.length; i++) {
+          const text = cardTexts[i];
+          if (!text) continue;
+          const digestNumber = i + 1;
+          const { person } = entries[i];
+          try {
+            const data = {
+              context: text.context,
+              quote: text.quote,
+              name: person.name,
+              role: person.role,
+              isDriver: person.isDriver,
+              team: person.team,
+              handle: HANDLE,
+              portrait: randomPortraitFor(person),
+              background: randomBackgroundFor(person.team),
+            };
+            const dataBlock = "const DATA = " + JSON.stringify(data) + ";";
+            const src = templateSrc.replace(/const DATA = \{[\s\S]*?\};/, dataBlock);
+
+            const fileName = `${String(digestNumber).padStart(3, "0")}-${slugify(person.name)}.png`;
+            const outPath = join(outDir, fileName);
+            await renderCardPuppeteer(src, TEMPLATES_DIR, outPath);
+
+            items.push({ path: outPath, caption: `${person.name} (${person.team})\n${text.quote}` });
+            console.log(`  [${digestNumber}/${entries.length}] ${fileName} rendered`);
+          } catch (e) {
+            console.error(`  [${digestNumber}/${entries.length}] render failed, skipping: ${e instanceof Error ? e.message : e}`);
+          }
+        }
+
+        if (items.length > 0) {
+          try {
+            await sendTelegramMessage(token, chatId, `🏁 *${t.title}*\n${items.length} story(ies) — ${t.url}`);
+            await sendPhotosInBatches(token, chatId, items);
+            console.log(`  sent ${items.length} photo(s) to Telegram`);
+            seen.add(t.url);
+          } catch (e) {
+            console.error(`  Telegram send failed, will retry next run: ${e instanceof Error ? e.message : e}`);
+          }
+        } else {
+          console.log(`  nothing renderable, marking seen anyway`);
+          seen.add(t.url);
+        }
+
+        rmSync(outDir, { recursive: true, force: true });
       } catch (e) {
-        console.error(`  [${digestNumber}/${entries.length}] render failed, skipping: ${e instanceof Error ? e.message : e}`);
+        // Safety net for anything not already caught above (this is exactly
+        // what synthesizeCardTexts lacked) — logs and moves on to the next
+        // transcript instead of aborting the whole run before saveSeen() runs.
+        console.error(`  unexpected error processing "${t.title}", will retry next run:`, e instanceof Error ? e.message : e);
       }
     }
-
-    if (items.length > 0) {
-      try {
-        await sendTelegramMessage(token, chatId, `🏁 *${t.title}*\n${items.length} story(ies) — ${t.url}`);
-        await sendPhotosInBatches(token, chatId, items);
-        console.log(`  sent ${items.length} photo(s) to Telegram`);
-        seen.add(t.url);
-      } catch (e) {
-        console.error(`  Telegram send failed, will retry next run: ${e instanceof Error ? e.message : e}`);
-      }
-    } else {
-      console.log(`  nothing renderable, marking seen anyway`);
-      seen.add(t.url);
-    }
-
-    rmSync(outDir, { recursive: true, force: true });
+  } finally {
+    saveSeen(seen);
+    await closeBrowser();
   }
-
-  saveSeen(seen);
-  await closeBrowser();
   console.log("Done.");
 }
 
