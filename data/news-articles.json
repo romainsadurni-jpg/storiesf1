@@ -2746,5 +2746,70 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-formula1-com-officiel-1787321777879.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/how-f1-2026-team-mates-are-comparing-in-qualifying/",
+    "title": "How F1 2026 team-mates are comparing in qualifying",
+    "summary": "The 2026 Formula 1 season will allow each driver to compare themselves to their team-mate in full qualifying trim up to 30 times - 24 in grand prix qualifying, and six more in sprint qualifying. Here's how this year's team-mate pairings are stacking up over one lap so far. *Right now, this is raw data. We've discounted comparisons only where one driver can't compete in qualifying. Further adjustments will be made with a large sample size to account for outliers. McLaren Lando Norris versus Oscar Piastri Head-to-head: Norris 11 - Piastri 4 Average gap: Norris ahead by 0.075s Mercedes George Rus",
+    "author": "The Race Team",
+    "publishedAt": "2026-08-21T11:49:00.000Z",
+    "fetchedAt": "2026-08-21T14:57:36.823Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-ferrari-1787324323333.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-results-2026-dutch-grand-prix-zandvoort-sprint-qualifying",
+    "title": "F1 Results: 2026 Dutch Grand Prix – Sprint Qualifying",
+    "summary": "Full results from Sprint Qualifying from the Dutch Grand Prix at Zandvoort.",
+    "author": null,
+    "publishedAt": "2026-08-21T14:51:44.000Z",
+    "fetchedAt": "2026-08-21T14:57:36.831Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-charles-leclerc-1787324383200.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-live-dutch-grand-prix-2026-sprint-qualifying-updates",
+    "title": "F1 LIVE: Sprint qualifying updates at the Dutch Grand Prix",
+    "summary": "After only one free practice session, it's straight into the action for the drivers.",
+    "author": null,
+    "publishedAt": "2026-08-21T14:16:26.000Z",
+    "fetchedAt": "2026-08-21T14:57:36.831Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-f1-1787324413950.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089289/f1-results-today-dutch-grand-prix-2026-sprint-qualifying-times/",
+    "title": "F1 Sprint Qualifying Results Today: 2026 Dutch Grand Prix times and positions",
+    "summary": "Charles Leclerc laid down an early marker in the first part of sprint qualifying at the Dutch Grand Prix on Friday, going fastest ahead of both McLarens and Lewis Hamilton at the top of the timing boards.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-21T15:48:21.000Z",
+    "fetchedAt": "2026-08-21T14:57:36.883Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-charles-leclerc-1787324455758.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089264/channel-4-f1-highlights-today-2026-dutch-grand-prix-free-uk/",
+    "title": "Channel 4 F1 highlights today: How to watch the 2026 Dutch Grand Prix FREE",
+    "summary": "F1 heads to Zandvoort for the Dutch Grand Prix this weekend, you can watch highlights of every day for FREE in the UK.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-21T15:30:00.000Z",
+    "fetchedAt": "2026-08-21T14:57:36.883Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-channel-4-1787324496877.png",
+    "storySkipReason": null
   }
 ]
