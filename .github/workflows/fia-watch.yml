@@ -53,13 +53,28 @@ jobs:
         with:
           node-version: 20
 
-      - name: Cache node_modules (incl. Puppeteer's bundled Chromium)
+      - name: Cache node_modules
         uses: actions/cache@v4
         with:
           path: node_modules
           key: node_modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
       - run: npm install
+
+      # Puppeteer's actual Chromium binary lives in ~/.cache/puppeteer, NOT
+      # inside node_modules — caching node_modules alone restores the package
+      # but not the browser, and `npm install` skips the download step when
+      # node_modules is already present, so every cached run after the first
+      # failed with "Could not find Chrome". Cache this dir separately and
+      # always run the install command explicitly (idempotent — no-ops if
+      # this exact Chromium build is already there).
+      - name: Cache Puppeteer's Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-chromium-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - run: npx puppeteer browsers install chrome
 
       - name: Cache Ollama model
         uses: actions/cache@v4

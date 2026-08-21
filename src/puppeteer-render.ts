@@ -10,17 +10,32 @@ import puppeteer, { type Browser } from "puppeteer";
 let browserPromise: Promise<Browser> | null = null;
 
 async function getBrowser(): Promise<Browser> {
-  // --no-sandbox: CI runners execute as root, where Chromium's sandbox
-  // refuses to start at all; harmless locally too.
-  if (!browserPromise) browserPromise = puppeteer.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
+  if (!browserPromise) {
+    // --no-sandbox: CI runners execute as root, where Chromium's sandbox
+    // refuses to start at all; harmless locally too.
+    browserPromise = puppeteer.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
+    // Don't cache a *failed* launch — every subsequent card would immediately
+    // re-throw the same error instead of getting its own attempt, and a
+    // failed launch left in browserPromise makes closeBrowser() throw too
+    // (awaiting a rejected promise) even after the caller already handled
+    // the per-card failure, crashing the whole run instead of just skipping.
+    browserPromise.catch(() => {
+      browserPromise = null;
+    });
+  }
   return browserPromise;
 }
 
 export async function closeBrowser(): Promise<void> {
   if (!browserPromise) return;
-  const browser = await browserPromise;
-  await browser.close();
-  browserPromise = null;
+  try {
+    const browser = await browserPromise;
+    await browser.close();
+  } catch {
+    // launch never succeeded — nothing to close
+  } finally {
+    browserPromise = null;
+  }
 }
 
 /** Renders `templateSrc` (with its `const DATA = {...}` block already
