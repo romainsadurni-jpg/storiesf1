@@ -7,12 +7,27 @@
 // Port 3004: reserved for this project only (3000-3003 are already used by
 // f1-editorial-os, f1-data, live-gp, prediction-weekend).
 
+import "dotenv/config";
 import { createServer, type IncomingMessage } from "node:http";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { join, resolve, sep } from "node:path";
 import { getArticleFullText } from "./article-fetcher";
 import { synthesizeArticle, resolveProvider } from "./synthesis";
 import { setSynthesis } from "./article-store";
 import { listStories, ingestStories, type StoriesContent } from "./stories-data";
 import { deriveSessionLabel, type WttsTeamSynthesis } from "./synthesis";
+import { NEWS_SOURCES } from "./news-sources";
+import { fetchNewsFeed } from "./news-rss";
+import { addNewsArticles, listNewsArticles, dismissNewsArticle, setStoryResult, type StoredNewsArticle } from "./news-store";
+import { scoreNews } from "./news-score";
+import { synthesizeArticleCard, type ArticleCardText } from "./article-synthesis";
+import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject } from "./asset-manifest";
+import { renderCardPuppeteer } from "./puppeteer-render";
+import { TEAMS } from "./teams";
+
+const BASE_DIR = join(__dirname, "..");
+const TEMPLATES_DIR = join(BASE_DIR, "templates");
+const OUTPUT_DIR = join(BASE_DIR, "output");
 
 const PORT = 3004;
 
@@ -216,7 +231,307 @@ function renderPage(content: StoriesContent, refreshError: string | null): strin
   `);
 }
 
-function page(body: string): string {
+// ---------------------------------------------------------------------------
+// Articles tab — port of f1-editorial-os's NewsPanel.tsx (the "Actualités"
+// tab in its F1 Hub dashboard). Pulls every NEWS_SOURCES feed straight into
+// this project's own JSON store (news-store.ts) and scores them with the
+// ported news-score.ts — no runtime call into f1-editorial-os at all.
+// ---------------------------------------------------------------------------
+
+type ScoredArticle = StoredNewsArticle & { score: number };
+
+const ARTICLES_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+async function ingestNewsArticles(): Promise<{ totalAdded: number; errors: string[] }> {
+  const results = await Promise.all(
+    NEWS_SOURCES.map(async (src) => {
+      const result = await fetchNewsFeed(src.feedUrl);
+      if (!result.ok) return { source: src.name, added: 0, error: result.error };
+      const added = addNewsArticles(src.name, src.category, result.items);
+      return { source: src.name, added, error: undefined as string | undefined };
+    }),
+  );
+  return {
+    totalAdded: results.reduce((s, r) => s + r.added, 0),
+    errors: results.filter((r) => r.error).map((r) => `${r.source}: ${r.error}`),
+  };
+}
+
+const HANDLE = "@SaD_F1";
+const ARTICLES_OUT_DIR = join(OUTPUT_DIR, "articles");
+const QUOTE_TEMPLATE_PATH = join(TEMPLATES_DIR, "quote-card.html");
+
+function slugify(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // strip accents (é -> e) before stripping non-alnum, else "Pérez" -> "p-rez"
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+// Deliberately-broken path so quote-card.html's own onerror handler falls
+// back to the initials circle — same "graceful fallback" contract STYLE.md
+// documents for a missing asset, just triggered on purpose here since
+// there's no real photo to point to for a subject outside the roster.
+const NO_PORTRAIT_PATH = "../assets/__no_portrait__.jpg";
+
+type CardSubject = {
+  name: string;
+  role: string | null;
+  isDriver: boolean;
+  team: string;
+  portrait: string;
+  background: string;
+};
+
+/** Every article gets a card — no roster filter. Tries, in order: a known
+ * driver/principal (asset-manifest.ts, real portrait), then a known
+ * constructor (teams.ts, team colors + background but initials instead of a
+ * photo), then a fully generic card (still readable, just no team branding)
+ * for anyone/anything else (pundits, FIA, other orgs).
+ *
+ * `contextText` (the card's own context+quote, plus the article title) is
+ * searched for the team match, not just `subjectName` — a pundit quoted
+ * commenting on Verstappen's Red Bull deal is correctly left with no
+ * portrait (Karun Chandhok isn't a driver/principal), but the article is
+ * still fundamentally about Red Bull, so the background should say so
+ * instead of falling all the way to a team-less generic card. */
+function resolveSubject(subjectName: string, contextText: string): CardSubject {
+  const person = resolvePerson(subjectName);
+  if (person) {
+    return {
+      name: person.name,
+      role: person.role,
+      isDriver: person.isDriver,
+      team: person.team,
+      portrait: randomPortraitFor(person),
+      background: randomBackgroundFor(person.team),
+    };
+  }
+
+  const haystack = `${subjectName} ${contextText}`.toLowerCase();
+  const team = TEAMS.find((t) => haystack.includes(t.name.toLowerCase()));
+  const teamSlug = team?.slug ?? "generic";
+  return {
+    name: subjectName,
+    role: null,
+    isDriver: false,
+    team: teamSlug,
+    portrait: NO_PORTRAIT_PATH,
+    background: randomBackgroundFor(teamSlug),
+  };
+}
+
+// Deterministic, non-LLM fallback for when article-synthesis.ts couldn't
+// produce anything usable (e.g. a caption-only "Spotlight" brief with too
+// little text for the model to extract a quote from) — the article's own
+// title becomes the "quote" verbatim (no translator available at this
+// point, so it stays in whatever language it was published in) and the
+// subject comes from a deterministic scan instead of the model's read of
+// the full text. Keeps the "one card per article, no exceptions" guarantee
+// even on content the LLM step genuinely can't work with.
+function deterministicCardText(article: StoredNewsArticle): ArticleCardText {
+  const titleLower = article.title.toLowerCase();
+  const subjectName =
+    findKnownSubject(article.title) ?? TEAMS.find((t) => titleLower.includes(t.name.toLowerCase()))?.name ?? article.source;
+  return { subjectName, context: article.source, quote: article.title, verbatim: false };
+}
+
+// One "story card" per article — title's subject as question, the model's
+// context+quote as the answer found in the text (article-synthesis.ts),
+// rendered onto quote-card.html the same way gen_stories_from_transcript.ts
+// does for FIA transcript Q/A pairs. No filter of any kind: resolveSubject()
+// always returns something renderable, and any content-level LLM failure
+// falls back to deterministicCardText() above, so a card is generated for
+// every single article. The one thing that still surfaces as a skip is "no
+// LLM provider configured at all" — an environment problem affecting every
+// article identically, not a per-article judgment call, so it's worth
+// surfacing rather than silently downgrading every card to the fallback.
+async function generateArticleStory(article: StoredNewsArticle): Promise<void> {
+  const fullText = await getArticleFullText(article.url);
+  const textForSynthesis = fullText ?? article.summary ?? article.title;
+
+  let cardText: ArticleCardText;
+  try {
+    cardText = (await synthesizeArticleCard(article.title, textForSynthesis)) ?? deterministicCardText(article);
+  } catch (e) {
+    setStoryResult(article.url, { reason: e instanceof Error ? e.message : String(e) });
+    return;
+  }
+
+  const subject = resolveSubject(cardText.subjectName, `${cardText.context} ${cardText.quote} ${article.title}`);
+
+  const data = {
+    context: cardText.context,
+    quote: cardText.quote,
+    name: subject.name,
+    role: subject.role,
+    isDriver: subject.isDriver,
+    team: subject.team,
+    handle: HANDLE,
+    portrait: subject.portrait,
+    background: subject.background,
+  };
+
+  const templateSrc = readFileSync(QUOTE_TEMPLATE_PATH, "utf-8");
+  const dataBlock = "const DATA = " + JSON.stringify(data) + ";";
+  const filledSrc = templateSrc.replace(/const DATA = \{[\s\S]*?\};/, dataBlock);
+
+  mkdirSync(ARTICLES_OUT_DIR, { recursive: true });
+  const fileName = `${slugify(article.source)}-${slugify(subject.name)}-${Date.now()}.png`;
+  const outPath = join(ARTICLES_OUT_DIR, fileName);
+  await renderCardPuppeteer(filledSrc, TEMPLATES_DIR, outPath);
+
+  setStoryResult(article.url, { storyPath: `articles/${fileName}` });
+}
+
+function scoreBadgeClass(score: number): string {
+  if (score >= 75) return "score-hot";
+  if (score >= 55) return "score-warm";
+  if (score >= 35) return "score-mild";
+  return "score-cold";
+}
+
+function filterPill(label: string, href: string, active: boolean): string {
+  return `<a class="pill${active ? " pill-active" : ""}" href="${href}">${escapeHtml(label)}</a>`;
+}
+
+/** Same source+search filter used by the /articles list view and the
+ * "Générer les stories" bulk action — kept as one function so the count
+ * shown on the button always matches what actually gets processed when
+ * it's clicked (a mismatch here would mean the button silently processes
+ * far more articles, and far more LLM calls, than its own label promises). */
+function filterArticles<T extends { source: string; title: string; summary: string | null }>(
+  articles: T[],
+  sourceFilter: string,
+  q: string,
+): T[] {
+  return articles
+    .filter((a) => sourceFilter === "all" || a.source === sourceFilter)
+    .filter((a) => !q || a.title.toLowerCase().includes(q) || (a.summary ?? "").toLowerCase().includes(q));
+}
+
+function renderArticlesPage(params: {
+  articles: ScoredArticle[];
+  sources: string[];
+  sourceFilter: string;
+  sort: "score" | "date";
+  q: string;
+  refreshError: string | null;
+}): string {
+  const { articles, sources, sourceFilter, sort, q, refreshError } = params;
+
+  const qs = (overrides: Record<string, string>) => {
+    const p = new URLSearchParams({ source: sourceFilter, sort, q, ...overrides });
+    if (!p.get("q")) p.delete("q");
+    return `/articles?${p.toString()}`;
+  };
+
+  const filtered = filterArticles(articles, sourceFilter, q);
+  const sorted = [...filtered].sort((a, b) =>
+    sort === "score"
+      ? b.score - a.score
+      : new Date(b.publishedAt ?? b.fetchedAt).getTime() - new Date(a.publishedAt ?? a.fetchedAt).getTime(),
+  );
+
+  const cardsHtml =
+    sorted.length > 0
+      ? sorted
+          .map((a) => {
+            const dismissForm = `
+            <form method="post" action="/articles/dismiss">
+              <input type="hidden" name="url" value="${escapeHtml(a.url)}">
+              <input type="hidden" name="source" value="${escapeHtml(sourceFilter)}">
+              <input type="hidden" name="sort" value="${escapeHtml(sort)}">
+              <input type="hidden" name="q" value="${escapeHtml(q)}">
+              <button class="btn btn-sm btn-danger" type="submit">✕ Masquer</button>
+            </form>`;
+            const storyHtml = a.storyPath
+              ? `<a class="pill pill-active" href="/output/${escapeHtml(a.storyPath)}" target="_blank" rel="noopener noreferrer">🖼️ Story générée</a>`
+              : a.storySkipReason
+                ? `<span class="article-meta" title="${escapeHtml(a.storySkipReason)}">Story non générée · ${escapeHtml(a.storySkipReason)}</span>`
+                : "";
+            return `
+            <div class="article-card">
+              <div class="article-top">
+                <span class="score-badge ${scoreBadgeClass(a.score)}">${a.score}</span>
+                ${badge(a.source)}
+                <span class="article-meta">${timeAgo(a.publishedAt ?? a.fetchedAt)}${a.author ? ` · ${escapeHtml(a.author)}` : ""}</span>
+              </div>
+              <a class="article-title" href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.title)}</a>
+              ${a.summary ? `<p class="article-summary">${escapeHtml(a.summary)}</p>` : ""}
+              <div class="article-actions">${dismissForm}${storyHtml}</div>
+            </div>`;
+          })
+          .join("")
+      : `<p class="empty">Aucun article ne correspond aux filtres sélectionnés.</p>`;
+
+  const sourcePills = [
+    filterPill(`Toutes (${articles.length})`, qs({ source: "all" }), sourceFilter === "all"),
+    ...sources.map((s) =>
+      filterPill(`${s} (${articles.filter((a) => a.source === s).length})`, qs({ source: s }), sourceFilter === s),
+    ),
+  ].join("");
+
+  const pendingCount = sorted.filter((a) => !a.storyPath && !a.storySkipReason).length;
+
+  return page(`
+    <div class="header-row">
+      <div>
+        <p class="section-title" style="margin:0">Actualités F1 — agrégées depuis ${NEWS_SOURCES.length} sources, dernières 24 h</p>
+      </div>
+      <div class="header-actions">
+        <form method="post" action="/articles/refresh">
+          <input type="hidden" name="source" value="${escapeHtml(sourceFilter)}">
+          <input type="hidden" name="sort" value="${escapeHtml(sort)}">
+          <input type="hidden" name="q" value="${escapeHtml(q)}">
+          <button class="btn" type="submit">↺ Rafraîchir les flux</button>
+        </form>
+        ${
+          pendingCount > 0
+            ? `<form method="post" action="/articles/generate-stories">
+                 <input type="hidden" name="source" value="${escapeHtml(sourceFilter)}">
+                 <input type="hidden" name="sort" value="${escapeHtml(sort)}">
+                 <input type="hidden" name="q" value="${escapeHtml(q)}">
+                 <button class="btn btn-accent" type="submit">✨ Générer les stories (${pendingCount})</button>
+               </form>`
+            : ""
+        }
+      </div>
+    </div>
+
+    ${refreshError ? `<div class="error">${escapeHtml(refreshError)}</div>` : ""}
+
+    <div class="filter-bar">
+      <form method="get" action="/articles">
+        <input type="hidden" name="source" value="${escapeHtml(sourceFilter)}">
+        <input type="hidden" name="sort" value="${escapeHtml(sort)}">
+        <input type="search" name="q" value="${escapeHtml(q)}" placeholder="Rechercher un article…">
+      </form>
+      <div class="filter-row">
+        <span class="filter-label">Source</span>
+        ${sourcePills}
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Trier</span>
+        ${filterPill("Score ↓", qs({ sort: "score" }), sort === "score")}
+        ${filterPill("Date ↓", qs({ sort: "date" }), sort === "date")}
+        <span class="article-meta" style="margin-left:auto">${sorted.length} article${sorted.length !== 1 ? "s" : ""}</span>
+      </div>
+    </div>
+
+    ${
+      articles.length === 0
+        ? `<p class="empty">Aucune actualité. Utilise «&nbsp;Rafraîchir les flux&nbsp;» pour récupérer les articles.</p>`
+        : cardsHtml
+    }
+  `, "articles");
+}
+
+function page(body: string, active: "stories" | "articles" = "stories"): string {
+  const navLink = (href: string, label: string, key: typeof active) =>
+    `<a class="nav-tab${key === active ? " nav-tab-active" : ""}" href="${href}">${label}</a>`;
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -300,10 +615,48 @@ function page(body: string): string {
   .meta { font-size: 12px; color: var(--muted); margin: 8px 0 0; padding-top: 8px; border-top: 1px solid var(--border); }
   .meta-label { color: var(--foreground); font-weight: 600; margin-right: 4px; }
   .empty { color: var(--muted); font-size: 13px; }
+  .nav-tabs { display: flex; gap: 4px; margin: 14px 0 24px; border-bottom: 1px solid var(--border); }
+  .nav-tab { display: inline-block; padding: 8px 14px; font-size: 13px; font-weight: 600; color: var(--muted);
+    border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .nav-tab:hover { color: var(--foreground); }
+  .nav-tab-active { color: var(--foreground); border-bottom-color: var(--accent); }
+  .filter-bar { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--border);
+    background: var(--surface); border-radius: 12px; padding: 12px; margin-bottom: 16px; }
+  .filter-bar input[type="search"] { width: 100%; background: var(--surface-2); color: var(--foreground);
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; font-size: 13px; }
+  .filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .filter-label { flex-shrink: 0; width: 44px; font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--muted); }
+  .pill { border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--muted);
+    padding: 3px 11px; font-size: 12px; font-weight: 500; cursor: pointer; }
+  .pill:hover { border-color: var(--border-hover); color: var(--foreground); }
+  .pill-active { border-color: var(--accent); background: var(--accent); color: #fff; }
+  .article-card { border: 1px solid var(--border); background: var(--surface); border-radius: 12px;
+    padding: 14px; margin-bottom: 10px; }
+  .article-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .score-badge { display: inline-flex; align-items: center; gap: 3px; border-radius: 999px; border: 1px solid;
+    padding: 1px 9px; font-size: 12px; font-weight: 700; }
+  .score-hot { border-color: rgba(225,6,0,0.4); background: rgba(225,6,0,0.15); color: var(--accent-soft); }
+  .score-warm { border-color: rgba(230,160,30,0.4); background: rgba(230,160,30,0.15); color: #e6a01e; }
+  .score-mild { border-color: rgba(80,180,110,0.4); background: rgba(80,180,110,0.15); color: #5fd189; }
+  .score-cold { border-color: var(--border); background: var(--surface-2); color: var(--muted); }
+  .article-meta { font-size: 11px; color: var(--muted); }
+  .article-title { display: block; font-size: 14.5px; font-weight: 600; color: var(--foreground); margin-bottom: 4px; }
+  .article-title:hover { color: var(--accent-soft); }
+  .article-summary { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 0 0 10px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .article-actions { display: flex; gap: 8px; }
+  .btn-sm { font-size: 12px; padding: 4px 10px; }
+  .btn-danger { background: var(--surface-2); color: var(--muted); }
+  .btn-danger:hover { color: var(--accent-soft); border-color: rgba(225,6,0,0.4); }
 </style>
 </head>
 <body>
 <h1><a href="/"><span class="brand">F1</span> Stories</a></h1>
+<nav class="nav-tabs">
+  ${navLink("/", "Stories", "stories")}
+  ${navLink("/articles", "Articles", "articles")}
+</nav>
 ${body}
 </body>
 </html>`;
@@ -354,6 +707,87 @@ const server = createServer(async (req, res) => {
       if (event) await synthesizeUnsynthesized(event);
       res.writeHead(302, { Location: `/?event=${encodeURIComponent(event ?? "")}` });
       res.end();
+      return;
+    }
+
+    if (req.method === "GET" && url.pathname === "/articles") {
+      const sourceFilter = url.searchParams.get("source") ?? "all";
+      const sort = url.searchParams.get("sort") === "date" ? "date" : "score";
+      const q = (url.searchParams.get("q") ?? "").trim().toLowerCase();
+
+      const cutoff = Date.now() - ARTICLES_WINDOW_MS;
+      const recent = listNewsArticles().filter((a) => new Date(a.publishedAt ?? a.fetchedAt).getTime() >= cutoff);
+      const scored: ScoredArticle[] = recent.map((a) => ({ ...a, score: scoreNews(a).score }));
+      const sources = Array.from(new Set(recent.map((a) => a.source))).sort();
+
+      res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+      res.end(renderArticlesPage({ articles: scored, sources, sourceFilter, sort, q, refreshError: null }));
+      return;
+    }
+
+    if (req.method === "POST" && url.pathname === "/articles/refresh") {
+      const params = await readBody(req);
+      const qs = new URLSearchParams({
+        source: params.get("source") ?? "all",
+        sort: params.get("sort") ?? "score",
+        q: params.get("q") ?? "",
+      });
+      await ingestNewsArticles();
+      res.writeHead(302, { Location: `/articles?${qs.toString()}` });
+      res.end();
+      return;
+    }
+
+    if (req.method === "POST" && url.pathname === "/articles/dismiss") {
+      const params = await readBody(req);
+      const articleUrl = params.get("url");
+      if (articleUrl) dismissNewsArticle(articleUrl);
+      const qs = new URLSearchParams({
+        source: params.get("source") ?? "all",
+        sort: params.get("sort") ?? "score",
+        q: params.get("q") ?? "",
+      });
+      res.writeHead(302, { Location: `/articles?${qs.toString()}` });
+      res.end();
+      return;
+    }
+
+    if (req.method === "POST" && url.pathname === "/articles/generate-stories") {
+      const params = await readBody(req);
+      const sourceFilter = params.get("source") ?? "all";
+      const q = (params.get("q") ?? "").trim().toLowerCase();
+      const qs = new URLSearchParams({ source: sourceFilter, sort: params.get("sort") ?? "score", q: params.get("q") ?? "" });
+
+      const cutoff = Date.now() - ARTICLES_WINDOW_MS;
+      const recent = listNewsArticles().filter((a) => new Date(a.publishedAt ?? a.fetchedAt).getTime() >= cutoff);
+      const pending = filterArticles(recent, sourceFilter, q).filter((a) => !a.storyPath && !a.storySkipReason);
+      for (const article of pending) {
+        try {
+          await generateArticleStory(article);
+        } catch (e) {
+          console.error(`[generate-stories] ${article.url}:`, e);
+          setStoryResult(article.url, { reason: e instanceof Error ? e.message : String(e) });
+        }
+      }
+      res.writeHead(302, { Location: `/articles?${qs.toString()}` });
+      res.end();
+      return;
+    }
+
+    // Serves rendered story PNGs (output/articles/*.png) so the "Story
+    // générée" link on /articles can open them — path-traversal-checked the
+    // same way any static file handler needs to be, since the filename
+    // comes from stored data rather than a fixed whitelist.
+    if (req.method === "GET" && url.pathname.startsWith("/output/")) {
+      const rel = decodeURIComponent(url.pathname.slice("/output/".length));
+      const filePath = resolve(OUTPUT_DIR, rel);
+      if (!filePath.startsWith(OUTPUT_DIR + sep) || !filePath.endsWith(".png") || !existsSync(filePath)) {
+        res.writeHead(404, { "Content-Type": "text/plain" });
+        res.end("Not found");
+        return;
+      }
+      res.writeHead(200, { "Content-Type": "image/png" });
+      res.end(readFileSync(filePath));
       return;
     }
 
