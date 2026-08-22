@@ -3968,5 +3968,57 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-charles-leclerc-1787399926699.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/nowhere-near-good-enough-mclaren-puzzled-by-dutch-gp-sprint-struggles/10848225/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "\"Nowhere near good enough\" - McLaren puzzled by Dutch GP sprint struggles",
+    "summary": "Reigning world champion Lando Norris says McLaren's low-speed weaknesses meant it was \"nowhere near good enough\" to challenge for victory in Zandvoort's sprint race. McLaren arrived at the beach-side circuit with its latest upgrade package focusing on the rear of the car, including a new rear wing assembly, to build on the progress made by its race-winning Hungary upgrades. The first ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-22T12:22:20.000Z",
+    "fetchedAt": "2026-08-22T12:28:34.467Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-lando-norris-1787401880267.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/norris-concedes-mclaren-are-not-quick-enough-after-settling-for-p3-in-zandvoort-sprint.1wWZadtCH0YIldOmE8jTwA",
+    "title": "Norris concedes McLaren ‘not quick enough’ in Zandvoort",
+    "summary": "Lando Norris has given his assessment of McLaren’s performance after he lost P2 to Charles Leclerc in the Zandvoort Sprint.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-22T12:28:34.524Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-lando-norris-1787401945825.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lando-norris-explains-ongoing-mclaren-issue-exposed-dutch-gp-sprint",
+    "title": "Lando Norris laments McLaren issue exposed in Dutch GP sprint",
+    "summary": "Lando Norris lost P2 and could have lost more in a longer race.",
+    "author": null,
+    "publishedAt": "2026-08-22T11:59:06.000Z",
+    "fetchedAt": "2026-08-22T12:28:34.647Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lando-norris-1787402054118.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089318/f1-qualifying-results-dutch-grand-prix-2026-times-grid-positions/",
+    "title": "F1 Qualifying Results: Dutch Grand Prix times and grid positions",
+    "summary": "The battle for pole position will rage at Zandvoort today as Qualifying takes centre stage at the 2026 F1 Dutch Grand Prix.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-22T12:57:00.000Z",
+    "fetchedAt": "2026-08-22T12:28:34.657Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-kimi-antonelli-1787402133896.png",
+    "storySkipReason": null
   }
 ]
