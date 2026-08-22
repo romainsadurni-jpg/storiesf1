@@ -3461,5 +3461,31 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-lewis-hamilton-1787375963133.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089295/f1-sprint-race-today-dutch-grand-prix-2026-start-times-tv-channel-free-live-stream/",
+    "title": "F1 Sprint Race Today: Dutch Grand Prix 2026 start times, TV channel and FREE live stream",
+    "summary": "The fifth sprint race of the F1 2026 championship takes place today (Saturday August 22) with crucial championship points up for grabs at the Dutch Grand Prix.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-22T06:27:00.000Z",
+    "fetchedAt": "2026-08-22T05:48:19.320Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1787377912472.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/how-george-russell-overcame-low-confidence-dutch-gp-sprint-pole",
+    "title": "How George Russell turned low confidence into Dutch GP Sprint pole",
+    "summary": "George Russell arrived at Zandvoort with low confidence, but revealed how a fresh mindset helped him claim Sprint pole...",
+    "author": null,
+    "publishedAt": "2026-08-22T05:44:53.000Z",
+    "fetchedAt": "2026-08-22T05:48:19.335Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-george-russell-1787378022607.png",
+    "storySkipReason": null
   }
 ]
