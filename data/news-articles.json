@@ -3487,5 +3487,31 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-george-russell-1787378022607.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fia-carlos-sainz-decision-sprint-qualifying-dutch-gp",
+    "title": "FIA confirms Carlos Sainz decision after Sprint quali investigation",
+    "summary": "It capped off a difficult Friday for Carlos Sainz.",
+    "author": null,
+    "publishedAt": "2026-08-22T06:01:33.000Z",
+    "fetchedAt": "2026-08-22T06:18:04.332Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-carlos-sainz-1787379650264.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089290/williams-f1-james-vowles-underinvestment-cost-cap-era-update/",
+    "title": "'20 years' of underinvestment': The bleak truth about once mighty Williams F1 team",
+    "summary": "Williams F1 chief James Vowles has insisted that the team cannot fix 20 years of underinvestment in 12 months, offering a bleak update on their current situation in the cost-cap era.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-22T07:12:00.000Z",
+    "fetchedAt": "2026-08-22T06:18:04.415Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-williams-f1-1787379736005.png",
+    "storySkipReason": null
   }
 ]
