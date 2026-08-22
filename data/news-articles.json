@@ -3448,5 +3448,18 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lewis-hamilton-1787374349393.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-mystery-pace-dutch-gp-sprint-qualifying",
+    "title": "Hamilton left puzzled by Ferrari pace mystery",
+    "summary": "Something 'went wrong' for Lewis Hamilton during Sprint Qualifying.",
+    "author": null,
+    "publishedAt": "2026-08-22T05:00:36.000Z",
+    "fetchedAt": "2026-08-22T05:16:49.987Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1787375963133.png",
+    "storySkipReason": null
   }
 ]
