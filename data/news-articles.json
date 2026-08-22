@@ -3929,5 +3929,44 @@
     "dismissed": false,
     "storyPath": "articles/the-race-f1-1787398651194.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/leclerc-praises-ferrari-for-doing-homework-amid-tyre-gamble-in-sprint-as-he-celebrates-p2-finish.6i28Xp7V41QSulTs60M6CI",
+    "title": "Leclerc praises Ferrari’s ‘homework’ amid Sprint tyre gamble",
+    "summary": "Charles Leclerc was pleased to begin the second half of the season on a positive note for Ferrari after taking P2 in the Zandvoort Sprint.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-22T11:53:17.864Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-charles-leclerc-1787399749359.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/a-great-start-to-the-weekend-russell-explains-strategic-approach-to-zandvoort-sprint-win.63JqOg5ycVoUmjNvYpKa0f",
+    "title": "Russell explains strategic approach to Zandvoort Sprint win",
+    "summary": "George Russell secured a straightforward victory during the Sprint in the Netherlands.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-22T11:53:17.864Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-george-russell-1787399820943.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/charles-leclerc-gamble-dutch-gp-sprint",
+    "title": "Charles Leclerc explains ‘very right or very wrong’ Dutch GP Sprint gamble",
+    "summary": "\"Always when you are the only one doing something, it's either very right or very wrong.\"",
+    "author": null,
+    "publishedAt": "2026-08-22T11:41:36.000Z",
+    "fetchedAt": "2026-08-22T11:53:18.075Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-charles-leclerc-1787399926699.png",
+    "storySkipReason": null
   }
 ]
