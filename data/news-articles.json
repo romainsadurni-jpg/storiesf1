@@ -3890,5 +3890,44 @@
     "dismissed": false,
     "storyPath": "articles/racefans-kimi-antonelli-1787397878285.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-fia-investigation-dutch-gp-sprint-incident",
+    "title": "Max Verstappen faces FIA investigation into Dutch GP Sprint incident",
+    "summary": "Max Verstappen faces an FIA stewards investigation for his actions ahead of the Dutch GP Sprint.",
+    "author": null,
+    "publishedAt": "2026-08-22T11:20:40.000Z",
+    "fetchedAt": "2026-08-22T11:31:07.671Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787398392193.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089343/f1-standings-2026-latest-points-leaders-dutch-grand-prix-sprint-race/",
+    "title": "F1 Standings 2026: Latest points leaders after Dutch Grand Prix Sprint race",
+    "summary": "Lewis Hamilton's F1 title hopes suffered another blow in Zandvoort on Saturday as the seven-time world champion endured more frustration in the Dutch Grand Prix Sprint race.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-22T12:25:00.000Z",
+    "fetchedAt": "2026-08-22T11:31:07.727Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787398525386.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/winners-losers-from-f1-dutch-gp-sprint-race/",
+    "title": "Winners and losers from F1's Dutch GP sprint race",
+    "summary": "Formula 1's first (and last) ever sprint race at the Dutch Grand Prix was hardly a classic, but it did produce some winners and losers. Here's our team's picks... Loser: F1 We&#x2019;re going to have more sprint races in 2027, and while it wouldn&#x2019;t be fair to judge that decision based purely on this turgid Zandvoort race, it&#x2019;s at least a warning that F1 has to be very careful in choosing which races get the sprint treatment. I&#x2019;ve seen more action in supercar parades than this so-called 'race'. Up front, Leclerc&#x2019;s dive down the inside of Lando Norris was the only ove",
+    "author": "Josh Suttill",
+    "publishedAt": "2026-08-22T11:22:52.000Z",
+    "fetchedAt": "2026-08-22T11:31:07.933Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-f1-1787398651194.png",
+    "storySkipReason": null
   }
 ]
