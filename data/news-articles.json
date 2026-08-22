@@ -4137,5 +4137,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lando-norris-1787406701297.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-live-dutch-grand-prix-2026-qualifying-updates",
+    "title": "F1 LIVE: Qualifying updates at the Dutch Grand Prix as it happens",
+    "summary": "After the drama of the Sprint, it's time to go again for Dutch Grand Prix qualifying.",
+    "author": null,
+    "publishedAt": "2026-08-22T13:45:50.000Z",
+    "fetchedAt": "2026-08-22T14:04:06.074Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-f1-1787407579136.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089304/f1-mercedes-kimi-antonelli-car-damage-qualifying-mistake-dutch-grand-prix/",
+    "title": "Kimi Antonelli reveals 'big time' car damage after qualifying mistake at F1 Dutch Grand Prix",
+    "summary": "Kimi Antonelli has revealed that his poor performance in Dutch Grand Prix Sprint Qualifying was due at least in part to a mistake he made in SQ1.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-22T14:57:00.000Z",
+    "fetchedAt": "2026-08-22T14:04:06.105Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-kimi-antonelli-1787407690853.png",
+    "storySkipReason": null
   }
 ]
