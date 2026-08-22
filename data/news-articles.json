@@ -3513,5 +3513,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-williams-f1-1787379736005.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089303/f1-lewis-hamilton-ferrari-dutch-grand-prix-sprint-qualifying-disaster-changes/",
+    "title": "Lewis Hamilton launches Ferrari investigation after Dutch Grand Prix disaster.",
+    "summary": "Lewis Hamilton has admitted that he and his Ferrari team are not yet sure what caused his disappointing sprint qualifying session at the Dutch Grand Prix on Friday.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-22T07:57:00.000Z",
+    "fetchedAt": "2026-08-22T07:06:32.123Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787382536834.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fernando-alonso-honda-power-unit-drivability-problems-dutch-gp",
+    "title": "Alonso reveals Honda power unit issue after Aston Martin struggles at Zandvoort",
+    "summary": "\"When you brake, and the throttle is open, it's difficult to stop the car.\"",
+    "author": null,
+    "publishedAt": "2026-08-22T06:41:02.000Z",
+    "fetchedAt": "2026-08-22T07:06:32.215Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fernando-alonso-1787382611015.png",
+    "storySkipReason": null
   }
 ]
