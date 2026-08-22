@@ -3435,5 +3435,18 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-les-experts-de-paris-1787349322566.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089305/f1-news-today-lewis-hamilton-title-bid-falters-teams-bring-23-upgrades-dutch-grand-prix/",
+    "title": "F1 News Today: Lewis Hamilton title bid falters as teams bring 23 upgrades to Dutch Grand Prix",
+    "summary": "George Russell took a surprise pole position for the Dutch Grand Prix sprint race on Friday at Zandvoort, while his two main championship rivals struggled.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-22T05:45:00.000Z",
+    "fetchedAt": "2026-08-22T04:50:51.324Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787374349393.png",
+    "storySkipReason": null
   }
 ]
