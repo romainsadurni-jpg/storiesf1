@@ -3630,5 +3630,18 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-fernando-alonso-1787388720940.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089326/aston-martin-f1-fernando-alonso-pitlane-start-sprint-race-dutch-grand-prix-2026/",
+    "title": "Aston Martin confirm pitlane start for Fernando Alonso at F1 Dutch Grand Prix",
+    "summary": "Aston Martin have announced that Fernando Alonso will start today's Sprint race at the Dutch Grand Prix (1100 UK time) from the pitlane.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-22T09:57:00.000Z",
+    "fetchedAt": "2026-08-22T09:14:08.217Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-aston-martin-1787390199339.png",
+    "storySkipReason": null
   }
 ]
