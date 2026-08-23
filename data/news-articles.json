@@ -4891,5 +4891,44 @@
     "dismissed": false,
     "storyPath": "articles/racefans-sham-1787437585230.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089379/f1-news-today-lewis-hamilton-blames-ferrari-change-kimi-antonelli-confirms-grid-penalty/",
+    "title": "F1 News Today: Lewis Hamilton blames Ferrari change as Antonelli confirms grid penalty",
+    "summary": "Lewis Hamilton blamed a 'subtle' change to his car after practice at the Dutch Grand Prix for his seventh place in sprint qualifying and the subsequent Sprint race.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-23T06:01:00.000Z",
+    "fetchedAt": "2026-08-23T05:41:10.905Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787463824144.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/george-russell-rejects-mercedes-team-orders-w17-upgrades",
+    "title": "George Russell rejects Mercedes team orders amid championship fight",
+    "summary": "\"Teams like McLaren, Red Bull, and Ferrari have been really, really close and given a really good fight recently.\"",
+    "author": null,
+    "publishedAt": "2026-08-23T05:35:26.000Z",
+    "fetchedAt": "2026-08-23T05:41:10.964Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-george-russell-1787463899818.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/winners-and-losers-from-the-2026-dutch-grand-prix-qualifying",
+    "title": "Winners and losers from the 2026 Dutch Grand Prix Qualifying",
+    "summary": "Liam Lawson tops our list of Winners and Losers from the Dutch Grand Prix qualifying session, but who else makes the list?",
+    "author": null,
+    "publishedAt": "2026-08-23T05:00:49.000Z",
+    "fetchedAt": "2026-08-23T05:41:10.964Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-liam-lawson-1787464156224.png",
+    "storySkipReason": null
   }
 ]
