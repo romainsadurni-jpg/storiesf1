@@ -5346,5 +5346,57 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-formula1-com-officiel-1787488488697.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/nico-rosberg-warns-kimi-antonelli-of-f1-title-demons/10848584/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Nico Rosberg warns Kimi Antonelli of F1 title \"demons\"",
+    "summary": "2016 Formula 1 champion Nico Rosberg believes Mercedes driver and current championship leader Kimi Antonelli will face a psychological battle as he fights for his maiden title. Speaking to Sky Sports F1 ahead of the Dutch Grand Prix, Rosberg drew on his own championship-winning experience to explain the mental toll Antonelli could encounter during the latter stages of the season. Antonelli ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-23T12:45:10.000Z",
+    "fetchedAt": "2026-08-23T13:14:06.264Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-nico-rosberg-1787491002905.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-live-dutch-grand-prix-2026-updates",
+    "title": "F1 LIVE: Red flag! Max Verstappen crashes out of the Dutch GP on Lap 1",
+    "summary": "Join us live as the Dutch Grand Prix unfolds!",
+    "author": null,
+    "publishedAt": "2026-08-23T12:30:54.000Z",
+    "fetchedAt": "2026-08-23T13:14:06.569Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787491034957.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-schedule-next-race-calendar",
+    "title": "F1 schedule: When is the next race and where is it being held?",
+    "summary": "Need to know anything about the upcoming F1 schedule? Fear not, we have you covered right here.",
+    "author": null,
+    "publishedAt": "2026-08-23T12:15:33.000Z",
+    "fetchedAt": "2026-08-23T13:14:06.569Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-l-italian-grand-prix-1787491176789.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089399/f1-standings-2026-latest-points-leaders-dutch-grand-prix-2026/",
+    "title": "F1 Standings 2026: Latest points leaders as Lewis Hamilton title bid falters at Dutch Grand Prix",
+    "summary": "Lewis Hamilton's bid to claim a record eighth F1 world title has faltered at the Dutch Grand Prix this weekend, with the British superstar falling further behind in the standings.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-23T13:30:00.000Z",
+    "fetchedAt": "2026-08-23T13:14:06.747Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787491317446.png",
+    "storySkipReason": null
   }
 ]
