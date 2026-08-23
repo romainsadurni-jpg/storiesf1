@@ -5294,5 +5294,57 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-zandvoort-1787484866788.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/stefano-domenicali-cannot-see-f1-without-max-verstappen/10848574/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Stefano Domenicali \"cannot see\" F1 without Max Verstappen",
+    "summary": "Formula 1 chief Stefano Domenicali has responded buoyantly to Max Verstappen extending his Red Bull contract. The four-time world champion announced on Thursday that he’d signed a new deal with the Austrian outfit, taking the expiry date from the end of 2028 to the end of 2030. It has therefore ended speculation that the 28-year-old may depart F1 in the coming seasons, which is talk that ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-23T12:26:53.000Z",
+    "fetchedAt": "2026-08-23T12:28:50.530Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-stefano-domenicali-1787488271272.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089395/f1-results-today-dutch-grand-prix-2026-times-finishing-positions-penalties/",
+    "title": "F1 Results Today: Dutch Grand Prix 2026 times, finishing positions and penalties",
+    "summary": "The 2026 F1 Dutch Grand Prix takes place at Zandvoort this afternoon and we will have full results as soon as the chequered flag falls at the seaside track.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-23T13:00:00.000Z",
+    "fetchedAt": "2026-08-23T12:28:50.722Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-f1-dutch-grand-prix-2026-1787488359746.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-dutch-grand-prix-2026.5ROtuCmKetGTEIfcCgoGet",
+    "title": "OFFICIAL GRID: Who starts where for the Dutch GP",
+    "summary": "The full official starting order for Sunday's 2026 Dutch Grand Prix in Zandvoort.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-23T12:28:50.756Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-lando-norris-1787488409708.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/live-coverage-formula-1-heineken-dutch-grand-prix-2026.2uh5TERoSAddhugM5730a6",
+    "title": "LIVE COVERAGE: Follow all the action from the Dutch GP",
+    "summary": "Live coverage of Sunday's Formula 1 Heineken Dutch Grand Prix 2026.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-23T12:28:50.756Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-formula1-com-officiel-1787488488697.png",
+    "storySkipReason": null
   }
 ]
