@@ -5151,5 +5151,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-mclaren-1787476546673.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/antonelli-f1-dutch-gp-weekend-has-been-a-wake-up-call/10848517/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Why the F1 Dutch GP weekend has been a \"wake-up call\" for Kimi Antonelli",
+    "summary": "Kimi Antonelli's face after qualifying third for Sunday's final Dutch Grand Prix said it all: another opportunity had slipped away. It has been a less than optimal weekend for the championship leader after an off-track excursion in sprint qualifying damaged his car, ultimately consigning him to fourth in that race. He then felt he should have been on pole position for Sunday's main ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-23T09:32:44.000Z",
+    "fetchedAt": "2026-08-23T09:47:23.988Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-kimi-antonelli-1787478624037.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/betting-mistakes-to-avoid-when-watching-the-dutch-grand-prix.1k7fPhv1cEzaUEc86giY1V",
+    "title": "Betting mistakes to avoid during the Dutch GP",
+    "summary": "Safer gambling is important, so we’ve flagged some key betting mistakes to avoid during Sunday’s race at Zandvoort.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-23T09:47:24.058Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-les-paris-sur-la-formule-1-1787478671727.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/las-vegas-double-header-ruled-out-f1-qatar-abu-dhabi-alternative",
+    "title": "Unique Las Vegas double-header plan ruled out as F1 considers Qatar and Abu Dhabi alternatives",
+    "summary": "Rumours of a potential double-header race weekend in Las Vegas re-emerged over the Dutch GP weekend, as uncertainty about the final races of the season remains...",
+    "author": null,
+    "publishedAt": "2026-08-23T09:41:43.000Z",
+    "fetchedAt": "2026-08-23T09:47:24.483Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fia-1787478783549.png",
+    "storySkipReason": null
   }
 ]
