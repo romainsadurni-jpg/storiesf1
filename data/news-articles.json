@@ -4943,5 +4943,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lando-norris-1787465240126.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fernando-alonso-suggests-aston-martin-improvement-hidden-q1-exit",
+    "title": "Fernando Alonso suggests huge Aston Martin improvement hidden by Q1 exit",
+    "summary": "Alonso may have exited in Q1 again but said the size of Aston Martin's recovery should not be understated.",
+    "author": null,
+    "publishedAt": "2026-08-23T06:47:36.000Z",
+    "fetchedAt": "2026-08-23T06:59:15.196Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fernando-alonso-1787468459260.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/f1-data/ferrari-deficit-lewis-hamilton-charles-leclerc-zandvoort",
+    "title": "Ferrari’s Zandvoort qualifying deficit exposed by telemetry data",
+    "summary": "Ferrari came up short at the Zandvoort circuit in the Sprint and in Qualifying.",
+    "author": null,
+    "publishedAt": "2026-08-23T06:15:35.000Z",
+    "fetchedAt": "2026-08-23T06:59:15.196Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-ferrari-1787468531477.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089347/sky-sports-f1-stars-absent-dutch-grand-prix-martin-brundle-david-croft-ted-kravitz-simon-lazenby/",
+    "title": "Top Sky Sports F1 stars absent at Dutch Grand Prix",
+    "summary": "A host of regular Sky Sports F1 pundits are absent from their coverage at this weekend's Dutch Grand Prix, including star analyst Martin Brundle, lead commentator David Croft and pitlane reporter Ted Kravitz.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-23T07:30:00.000Z",
+    "fetchedAt": "2026-08-23T06:59:15.219Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-martin-brundle-et-david-croft-1787468581756.png",
+    "storySkipReason": null
   }
 ]
