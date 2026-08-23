@@ -4982,5 +4982,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-martin-brundle-et-david-croft-1787468581756.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089378/f1-ferrari-worst-habits-lewis-hamilton-dutch-grand-prix-disappointing-championship/",
+    "title": "Lewis Hamilton wants F1 world title number 8 but Ferrari are really starting to screw this up",
+    "summary": "It really looked for a month or two that Ferrari could take the fight to Mercedes in 2026 and that Lewis Hamilton did have a puncher's chance of becoming the first driver in the sport's history to win eight drivers' titles.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-23T08:10:00.000Z",
+    "fetchedAt": "2026-08-23T07:42:27.613Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ferrari-1787471040930.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lando-norris-mercedes-double-dsq-f1-title-hopes",
+    "title": "Lando Norris wants Mercedes ‘double DSQ’ to boost F1 title hopes",
+    "summary": "Norris has found the key to an \"easy\" walk to a second world title, now he just needs Mercedes to co-operate.",
+    "author": null,
+    "publishedAt": "2026-08-23T07:09:59.000Z",
+    "fetchedAt": "2026-08-23T07:42:27.669Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lando-norris-1787471091381.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/from-salo-to-bearman-10-memorable-f1-stand-in-performances.6gSKgUqdna7TDCB6memplX",
+    "title": "From Salo to Bearman – 10 memorable F1 stand-in performances",
+    "summary": "Liam Lawson is back in a Red Bull this weekend, while Yuki Tsunoda takes his place at Racing Bulls. But will they shine like some of these F1 super-sub drivers?",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-23T07:42:27.790Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-liam-lawson-1787471190062.png",
+    "storySkipReason": null
   }
 ]
