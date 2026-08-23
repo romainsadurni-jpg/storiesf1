@@ -5476,5 +5476,44 @@
     "dismissed": false,
     "storyPath": "articles/racefans-max-verstappen-1787493410440.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/nico-rosberg-says-george-russell-is-back-at-his-best-after-difficult-f1-start/10848608/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Nico Rosberg says George Russell is \"back at his best\" after difficult F1 start",
+    "summary": "2016 Formula 1 champion Nico Rosberg believes George Russell is finally back to his best form. Russell has endured a tricky start to the 2026 season. The Briton arrived at the season-opening Australian Grand Prix as a title favourite, but after winning in Melbourne and the Chinese sprint race, he faced multiple issues, including ill-timed safety cars that hampered his strategy and car ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-23T14:07:30.000Z",
+    "fetchedAt": "2026-08-23T14:12:00.939Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-george-russell-1787494414815.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089430/f1-arvid-lindblad-franco-colapinto-penalty-dutch-grand-prix-max-verstappen-crash/",
+    "title": "F1 stars hit with HUGE penalties after Max Verstappen crash at Dutch Grand Prix",
+    "summary": "Two F1 stars have been hit with huge penalties at the Dutch Grand Prix after an infringement following Max Verstappen's huge crash in Zandvoort.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-23T15:04:00.000Z",
+    "fetchedAt": "2026-08-23T14:12:01.174Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lindblad-et-colapinto-1787494462896.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-dutch-gp-crash-zandvoort",
+    "title": "Max Verstappen suffers huge Dutch GP crash",
+    "summary": "Max Verstappen was lucky to walk away after a massive Lap 1 crash.",
+    "author": null,
+    "publishedAt": "2026-08-23T13:44:05.000Z",
+    "fetchedAt": "2026-08-23T14:12:01.324Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787494508497.png",
+    "storySkipReason": null
   }
 ]
