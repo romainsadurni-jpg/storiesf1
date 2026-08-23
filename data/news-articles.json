@@ -5138,5 +5138,18 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-les-experts-de-paris-hippiques-1787475254059.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089386/stolen-f1-lego-found-california-desert-mclaren/",
+    "title": "Stolen F1 LEGO mystery deepens as US police find massive haul in the California desert",
+    "summary": "Police in the US have recovered a massive haul of F1 LEGO which was believed stolen in a recent train theft.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-23T09:57:00.000Z",
+    "fetchedAt": "2026-08-23T09:14:24.397Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-mclaren-1787476546673.png",
+    "storySkipReason": null
   }
 ]
