@@ -6321,5 +6321,18 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-lando-norris-1787522391244.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/08/23/video-draft-49/",
+    "title": "Video: IndyCar Washington highlights | Brief",
+    "summary": "Highlights of from IndyCar's third new race of the season",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-08-23T22:20:50.000Z",
+    "fetchedAt": "2026-08-23T22:28:34.736Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-alex-palou-1787524245676.png",
+    "storySkipReason": null
   }
 ]
