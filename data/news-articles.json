@@ -6425,5 +6425,57 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-toto-wolff-1787553133440.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/motogp/trackhouse-signs-bastianini-for-2027/",
+    "title": "Bastianini's next MotoGP move announced for 2027",
+    "summary": "Aprilia MotoGP satellite team Trackhouse has announced Enea Bastianini as its new signing for the 2027 season. The 28-year-old will replace Ai Ogura in the Trackhouse roster, following Ogura's deal with the Yamaha factory team . Bastianini will team up with Raul Fernandez, who won the British Grand Prix last weekend. A seven-time grand prix winner in MotoGP since his debut in 2021, Bastianini took all seven of those wins as a Ducati rider - but signed a KTM works deal to race for Tech3 in 2025, after his stint as Pecco Bagnaia's factory team-mate at Ducati didn't pan out through injury and und",
+    "author": "Valentin Khorounzhiy",
+    "publishedAt": "2026-08-24T07:23:13.000Z",
+    "fetchedAt": "2026-08-24T07:40:03.410Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-enea-bastianini-1787557340010.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089447/f1-lewis-hamilton-dutch-grand-prix-ferrari-frustration-charles-leclerc/",
+    "title": "Lewis Hamilton opens up on Ferrari 'frustration' after team-mate battle ruins podium chances",
+    "summary": "Lewis Hamilton has continued to show his frustration at Ferrari's strategy decisions at Sunday's Dutch Grand Prix, claiming that his team cost him a podium finish.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-24T07:59:00.000Z",
+    "fetchedAt": "2026-08-24T07:40:03.426Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787557421402.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/f1-data/ferrari-strategy-data-lewis-hamilton-dutch-grand-prix",
+    "title": "Ferrari biggest strategy blunder emerges after Hamilton Dutch GP frustration",
+    "summary": "Lewis Hamilton was not the only Ferrari driver with grounds for frustration.",
+    "author": null,
+    "publishedAt": "2026-08-24T07:25:58.000Z",
+    "fetchedAt": "2026-08-24T07:40:03.480Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-ferrari-1787557524864.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/08/24/mercedes-is-clearly-not-the-fastest-car-on-the-grid-any-more-claims-antonelli/",
+    "title": "Mercedes is “clearly not the fastest car on the grid any more” claims Antonelli | Formula 1",
+    "summary": "Mercedes are no longer the team to beat in Formula 1 claimed Andrea Kimi Antonelli after McLaren's second consecutive victory in the Dutch Grand Prix.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-08-24T06:48:01.000Z",
+    "fetchedAt": "2026-08-24T07:40:03.555Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-kimi-antonelli-1787557606984.png",
+    "storySkipReason": null
   }
 ]
