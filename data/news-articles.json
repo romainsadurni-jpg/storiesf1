@@ -6477,5 +6477,57 @@
     "dismissed": false,
     "storyPath": "articles/racefans-kimi-antonelli-1787557606984.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/mercedes-confirms-kimi-antonelli-grid-penalty-in-monza-for-full-power-unit-change/10848891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Mercedes confirms Kimi Antonelli grid penalty in Monza",
+    "summary": "Mercedes has officially decided its championship leader Kimi Antonelli will start from the back of the grid at the upcoming Italian Grand Prix after it decided to give the Italian a new power unit, exceeding his allowance for the year. Drivers are allowed to use up to four power units for the season, but Mercedes' reliability woes over the first half of the campaign meant it has always been a ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-24T08:11:46.000Z",
+    "fetchedAt": "2026-08-24T08:27:35.879Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-kimi-antonelli-1787560195531.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/features/2026-dutch-grand-prix-driver-ratings",
+    "title": "Dutch GP driver ratings: Norris delivers again as Verstappen makes rare costly error",
+    "summary": "The ratings are in for the final Dutch Grand Prix which saw home hero Max Verstappen crash in the opening lap.",
+    "author": null,
+    "publishedAt": "2026-08-24T07:48:14.000Z",
+    "fetchedAt": "2026-08-24T08:27:36.120Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787560380884.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089390/adrian-newey-aston-martin-f1-more-potential-to-unlock-dutch-grand-prix-2026/",
+    "title": "Adrian Newey issues exciting Aston Martin F1 statement after 'incredible' Alonso verdict",
+    "summary": "Fernando Alonso described Aston Martin's recent progress as \"incredible\" at the F1 Dutch Grand Prix, but team principal Adrian Newey believes there is still even more to come.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-24T08:45:00.000Z",
+    "fetchedAt": "2026-08-24T08:27:36.164Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-adrian-newey-1787560465843.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/how-the-tough-zandvoort-conditions-brought-out-the-best-in-norris.6a2xcdJpecuyqeavYwNzAp",
+    "title": "How the tough Zandvoort conditions brought out the best in Norris",
+    "summary": "Lando Norris made it back-to-back Grand Prix victories in 2026 with his triumph in the Dutch Grand Prix.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-24T08:27:36.215Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-lando-norris-1787560499528.png",
+    "storySkipReason": null
   }
 ]
