@@ -7257,5 +7257,18 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lewis-hamilton-1787604423846.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089471/f1-monaco-grand-prix-result-2026-red-bull-mclaren-appeal-paris/",
+    "title": "F1 Monaco Grand Prix result could change AGAIN as Red Bull and McLaren begin courtroom battle",
+    "summary": "The result of the 2026 Monaco Grand Prix could be changed yet again, well over two months after the event.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-24T22:30:00.000Z",
+    "fetchedAt": "2026-08-24T21:49:03.520Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-red-bull-et-mclaren-1787608377588.png",
+    "storySkipReason": null
   }
 ]
