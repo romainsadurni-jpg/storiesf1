@@ -7192,5 +7192,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-mercedes-1787594872367.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089491/f1-star-lose-job-ferrari-mclaren-fight-haas-seat-rafael-camara-leonardo-fornaroli/",
+    "title": "F1 star is set to lose his job and Ferrari and McLaren are in a fight to replace him with 'their guy'",
+    "summary": "Not for the first time this year, McLaren and Ferrari appear to be going head-to-head - this time to get one of 'their guys' into the F1 grid for 2027.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-24T19:45:00.000Z",
+    "fetchedAt": "2026-08-24T18:58:52.705Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-esteban-ocon-1787598089504.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fia-dutch-grand-prix-lewis-hamilton",
+    "title": "FIA confirms Dutch GP penalty points, new Lewis Hamilton evidence, Newey team radio – roundup",
+    "summary": "Monday's fast-paced F1 news is go, go, go!",
+    "author": null,
+    "publishedAt": "2026-08-24T18:07:39.000Z",
+    "fetchedAt": "2026-08-24T18:58:52.864Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fia-1787598191963.png",
+    "storySkipReason": null
   }
 ]
