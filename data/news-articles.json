@@ -7062,5 +7062,70 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-fia-1787586491005.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/netflix-renews-formula-1-drive-to-survive-for-season-9/10849071/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Netflix renews \"Formula 1: Drive to Survive\" for season 9",
+    "summary": "Netflix has officially confirmed that its behind-the-scenes docuseries Formula 1: Drive to Survive will return for a ninth season, covering the ongoing 2026 season. The docuseries, which premiered on the streaming service in 2019, has given viewers unprecedented access to the paddock and an insight into the drivers' personal lives beyond the track. \"We’re so excited to be making Season 9 ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-24T16:04:25.000Z",
+    "fetchedAt": "2026-08-24T16:18:46.172Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-netflix-1787588526477.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/5-winners-and-5-losers-from-zandvoort-2026-dutch-grand-prix.6BMtP66ox9UVKyds6XJjQG",
+    "title": "6 Winners and 5 Losers from Zandvoort",
+    "summary": "Lawrence Barretto selects his winners and losers from an eventful 2026 Dutch Grand Prix.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-24T16:18:46.292Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-lando-norris-1787588564125.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/f1-academy-unveils-expanded-2026-rookie-test-with-new-training-camp.5iNMKzRqTBhLSpehfq0JZZ",
+    "title": "F1 ACADEMY unveils expanded 2026 Rookie Test",
+    "summary": "F1 ACADEMY has today announced that their Rookie Test will return this year, alongside the launch of a new Rookie Training Camp, supported by Loughborough University.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-24T16:18:46.292Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-f1-academy-1787588672741.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/why-f1-team-betting-markets-are-about-to-become-more-popular-after-the-dutch-grand-prix.dSe6rOkQ5cQQr90sYOIMa",
+    "title": "Why F1 team markets are about to become more popular",
+    "summary": "With very little to choose between drivers at the top teams, backing both drivers together within a team could prove to be the smartest move.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-24T16:18:46.292Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-fia-1787588696622.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089482/f1-fans-max-verstappen-crash-video-ai-debate-controversial/",
+    "title": "'Is this AI?' - F1 fans speculate over controversial Max Verstappen crash footage at Dutch Grand Prix",
+    "summary": "The most dramatic moment of Sunday's Dutch Grand Prix was, by some margin, Max Verstappen crashing on the opening lap of his last ever home race.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-24T17:15:00.000Z",
+    "fetchedAt": "2026-08-24T16:18:46.703Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1787588760386.png",
+    "storySkipReason": null
   }
 ]
