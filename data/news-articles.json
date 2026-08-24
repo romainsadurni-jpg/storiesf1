@@ -7218,5 +7218,18 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-fia-1787598191963.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/liam-lawson-questions-fia-decision-predictable-max-verstappen-crash",
+    "title": "Liam Lawson questions FIA decision after ‘predictable’ Max Verstappen crash",
+    "summary": "The FIA started the drivers behind a Safety Car due to the wet conditions.",
+    "author": null,
+    "publishedAt": "2026-08-24T19:00:40.000Z",
+    "fetchedAt": "2026-08-24T19:37:13.974Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-liam-lawson-1787600391789.png",
+    "storySkipReason": null
   }
 ]
