@@ -27,7 +27,8 @@
     "ayao_komatsu":      { "file": "principals/ayao_komatsu/portrait.jpg",      "name": "Ayao Komatsu",      "role": "Team Principal — Haas",          "team": "haas",        "aliases": ["ayao komatsu", "komatsu"] },
     "alan_permane":      { "file": "principals/alan_permane/portrait.jpg",      "name": "Alan Permane",      "role": "Team Principal — Racing Bulls",  "team": "racingbulls", "aliases": ["alan permane", "permane"] },
     "graeme_lowdon":     { "file": "principals/graeme_lowdon/portrait.jpg",     "name": "Graeme Lowdon",     "role": "Ancien Team Principal — Cadillac (jusqu'à mi-août 2026)", "team": "cadillac",    "aliases": ["graeme lowdon", "lowdon"] },
-    "marcin_budkowski":  { "file": "principals/marcin_budkowski/portrait.webp", "name": "Marcin Budkowski", "role": "Team Principal — Cadillac",      "team": "cadillac",    "aliases": ["marcin budkowski", "budkowski"] }
+    "marcin_budkowski":  { "file": "principals/marcin_budkowski/portrait.webp", "name": "Marcin Budkowski", "role": "Team Principal — Cadillac",      "team": "cadillac",    "aliases": ["marcin budkowski", "budkowski"] },
+    "guenther_steiner":  { "file": "principals/guenther_steiner/portrait.jpg", "name": "Guenther Steiner", "role": "Ancien Team Principal — Haas · consultant F1", "team": "haas", "aliases": ["guenther steiner", "günther steiner", "steiner"] }
   },
 
   "drivers": {

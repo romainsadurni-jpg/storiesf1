@@ -7,10 +7,11 @@ import { mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { getArticleFullText } from "./article-fetcher";
 import { synthesizeArticleCard, translateContextQuote, type ArticleCardText } from "./article-synthesis";
-import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject, teamLogoPath } from "./asset-manifest";
+import { resolvePerson, randomPortraitFor, randomBackgroundFor, findKnownSubject, teamLogoPath, orgLogoPath } from "./asset-manifest";
 import { renderCardPuppeteer } from "./puppeteer-render";
 import { setStoryResult, type StoredNewsArticle } from "./news-store";
 import { TEAMS } from "./teams";
+import { ORGS } from "./orgs";
 
 const BASE_DIR = join(__dirname, "..");
 const TEMPLATES_DIR = join(BASE_DIR, "templates");
@@ -44,6 +45,9 @@ export type CardSubject = {
    * face photo — the template renders these "contain"-fit on a white
    * backing instead of the face-oriented "cover" crop. */
   isLogo: boolean;
+  /** Overrides the logo's white backing (see isLogo) for a logo file with
+   * its own opaque background baked in — orgs.ts's per-org setting. */
+  logoBackground?: string;
   background: string;
 };
 
@@ -58,7 +62,10 @@ export type CardSubject = {
  * commenting on Verstappen's Red Bull deal is correctly left with no
  * portrait (Karun Chandhok isn't a driver/principal), but the article is
  * still fundamentally about Red Bull, so the background/badge should say so
- * instead of falling all the way to a team-less generic card. */
+ * instead of falling all the way to a team-less generic card. Institutional
+ * subjects (orgs.ts — FIA and the like) get the same badge treatment as a
+ * constructor, just from their own assets/orgs/ tree since they aren't an
+ * "écurie" with their own TEAM_COLORS entry in quote-card.html. */
 export function resolveSubject(subjectName: string, contextText: string): CardSubject {
   const person = resolvePerson(subjectName);
   if (person) {
@@ -75,16 +82,42 @@ export function resolveSubject(subjectName: string, contextText: string): CardSu
 
   const haystack = `${subjectName} ${contextText}`.toLowerCase();
   const team = TEAMS.find((t) => haystack.includes(t.name.toLowerCase()));
-  const teamSlug = team?.slug ?? "generic";
-  const logo = team ? teamLogoPath(team.slug) : null;
+  if (team) {
+    const logo = teamLogoPath(team.slug);
+    return {
+      name: subjectName,
+      role: null,
+      isDriver: false,
+      team: team.slug,
+      portrait: logo ?? NO_PORTRAIT_PATH,
+      isLogo: logo !== null,
+      background: randomBackgroundFor(team.slug),
+    };
+  }
+
+  const org = ORGS.find((o) => haystack.includes(o.name.toLowerCase()));
+  if (org) {
+    const logo = orgLogoPath(org.slug);
+    return {
+      name: subjectName,
+      role: null,
+      isDriver: false,
+      team: org.slug,
+      portrait: logo ?? NO_PORTRAIT_PATH,
+      isLogo: logo !== null,
+      logoBackground: org.logoBackground,
+      background: randomBackgroundFor(org.slug),
+    };
+  }
+
   return {
     name: subjectName,
     role: null,
     isDriver: false,
-    team: teamSlug,
-    portrait: logo ?? NO_PORTRAIT_PATH,
-    isLogo: logo !== null,
-    background: randomBackgroundFor(teamSlug),
+    team: "generic",
+    portrait: NO_PORTRAIT_PATH,
+    isLogo: false,
+    background: randomBackgroundFor("generic"),
   };
 }
 
@@ -96,22 +129,30 @@ export function resolveSubject(subjectName: string, contextText: string): CardSu
 // the full text, and the article's title/summary still get one last,
 // much simpler translate-only pass (see translateContextQuote — a plain
 // two-sentence translation succeeds far more often than the combined
-// extraction+translation that already failed above) so the card isn't
-// left with just the source name as "context" and an English title as
-// "quote". Only degrades to the fully English/source-only version if that
-// last pass also fails or no LLM is available. Keeps the "one card per
-// article, no exceptions" guarantee even on content the LLM step
-// genuinely can't work with.
-async function deterministicCardText(article: StoredNewsArticle): Promise<ArticleCardText> {
+// extraction+translation that already failed above).
+//
+// Returns null when even that last pass fails: this used to fall through
+// to a source-name-as-context / English-title-as-quote card, which is
+// exactly the "near-empty card" symptom reported after the first day of
+// live Telegram delivery (see a604589) — a card that LOOKS finished but
+// is either half-English or content-free is worse than no card at all,
+// since the digest sends every rendered card straight to Telegram with no
+// human in the loop. generateArticleStory() below treats null the same as
+// a genuine synthesis failure: no card, article recorded as skipped and
+// left for manual retry, nothing shipped.
+async function deterministicCardText(article: StoredNewsArticle): Promise<ArticleCardText | null> {
   const titleLower = article.title.toLowerCase();
   const subjectName =
-    findKnownSubject(article.title) ?? TEAMS.find((t) => titleLower.includes(t.name.toLowerCase()))?.name ?? article.source;
+    findKnownSubject(article.title) ??
+    TEAMS.find((t) => titleLower.includes(t.name.toLowerCase()))?.name ??
+    ORGS.find((o) => titleLower.includes(o.name.toLowerCase()))?.name ??
+    article.source;
 
   const rawContext = article.summary?.trim().slice(0, 220) || article.source;
   const translated = await translateContextQuote(rawContext, article.title);
   if (translated) return { subjectName, context: translated.context, quote: translated.quote, verbatim: false };
 
-  return { subjectName, context: article.source, quote: article.title, verbatim: false };
+  return null;
 }
 
 export type ArticleStoryResult = {
@@ -124,22 +165,24 @@ export type ArticleStoryResult = {
 // One "story card" per article — title's subject as question, the model's
 // context+quote as the answer found in the text (article-synthesis.ts),
 // rendered onto quote-card.html the same way gen_stories_from_transcript.ts
-// does for FIA transcript Q/A pairs. No filter of any kind: resolveSubject()
-// always returns something renderable, and any content-level LLM failure
-// falls back to deterministicCardText() above, so a card is generated for
-// every single article. The one thing that still surfaces as a skip is "no
-// LLM provider configured at all" — an environment problem affecting every
-// article identically, not a per-article judgment call, so it's worth
-// surfacing rather than silently downgrading every card to the fallback
-// (returns null in that case; other failures propagate so callers can
-// decide how to record them).
+// does for FIA transcript Q/A pairs. resolveSubject() always returns
+// something renderable, and most content-level LLM failures recover via
+// deterministicCardText() above, so a card is generated for the vast
+// majority of articles. The exceptions that surface as a skip: "no LLM
+// provider configured at all" (an environment problem affecting every
+// article identically) and every translation path failing outright for one
+// article (deterministicCardText returning null) — both cases return null
+// here rather than shipping a half-finished card, so callers can record the
+// skip and move on instead of auto-publishing something degraded.
 export async function generateArticleStory(article: StoredNewsArticle): Promise<ArticleStoryResult | null> {
   const fullText = await getArticleFullText(article.url);
   const textForSynthesis = fullText ?? article.summary ?? article.title;
 
   let cardText: ArticleCardText;
   try {
-    cardText = (await synthesizeArticleCard(article.title, textForSynthesis)) ?? (await deterministicCardText(article));
+    const synthesized = (await synthesizeArticleCard(article.title, textForSynthesis)) ?? (await deterministicCardText(article));
+    if (!synthesized) throw new Error("traduction impossible (extraction LLM et secours de traduction ont tous les deux échoué)");
+    cardText = synthesized;
   } catch (e) {
     setStoryResult(article.url, { reason: e instanceof Error ? e.message : String(e) });
     return null;
@@ -157,6 +200,7 @@ export async function generateArticleStory(article: StoredNewsArticle): Promise<
     handle: HANDLE,
     portrait: subject.portrait,
     isLogo: subject.isLogo,
+    logoBackground: subject.logoBackground,
     background: subject.background,
   };
 

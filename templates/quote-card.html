@@ -271,6 +271,11 @@
     const portraitImg = document.getElementById('portrait-img');
     portraitImg.src = data.portrait || '';
     portraitImg.classList.toggle('is-logo', !!data.isLogo);
+    // Most crests are transparent PNGs, where the default white backing
+    // (below) gives contrast. A logo with its own opaque background color
+    // baked in (e.g. FIA's flat-navy JPEG) looks better blended into that
+    // same color instead — data.logoBackground overrides per-subject.
+    portraitImg.style.background = data.isLogo ? (data.logoBackground || '#ffffff') : '';
     document.getElementById('portrait-fallback').textContent = initials(data.name);
 
     const contextEl = document.getElementById('context');

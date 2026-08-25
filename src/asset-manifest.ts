@@ -137,6 +137,21 @@ export function teamLogoPath(team: string): string | null {
   return null;
 }
 
+/** Same idea as teamLogoPath, for non-constructor organizations (orgs.ts —
+ * FIA and the like) — kept in its own assets/orgs/ tree rather than
+ * assets/teams/ since those aren't an "écurie" with a TEAM_COLORS entry of
+ * their own (quote-card.html falls back to the generic navy for any team
+ * slug it doesn't recognize, which already matches STYLE.md's documented
+ * "FIA / générique 2026" color, so no color entry is needed here either). */
+export function orgLogoPath(org: string): string | null {
+  for (const ext of ["png", "svg", "jpg", "jpeg", "webp"]) {
+    if (existsSync(join(ASSETS_DIR, "orgs", org, `logo.${ext}`))) {
+      return `../assets/orgs/${org}/logo.${ext}`;
+    }
+  }
+  return null;
+}
+
 /** Picks a random portrait among every portrait*.jpg actually present for a
  * person (portrait.jpg, portrait_2.jpg, ...) — same "discover what's on
  * disk" approach as randomBackgroundFor, so cards for someone with several

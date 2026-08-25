@@ -23,10 +23,18 @@ assets/
   principals/<slug>/portrait.jpg   — team principals (un dossier par personne,
   drivers/<slug>/portrait.jpg      — pilotes                peut accueillir
   teams/<slug>/logo.png            — logos/couleurs écurie   d'autres photos:
-  context/<slug>.jpg   — plans génériques (grille de départ, podium,     action.jpg, etc.)
+  orgs/<slug>/logo.png             — organisations hors écurie (FIA...)   action.jpg, etc.)
+  context/<slug>.jpg   — plans génériques (grille de départ, podium,
                           paddock, stand, pluie, safety car...)
   manifest.json — index mot-clé → fichier (voir ce fichier pour le format)
 ```
+
+`orgs/<slug>/logo.png` suit la même logique que `teams/` mais pour un sujet
+institutionnel sans écurie propre (FIA, diffuseurs...) : pas d'entrée
+`TEAM_COLORS` dédiée dans `quote-card.html`, la carte retombe sur la couleur
+`generic` (bleu foncé `#12213A`, déjà la couleur "FIA / générique 2026" du
+tableau ci-dessous) — seul le logo change. Liste des orgs reconnues :
+`src/orgs.ts`.
 
 Roster 2026 (11 écuries, 22 pilotes, 11 team principals) pré-créé en dossiers
 vides le 2026-08-18, vérifié par recherche web. Les dossiers `context/`
