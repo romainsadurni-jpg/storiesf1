@@ -7283,5 +7283,31 @@
     "dismissed": false,
     "storyPath": "articles/motorsport-com-f1-oscar-piastri-1787613251572.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-red-bull-contract-exit-clauses-2030",
+    "title": "Fresh details confirmed about Max Verstappen’s extended Red Bull deal",
+    "summary": "A contract doesn't necessarily mean committed...",
+    "author": null,
+    "publishedAt": "2026-08-25T04:59:30.000Z",
+    "fetchedAt": "2026-08-25T05:45:15.721Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787636837457.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089498/f1-news-today-mercedes-cost-cap-bombshell-mclaren-daniel-ricciardo-black-mark/",
+    "title": "F1 News Today: Mercedes cost cap bombshell as McLaren get Ricciardo 'black mark'",
+    "summary": "The Mercedes F1 team is worth $6billion, but team principal Toto Wolff says they 'haven't got the money' to keep pace with their rivals in 2026. Welcome to the cost cap era.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-25T06:30:00.000Z",
+    "fetchedAt": "2026-08-25T05:45:15.911Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-mercedes-1787636906298.png",
+    "storySkipReason": null
   }
 ]
