@@ -7335,5 +7335,44 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-fernando-alonso-1787639049241.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fia-kimi-antonelli-mercedes-toto-wolff",
+    "title": "Kimi Antonelli braced for Italian GP penalty with George Russell ‘discussions ongoing’",
+    "summary": "Kimi Antonelli is set to start his home race from the back of the field.",
+    "author": null,
+    "publishedAt": "2026-08-25T07:00:01.000Z",
+    "fetchedAt": "2026-08-25T07:16:33.652Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1787642278671.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089487/sky-sports-f1-insider-natalie-pinkham-mercedes-civil-war-kimi-antonelli-overtakes-george-russell/",
+    "title": "Sky Sports F1 expert fears Mercedes 'civil war' is coming as Antonelli overtakes Russell",
+    "summary": "A leading Sky Sports F1 insider has warned that Mercedes could be facing a 'civil war' as the 2026 title battle heats up.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-25T07:59:00.000Z",
+    "fetchedAt": "2026-08-25T07:16:33.883Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-mercedes-1787642351283.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/08/25/mclarens-car-is-still-horrible-to-drive-despite-consecutive-wins-says-norris/",
+    "title": "McLaren’s car is still “horrible to drive” despite consecutive wins, says Norris | Formula 1",
+    "summary": "Lando Norris may have won the last two grands prix in a row but he says McLaren's car is still a handful to drive.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-08-25T06:16:24.000Z",
+    "fetchedAt": "2026-08-25T07:16:34.014Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-lando-norris-1787642415096.png",
+    "storySkipReason": null
   }
 ]
