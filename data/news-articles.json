@@ -7309,5 +7309,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-mercedes-1787636906298.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089486/f1-insider-pinpoints-real-issue-at-ferrari-as-hamilton-vs-leclerc-debate-rages/",
+    "title": "F1 insider pinpoints 'real issue' at Ferrari as Hamilton vs Leclerc debate rages",
+    "summary": "Lewis Hamilton and Charles both appeared to be highly frustrated after another underwhelming Sunday afternoon for Ferrari, this time at the Dutch Grand Prix.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-25T07:15:00.000Z",
+    "fetchedAt": "2026-08-25T06:19:53.099Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-julianne-cerasoli-1787638961494.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-honda-engine-upgrade",
+    "title": "Alonso hails Aston Martin breakthrough amid ‘back to square one’ Honda claim",
+    "summary": "Fernando Alonso: \"Everything we’d improved with the first engine; we’ve gone back a bit to square one...\"",
+    "author": null,
+    "publishedAt": "2026-08-25T06:16:27.000Z",
+    "fetchedAt": "2026-08-25T06:19:53.174Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fernando-alonso-1787639049241.png",
+    "storySkipReason": null
   }
 ]
