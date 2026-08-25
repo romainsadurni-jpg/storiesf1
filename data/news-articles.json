@@ -7946,5 +7946,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-marco-antonelli-1787677852111.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/drive-to-survive-season-9-the-biggest-f1-stories-netflix-could-cover/10849391/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "\"Drive to Survive\" Season 9: The biggest F1 stories Netflix could cover",
+    "summary": "Netflix has officially confirmed that its Formula 1 docuseries Drive to Survive will return for a ninth season. The series is set to document the ongoing 2026 championship, so we are taking a look at what could feature in the series. While information is yet to be released on the episodes for the ninth instalment of the show, there are already several storylines that could form the expected 10 ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-25T17:45:19.000Z",
+    "fetchedAt": "2026-08-25T18:18:24.940Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-drive-to-survive-1787681996178.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-public-apology-fia-addresses-stewards-abuse",
+    "title": "Lewis Hamilton addresses Ferrari criticism as FIA condemns stewards abuse – round-up",
+    "summary": "Here is your fast-paced run through Tuesday's F1 news headlines.",
+    "author": null,
+    "publishedAt": "2026-08-25T18:07:46.000Z",
+    "fetchedAt": "2026-08-25T18:18:25.146Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1787682031421.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089495/f1-ferrari-dutch-grand-prix-lewis-hamilton-strategy-fred-vasseur-controversial/",
+    "title": "Ferrari F1 boss explains controversial Lewis Hamilton strategy decisions",
+    "summary": "Ferrari boss Fred Vasseur has opened up on some race-altering strategy decisions his team made during Sunday's F1 Dutch Grand Prix.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-25T18:45:00.000Z",
+    "fetchedAt": "2026-08-25T18:18:25.181Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fred-vasseur-1787682068213.png",
+    "storySkipReason": null
   }
 ]
