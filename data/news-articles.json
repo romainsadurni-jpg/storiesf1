@@ -7621,5 +7621,31 @@
     "dismissed": false,
     "storyPath": "articles/autosport-f1-fia-1787657689901.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/how-alonso-used-a-unique-strategy-to-earn-p9-for-aston-martin-in-zandvoort.1PYIzmhBjiY5oR3psn9Sy1",
+    "title": "How Alonso used a unique strategy to earn P9 in Zandvoort",
+    "summary": "The Dutch Grand Prix saw some fantastic action at the front, but there were also impressive performances further back, including a spectacular drive from Fernando Alonso to P9 and two precious points for Aston Martin.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-25T11:58:28.857Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-fernando-alonso-1787659331449.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089520/fia-issues-statement-race-stewards-abuse-f1-dutch-grand-prix/",
+    "title": "FIA responds to targeted online abuse after controversial F1 Dutch Grand Prix decisions",
+    "summary": "The FIA has issued a strongly-worded statement after race stewards were targeted with online abuse following Sunday's Dutch Grand Prix at Zandvoort.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-25T12:57:00.000Z",
+    "fetchedAt": "2026-08-25T11:58:28.993Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1787659432501.png",
+    "storySkipReason": null
   }
 ]
