@@ -7374,5 +7374,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lando-norris-1787642415096.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/f1-data/lando-norris-data-dutch-grand-prix-mercedes-team-orders",
+    "title": "Lando Norris chief threat as Mercedes Dutch GP team order under microscope",
+    "summary": "Lando Norris is coming, and George Russell felt the Mercedes effects...",
+    "author": null,
+    "publishedAt": "2026-08-25T07:34:52.000Z",
+    "fetchedAt": "2026-08-25T08:04:16.172Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lando-norris-1787645236967.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089481/adrian-newey-fernando-alonso-aston-martin-f1-team-radio-dutch-grand-prix-2026/",
+    "title": "Adrian Newey celebrates Aston Martin turnaround with heartfelt team radio message",
+    "summary": "When Adrian Newey went on team radio in Zandvoort on Sunday afternoon, it was a heartfelt moment which started to wash away months of pain for Aston Martin.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-25T08:45:00.000Z",
+    "fetchedAt": "2026-08-25T08:04:16.194Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-adrian-newey-1787645329757.png",
+    "storySkipReason": null
   }
 ]
