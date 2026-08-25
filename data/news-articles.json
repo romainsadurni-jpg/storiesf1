@@ -7660,5 +7660,44 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-ferrari-1787662995413.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089499/f1-max-verstappen-red-bull-upgrades-2027-dutch-grand-prix-disappointment-crash/",
+    "title": "Max Verstappen reveals bleak Red Bull diagnosis after Dutch Grand Prix disaster",
+    "summary": "Max Verstappen has admitted that his Red Bull team are already looking to 2027 with a number of areas of improvement.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-25T14:30:00.000Z",
+    "fetchedAt": "2026-08-25T14:00:21.969Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1787666535284.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/extra/verstappen-to-take-on-100-rivals-in-world-record-kart-race/",
+    "title": "Verstappen to take on 100 rivals in world-record kart race",
+    "summary": "Max Verstappen will return to his karting roots in September as he takes on 100 rivals in what is being pitched as the biggest go-kart race ever staged. The four-time Formula 1 world champion will headline a one-off event called Max vs 100 at Silverstone on September 16. Rather than racing from the front, Verstappen will start behind a field of 100 other racers, made up of athletes, streamers, personalities and fans, with the objective of overtaking every kart ahead of him. The event will be broadcast live globally on Disney+, while viewers in the United States will be able to watch via the ES",
+    "author": "Fleur Mealing",
+    "publishedAt": "2026-08-25T13:49:01.000Z",
+    "fetchedAt": "2026-08-25T14:00:22.059Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-max-verstappen-1787666586906.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/08/25/verstappen-to-race-100-drivers-at-once-in-karts-at-silverstone/",
+    "title": "Verstappen to race 100 drivers at once in karts at Silverstone | Formula 1",
+    "summary": "Max Verstappen will attempt to win a kart race against 100 rivals from the back of the grid at Silverstone next month.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-08-25T13:08:52.000Z",
+    "fetchedAt": "2026-08-25T14:00:22.331Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-max-verstappen-1787666633608.png",
+    "storySkipReason": null
   }
 ]
