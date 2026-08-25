@@ -7582,5 +7582,44 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-pierre-gasly-1787655766485.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/fia-condemns-online-abuse-f1-stewards-following-franco-colapinto-dutch-gp-penalty/10849233/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "FIA exploring legal options over abuse against F1 stewards following Franco Colapinto's Dutch GP penalty",
+    "summary": "Formula 1's governing body the FIA condemned the online harassment directed at its F1 race stewards following their decision to apply the rulebook and penalise Alpine driver Franco Colapinto at Zandvoort. Colapinto, and Racing Bulls driver Arvid Lindblad, were both handed drive-through penalties for overtaking under a double-waved yellow flag on lap 1 of the race. At the end of the lap, the ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-25T11:10:57.000Z",
+    "fetchedAt": "2026-08-25T11:28:42.185Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-fia-1787657502635.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/oscar-piastri-overtake-george-russell-mercedes-dutch-grand-prix",
+    "title": "George Russell makes Mercedes deployment claim after Piastri overtake",
+    "summary": "Oscar Piastri appeared and struck out of nowhere at Zandvoort, sadly for George Russell.",
+    "author": null,
+    "publishedAt": "2026-08-25T11:26:28.000Z",
+    "fetchedAt": "2026-08-25T11:28:42.372Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-george-russell-1787657577565.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.autosport.com/f1/news/fia-condemns-online-abuse-at-f1-stewards-following-colapintos-dutch-gp-penalty/10849237/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+    "title": "FIA condemns online abuse at F1 stewards following Colapinto's Dutch GP penalty",
+    "summary": "Formula 1's governing body the FIA condemned the online harassment directed at its race stewards following their decision to apply the rulebook and penalise Alpine driver Franco Colapinto at Zandvoort. Colapinto and Racing Bulls rookie Arvid Lindblad were both handed drive-through penalties for overtaking under a double-waved yellow flag on lap one of the race. At the end of the lap, the ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-25T11:18:55.000Z",
+    "fetchedAt": "2026-08-25T11:28:42.388Z",
+    "source": "Autosport — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/autosport-f1-fia-1787657689901.png",
+    "storySkipReason": null
   }
 ]
