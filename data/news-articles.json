@@ -8648,5 +8648,57 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-toto-wolff-1787762743213.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/isack-hadjars-dutch-gp-withdrawal-was-sign-of-confidence-says-calum-nicholas/10849518/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Isack Hadjar's Dutch GP withdrawal was \"sign of confidence\", says Calum Nicholas",
+    "summary": "Isack Hadjar's decision to withdraw from the Dutch Grand Prix due to a wrist injury was a demonstration of confidence rather than a sign of weakness, according to former Red Bull mechanic Calum Nicholas. Hadjar, who has had an impressive start to the 2026 campaign alongside four-time champion Max Verstappen at Red Bull, opted to step aside for the Zandvoort weekend after sustaining the injury ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-26T17:00:04.000Z",
+    "fetchedAt": "2026-08-26T18:20:35.813Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-isack-hadjar-1787768512250.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/liam-lawson-dutch-gp-performance-red-bull",
+    "title": "Mekies casts Liam Lawson Red Bull verdict after Dutch GP return",
+    "summary": "Liam Lawson went back to Red Bull at the weekend, scoring his first points with the team in the process.",
+    "author": null,
+    "publishedAt": "2026-08-26T18:03:38.000Z",
+    "fetchedAt": "2026-08-26T18:20:36.038Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-laurent-mekies-1787768564791.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089564/lewis-hamilton-f1-title-bid-faltering-ferrari-take-action-charles-leclerc/",
+    "title": "Ferrari are fudging, Hamilton's F1 title bid is fading, it's time to make the call",
+    "summary": "Heading into the summer break, Lewis Hamilton at Ferrari looked like he had the best chance of stopping Kimi Antonelli from walking away with the F1 title and becoming the sport's youngest-ever world champion.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-26T18:45:00.000Z",
+    "fetchedAt": "2026-08-26T18:20:36.117Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ferrari-1787768633894.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089573/fia-announce-controversial-aduo-ruling-f1-2026-mercedes-red-bull-ferrari-honda-audi/",
+    "title": "FIA announce controversial ADUO ruling as F1 title rivals learn their fate",
+    "summary": "The FIA has announced its latest controversial ADUO ruling, with Red Bull STILL considered the benchmark when it comes to F1 engines.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-08-26T17:45:00.000Z",
+    "fetchedAt": "2026-08-26T18:20:36.117Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1787768685889.png",
+    "storySkipReason": null
   }
 ]
