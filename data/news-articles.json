@@ -8167,5 +8167,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-max-verstappen-1787731326827.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/f1-ferrari-surprise-sf-26-to-run-special-michael-schumacher-livery-at-monza/10849464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Ferrari teases special Michael Schumacher livery for SF-26 at Monza",
+    "summary": "Ferrari is preparing for the Italian Grand Prix at Monza next week, where there is growing anticipation for the debut of the new engine that should significantly reduce the power gap to Mercedes. In the process, the Scuderia hopes to reopen the world championship battle, given that Lewis Hamilton is second (level with George Russell) behind world championship leader Kimi Antonelli. As well as ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-08-26T08:22:17.000Z",
+    "fetchedAt": "2026-08-26T08:52:01.854Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-ferrari-1787734465829.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/mercedes-upgrades-toto-wolff-money-admission",
+    "title": "Mercedes ‘haven’t got the money’ to react to rival upgrade push",
+    "summary": "Will Mercedes' lead at the top of both championships last as others develop faster?",
+    "author": null,
+    "publishedAt": "2026-08-26T08:35:32.000Z",
+    "fetchedAt": "2026-08-26T08:52:02.105Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-toto-wolff-1787734561890.png",
+    "storySkipReason": null
   }
 ]
