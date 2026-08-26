@@ -8336,5 +8336,31 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-sergio-perez-et-valtteri-bottas-1787742218749.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lando-norris-mclaren-mcl40-f1-2026-performance",
+    "title": "Norris in surprise McLaren MCL40 claim after Dutch GP",
+    "summary": "Can Lando Norris catch Mercedes?",
+    "author": null,
+    "publishedAt": "2026-08-26T11:19:40.000Z",
+    "fetchedAt": "2026-08-26T11:35:08.104Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lando-norris-1787744196478.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/10-times-f1-drivers-have-suffered-heartbreak-at-their-home-grand-prix.1aJMCMUW23aJrsmuOw5j1b",
+    "title": "10 times F1 drivers suffered heartbreak at their home race",
+    "summary": "Max Verstappen suffered a spectacular exit from the Dutch Grand Prix last weekend, after crashing out at high-speed on the final corner.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-26T11:35:08.208Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-max-verstappen-1787744304610.png",
+    "storySkipReason": null
   }
 ]
