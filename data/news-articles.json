@@ -8076,5 +8076,70 @@
     "dismissed": false,
     "storyPath": "articles/the-race-fia-1787724429904.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/honda-engine-upgrade-fernando-alonso",
+    "title": "Honda issues engine upgrade statement after Dutch Grand Prix",
+    "summary": "Honda has set its \"main aim\" after the B-spec engine debuted at Zandvoort...",
+    "author": null,
+    "publishedAt": "2026-08-26T07:02:10.000Z",
+    "fetchedAt": "2026-08-26T07:05:34.445Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-honda-1787728085694.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-80-million-nico-rosberg-red-bull",
+    "title": "Max Verstappen ‘$80 million’ Nico Rosberg claim triggers Mekies response",
+    "summary": "Nico Rosberg was told \"both statements are not correct.\"",
+    "author": null,
+    "publishedAt": "2026-08-26T06:01:26.000Z",
+    "fetchedAt": "2026-08-26T07:05:34.445Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1787728173840.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089542/max-verstappen-f1-contract-red-bull-mercedes-mclaren-transfer/",
+    "title": "Mercedes and McLaren just gave Red Bull wings with $500million Verstappen transfer mistake",
+    "summary": "When Max Verstappen put pen to paper on that record-breaking F1 contract extension last Thursday, it was the rebirth of Red Bull Racing.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-26T07:59:00.000Z",
+    "fetchedAt": "2026-08-26T07:05:34.768Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-mercedes-et-mclaren-1787728271578.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089533/f1-heinz-harald-frentzen-fia-tv-pressure-lewis-hamilton-penalty-quit-steward/",
+    "title": "Former F1 star quit FIA steward role after TV backlash over Lewis Hamilton penalty",
+    "summary": "Former F1 star Heinz Harald Frentzen has opened up on why he left his role as an FIA steward back in 2010.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-26T07:15:00.000Z",
+    "fetchedAt": "2026-08-26T07:05:34.768Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-heinz-harald-frentzen-1787728369368.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/08/26/domenicali-hopeful-verstappens-new-deal-will-end-talk-of-f1-exit/",
+    "title": "Domenicali hopeful Verstappen’s new deal will end talk of F1 exit | Formula 1",
+    "summary": "Stefano Domenicali hopes Max Verstappen's new Red Bull contract will put an end to claims he could leave Formula 1.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-08-26T06:18:28.000Z",
+    "fetchedAt": "2026-08-26T07:05:35.087Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-stefano-domenicali-1787728452230.png",
+    "storySkipReason": null
   }
 ]
