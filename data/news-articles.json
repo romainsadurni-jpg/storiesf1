@@ -8141,5 +8141,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-stefano-domenicali-1787728452230.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/mclaren-fia-hearing-monaco-grand-prix-penalties",
+    "title": "McLaren reveals ‘double intent’ as FIA hearing held over Monaco GP controversy",
+    "summary": "McLaren headed for the FIA International Court of Appeal.",
+    "author": null,
+    "publishedAt": "2026-08-26T07:23:05.000Z",
+    "fetchedAt": "2026-08-26T07:57:49.111Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-mclaren-1787731231674.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089551/max-verstappen-gianpiero-lambiase-mclaren-f1-transfer-red-bull-exit/",
+    "title": "Max Verstappen told to block Lambiase McLaren transfer: 'Money changes everything'",
+    "summary": "Max Verstappen has been told to try and block his long-time race engineer Gianpiero Lambiase leaving Red Bull for McLaren.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-26T08:47:00.000Z",
+    "fetchedAt": "2026-08-26T07:57:49.118Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1787731326827.png",
+    "storySkipReason": null
   }
 ]
