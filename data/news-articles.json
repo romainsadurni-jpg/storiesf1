@@ -8024,5 +8024,18 @@
     "dismissed": false,
     "storyPath": "articles/motorsport-com-f1-liam-lawson-1787699761345.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-strategy-secret-fred-vasseur-ferrari",
+    "title": "Vasseur explains Ferrari secret strategy amid Lewis Hamilton public apology",
+    "summary": "Lewis Hamilton admitted his team radio frustration was not his \"best version\", and Fred Vasseur explained why he was left with that feeling.",
+    "author": null,
+    "publishedAt": "2026-08-26T04:59:01.000Z",
+    "fetchedAt": "2026-08-26T05:27:50.075Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fred-vasseur-1787722136032.png",
+    "storySkipReason": null
   }
 ]
