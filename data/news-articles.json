@@ -8037,5 +8037,44 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-fred-vasseur-1787722136032.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089544/f1-news-today-lewis-hamilton-big-admission-adrian-newey-wife-aston-martin-critic/",
+    "title": "F1 News Today: Hamilton makes big admission, Newey's wife takes down Aston Martin critic",
+    "summary": "Lewis Hamilton says the frustration he voiced at Ferrari's race strategy at the Dutch Grand Prix 'was not the best version' of him.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-26T06:30:00.000Z",
+    "fetchedAt": "2026-08-26T06:03:29.604Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1787724278139.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/business/are-f1-teams-still-undervalued-compared-to-us-franchises/",
+    "title": "Are F1 teams still undervalued compared to US franchises?",
+    "summary": "&#x201C;I think the teams are undervalued compared to US franchises&#x201D; - Jefferson Slack, managing director of Aston Martin, at the 2026 Monaco Formula 1 Grand Prix. Seventy-six days after Jeff made this statement at The Race Business&#x2019;s event in association with Axios at Monaco, Aston Martin announced that the owner of the New York Jets NFL franchise has bought into the Aston Martin F1 team.&#xA0; F1 team personnel have been at pains to tell the world that the gap between F1 team valuations and those of American sports franchises should not exist. The announcement that Robert &#x20",
+    "author": "Darren Cox",
+    "publishedAt": "2026-08-26T05:45:50.000Z",
+    "fetchedAt": "2026-08-26T06:03:29.655Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-aston-martin-1787724373336.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/f1-calendar-latest-new-back-up-plan-for-2027-season-opener/",
+    "title": "F1 calendar latest: New back-up plan for 2027 season-opener",
+    "summary": "The Chinese Grand Prix has emerged as a leading options to be the 2027 Formula 1 season opener if starting in Bahrain and Saudi Arabia is not possible. F1 is currently holding a watching brief over the situation in the Middle East, following the conflict that erupted between the United States and Iran back in February. Decisions it plans to make over the next few weeks are not only to what happens to the final phase of this year's calendar, but will dictate the fate of the 2027 schedule too. F1's provisional idea is to start next year in Bahrain &#x2013; so if that cannot happen then an altern",
+    "author": "Jon Noble",
+    "publishedAt": "2026-08-26T05:31:13.000Z",
+    "fetchedAt": "2026-08-26T06:03:29.655Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-fia-1787724429904.png",
+    "storySkipReason": null
   }
 ]
