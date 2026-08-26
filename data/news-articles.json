@@ -8700,5 +8700,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-fia-1787768685889.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/mercedes-kimi-antonelli-w17-investigation-toto-wolff-upgrades",
+    "title": "Mercedes launches Kimi Antonelli W17 inspection amid Wolff upgrades claim – roundup",
+    "summary": "Kimi Antonelli and Mercedes feature prominently in your latest F1 news recap.",
+    "author": null,
+    "publishedAt": "2026-08-26T19:01:30.000Z",
+    "fetchedAt": "2026-08-26T20:17:03.682Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-mercedes-1787775581890.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089562/kelly-piquet-on-london-mayor-first-dates-romantic-weekends/",
+    "title": "Move over Sadiq Khan, how Kelly Piquet would make London better",
+    "summary": "Kelly Piquet revealing her 'manifesto' to be Mayor of London wasn't quite on our F1 bingo card today, but we're here for it.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-08-26T20:45:00.000Z",
+    "fetchedAt": "2026-08-26T20:17:03.897Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-kelly-piquet-1787775650537.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089537/f1-max-verstappen-go-kart-race-100-drivers-disney-red-bull-silverstone/",
+    "title": "CONFIRMED: Max Verstappen signs up for unique new Silverstone race outside F1",
+    "summary": "If it's got four wheels and an engine, Max Verstappen will race it and once again we have the proof.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-26T19:45:00.000Z",
+    "fetchedAt": "2026-08-26T20:17:03.897Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1787775715077.png",
+    "storySkipReason": null
   }
 ]
