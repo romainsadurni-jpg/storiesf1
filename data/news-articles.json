@@ -8193,5 +8193,57 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-toto-wolff-1787734561890.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-e/what-settled-the-fight-for-nissans-vacant-seat/",
+    "title": "What settled the fight for Nissan's vacant seat",
+    "summary": "Nissan has signed Zane Maloney to replace Norman Nato because it believed his recent experience in Formula E, combined with his already banked Gen4 test days, would be more beneficial than taking out-and-out rookie Victor Martins.&#xA0; The deal for Nissan to take former Lola Yamaha Abt racer Maloney was announced on Wednesday, but for a long spell it looked like Alpine World Endurance Championship racer Victor Martins was on course for it, with Martins having previously tested for Nissan on several occasions. The Race has learned that the ultimate decision of who would partner Oliver Rowland ",
+    "author": "Sam Smith",
+    "publishedAt": "2026-08-26T09:18:43.000Z",
+    "fetchedAt": "2026-08-26T09:33:42.576Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-zane-maloney-1787737032602.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089530/f1-honda-boss-koji-watanabe-fernando-alonso-history-2027-contract-aston-martin/",
+    "title": "Honda boss wants to 'make history with Fernando Alonso', he just doesn't know when",
+    "summary": "Aston Martin earned their second points finish of the year at the Dutch Grand Prix on Sunday, with Fernando Alonso once again the difference-maker.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-26T09:57:00.000Z",
+    "fetchedAt": "2026-08-26T09:33:42.592Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-koji-watanabe-1787737113711.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/carlos-sainz-williams-commitment-explained",
+    "title": "Carlos Sainz explains key factor behind long-term Williams commitment",
+    "summary": "Carlos Sainz has committed to Williams for next season.",
+    "author": null,
+    "publishedAt": "2026-08-26T09:25:12.000Z",
+    "fetchedAt": "2026-08-26T09:33:42.604Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-carlos-sainz-1787737206093.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/piastri-not-able-to-drive-through-pure-instinct-and-that-is-costing-him-stella.1MFgw725zJBXENFJBWWvnx",
+    "title": "Piastri not able to drive ‘through pure instinct’ – Stella",
+    "summary": "The Dutch Grand Prix weekend marked one year since Oscar Piastri last won a race for McLaren, his championship fight tailing away towards the end of 2025 before this season has thrown up a new set of challenges for the Australian.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-08-26T09:33:42.625Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-oscar-piastri-1787737302034.png",
+    "storySkipReason": null
   }
 ]
