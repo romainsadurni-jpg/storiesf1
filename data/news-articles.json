@@ -8765,5 +8765,18 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-lando-norris-1787788162516.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/mclaren-response-mercedes-upgrades-finances",
+    "title": "McLaren rubbishes Toto Wolff ‘no money’ claim: ‘I don’t believe it’",
+    "summary": "Andrea Stella: \"I don't believe it...\"",
+    "author": null,
+    "publishedAt": "2026-08-27T04:58:53.000Z",
+    "fetchedAt": "2026-08-27T05:10:01.749Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-andrea-stella-1787807562058.png",
+    "storySkipReason": null
   }
 ]
