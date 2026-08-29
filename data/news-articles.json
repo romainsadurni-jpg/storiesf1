@@ -11248,5 +11248,44 @@
     "dismissed": false,
     "storyPath": "articles/the-race-marc-marquez-1788030272887.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089682/f1-carlos-sainz-williams-warning-sign-development-struggles-2026/",
+    "title": "Carlos Sainz reveals first 'warning sign' at Williams ahead of 2026 struggles",
+    "summary": "Carlos Sainz has opened up on Williams' struggles in the 2026 season, revealing the moment that he realised things were worse than he thought.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-29T21:29:00.000Z",
+    "fetchedAt": "2026-08-29T21:22:22.349Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-carlos-sainz-1788038704438.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089680/f1-lando-norris-contract-2030-rival-teams-attempt-sign-rumours-mclaren/",
+    "title": "Lorris Norris reveals other F1 teams tried to sign him before new McLaren deal",
+    "summary": "Lando Norris has revealed that he was contacted by other teams looking to steal him from McLaren before he signed his huge new contract extension.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-08-29T20:45:00.000Z",
+    "fetchedAt": "2026-08-29T21:22:22.349Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lando-norris-1788038783120.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089679/f1-fernando-alonso-paid-ferrari-mclaren-rage-2015-sacked-sebastian-vettel/",
+    "title": "Fernando Alonso paid by TWO teams for one season after launching Ferrari tirade",
+    "summary": "One of the biggest stories of the 2010s was Fernando Alonso's messy exit from Ferrari and the circumstances surrounding it.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-08-29T19:55:00.000Z",
+    "fetchedAt": "2026-08-29T21:22:22.349Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fernando-alonso-1788038898196.png",
+    "storySkipReason": null
   }
 ]
