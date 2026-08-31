@@ -12704,5 +12704,18 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lewis-hamilton-1788209181875.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089722/fia-italian-grand-prix-monza-announces-circuit-configuratio/",
+    "title": "FIA announces circuit configuration for Italian Grand Prix at Monza and it could help Ferrari",
+    "summary": "The FIA has designated four distinct zones at Monza where drivers can engage the new Straight Mode during this year’s Italian Grand Prix.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-08-31T21:28:00.000Z",
+    "fetchedAt": "2026-08-31T23:57:47.604Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1788220754482.png",
+    "storySkipReason": null
   }
 ]
