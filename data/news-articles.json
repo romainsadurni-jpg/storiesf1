@@ -16851,5 +16851,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-flavio-briatore-1788552523702.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089854/f1-kimi-antonelli-valentino-rossi-crash-helmet-italian-grand-prix-mercedes-monza/",
+    "title": "Valentino Rossi given F1 tribute at Italian Grand Prix",
+    "summary": "With Kimi Antonelli and Ferrari, the 2026 Italian Grand Prix is set to be the country's biggest Formula 1 race in years.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-04T21:29:00.000Z",
+    "fetchedAt": "2026-09-04T21:48:01.830Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-valentino-rossi-1788558681195.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089861/f1-madring-circuit-car-killer-james-vowles-williams-analysis/",
+    "title": "F1's newest circuit is 'a car killer' as teams prepare for chaos",
+    "summary": "Williams F1 team boss James Vowles says the sport's newest track is 'a car killer' ahead of next weekend's inaugural Spanish Grand Prix at the Madring.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-04T20:51:00.000Z",
+    "fetchedAt": "2026-09-04T21:48:01.830Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-williams-f1-team-boss-james-vowles-1788558754993.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/ferrari-f1-engine-upgrade-italian-gp-early-verdict/",
+    "title": "The early verdict on Ferrari's Italian GP engine upgrade",
+    "summary": "Ferrari team principal Fred Vasseur always downplays the impact of specific upgrade packages, so by his standards his verdict after the debut of the upgraded Formula 1 power unit was encouraging despite confirming it's still at a deficit on power. With Charles Leclerc second fastest in FP2, 0.120s slower than pacesetting Mercedes driver George Russell, and showing promising long-run pace, there was nothing on Friday to suggest that Ferrari had taken a giant leap to the front. What there was is proof of gains with the second engine upgrade introduced under the FIA&#x2019;s Additional Developmen",
+    "author": "Edd Straw",
+    "publishedAt": "2026-09-04T19:35:25.000Z",
+    "fetchedAt": "2026-09-04T21:48:01.927Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-ferrari-1788558893993.png",
+    "storySkipReason": null
   }
 ]
