@@ -16903,5 +16903,57 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-les-experts-de-paris-1788564525597.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/2026-f1-power-units-monza-slower-than-hungary",
+    "title": "Monza faces a new reality as 2026 F1 power units sap the Temple of Speed",
+    "summary": "Monza is supposed to be the Temple of Speed, but F1's 2026 power units could make it anything but...",
+    "author": null,
+    "publishedAt": "2026-09-05T05:48:42.000Z",
+    "fetchedAt": "2026-09-05T05:54:34.356Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-aston-martin-1788587944310.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-mika-hakkinen-ferrari-team-orders",
+    "title": "Mika Hakkinen warns F1 teams risk being ‘crucified’ by fans over team orders",
+    "summary": "\"The fanbase has changed in Formula 1; the generation is different than in my time.\"",
+    "author": null,
+    "publishedAt": "2026-09-05T05:33:24.000Z",
+    "fetchedAt": "2026-09-05T05:54:34.356Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-mika-hakkinen-1788588060884.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/laurent-mekies-mclaren-red-bull-appeal-pierre-gasly-martin-brundle",
+    "title": "Mekies rejects Brundle ‘dangerous precedent’ theory as Gasly Monaco podium stripped",
+    "summary": "Laurent Mekies: \"I think it's the other way around, Martin...\"",
+    "author": null,
+    "publishedAt": "2026-09-05T05:03:55.000Z",
+    "fetchedAt": "2026-09-05T05:54:34.356Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-laurent-mekies-1788588159753.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089870/f1-news-today-kimi-antonelli-penalty-confirmed-isack-hadjar-miss-spanish-grand-prix/",
+    "title": "F1 News Today: Kimi Antonelli penalty confirmed as F1 star 'almost certain' to miss Spanish Grand Prix",
+    "summary": "The FIA has confirmed that Kimi Antonelli will take a 30-place grid penalty for Sunday's Italian Grand Prix.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-05T06:44:00.000Z",
+    "fetchedAt": "2026-09-05T05:54:34.662Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-kimi-antonelli-1788588222241.png",
+    "storySkipReason": null
   }
 ]
