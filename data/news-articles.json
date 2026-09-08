@@ -21063,5 +21063,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-alex-zanardi-1788822575751.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-italian-grand-prix-2026-team-radio",
+    "title": "Untelevised Max Verstappen team radio emerges after Italian Grand Prix",
+    "summary": "Max Verstappen finished third at Monza.",
+    "author": null,
+    "publishedAt": "2026-09-08T05:23:46.000Z",
+    "fetchedAt": "2026-09-08T06:00:31.788Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1788847495016.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1089999/f1-news-today-max-verstappen-unhappy-after-monza-as-f1-star-set-to-miss-spanish-grand-prix/",
+    "title": "F1 News Today: Max Verstappen unhappy after Monza and Red Bull star set to miss Spanish Grand Prix",
+    "summary": "Red Bull F1 star Max Verstappen was left feeling frustrated with the competitiveness of his car after the Italian Grand Prix at Monza on Sunday.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-08T06:30:00.000Z",
+    "fetchedAt": "2026-09-08T06:00:31.805Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1788847574660.png",
+    "storySkipReason": null
   }
 ]
