@@ -22402,5 +22402,57 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lewis-hamilton-1788981041963.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090065/f1-max-verstappen-bucket-list-races-nurburgring-le-mans-fernando-alonso/",
+    "title": "F1 champion Max Verstappen reveals his 'bucket list' races after Nurburgring adventure",
+    "summary": "Max Verstappen has revealed his 'bucket list' races, after competing in the Nurburgring 24 Hours showpiece earlier this year.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-09T21:57:00.000Z",
+    "fetchedAt": "2026-09-09T21:28:07.330Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1788989441967.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090061/f1-bernie-ecclestone-portugal-arrest-shotgun-airport-police-customs/",
+    "title": "F1 legend denies being arrested in Portugal over shotgun 'cock-up'",
+    "summary": "Bernie Ecclestone has strongly denied reports that he was arrested in Portugal this week for bringing an illegal firearm into the country, calling the incident 'overblown and a massive cock-up'.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-09T21:00:00.000Z",
+    "fetchedAt": "2026-09-09T21:28:07.330Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-bernie-ecclestone-1788989545636.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090063/ferrari-lewis-hamilton-charles-leclerc-peace-talks-juan-pablo-montoya-analysis-monza/",
+    "title": "Ferrari 'need to get their s**t together' as F1 legend calls for Hamilton-Leclerc peace talks",
+    "summary": "F1 legend Juan Pablo Montoya has told Ferrari that they need to 'get their s**t together' after Lewis Hamilton and Charles Leclerc's scuffle at the Italian Grand Prix.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-09T19:57:00.000Z",
+    "fetchedAt": "2026-09-09T21:28:07.330Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-juan-pablo-montoya-1788989637214.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-calls-for-ferrari-rules-robin-raikkonen-signs-for-red-bull-round-up",
+    "title": "Lewis Hamilton calls for Ferrari rules; Robin Raikkonen signs for Red Bull – round-up",
+    "summary": "Your fast-paced Wednesday round-up is go, go, go!",
+    "author": null,
+    "publishedAt": "2026-09-09T18:57:13.000Z",
+    "fetchedAt": "2026-09-09T21:28:07.344Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1788989711192.png",
+    "storySkipReason": null
   }
 ]
