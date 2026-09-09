@@ -21726,5 +21726,70 @@
     "dismissed": false,
     "storyPath": "articles/racefans-fernando-alonso-1788910836476.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/mercedes-new-engine-upgrade-plan-is-terrible-news-for-ferrari/",
+    "title": "Mercedes' new engine upgrade plan is terrible news for Ferrari",
+    "summary": "Mercedes is working on what could be a killer blow to rival Ferrari's fading 2026 Formula 1 title chances with an ADUO-assisted engine upgrade set for introduction. Despite it being accepted in the paddock that Mercedes has the best complete power unit package, it has earned the right to bring a development step this year under F1's catch-up mechanism known as Additional Development and Upgrade Opportunities (ADUO). That is because the FIA's analysis of the different manufacturers has concluded that, based on the internal combustion engine element that ADUO is judged on, Red Bull is more than ",
+    "author": "Jon Noble",
+    "publishedAt": "2026-09-09T04:12:09.000Z",
+    "fetchedAt": "2026-09-09T06:39:13.456Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-ferrari-1788936044351.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fia-spanish-grand-prix-2026-madring-active-aero",
+    "title": "FIA makes key Madring decision for Spanish Grand Prix",
+    "summary": "The Madring is a new addition to the calendar for 2026.",
+    "author": null,
+    "publishedAt": "2026-09-09T06:16:39.000Z",
+    "fetchedAt": "2026-09-09T06:39:13.564Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fia-1788936091762.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090041/f1-ferrari-engine-upgrade-disappointment-ollie-bearman-italian-grand-prix-aduo/",
+    "title": "Ferrari star pours cold water on big upgrade with 'no game changer' verdict",
+    "summary": "Haas star and Ferrari Driver Academy product Ollie Bearman has admitted that the Scuderia's second ADUO power unit update wasn't the game-changer that some were hoping for.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-09T07:15:00.000Z",
+    "fetchedAt": "2026-09-09T06:39:13.913Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-oliver-bearman-1788936133594.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090042/f1-news-today-ferrari-confirm-monza-inquest-lewis-hamilton-fred-vasseur-hotseat/",
+    "title": "F1 News Today: Ferrari confirm Monza inquest as Lewis Hamilton puts his boss on the hotseat",
+    "summary": "Fred Vasseur has confirmed that Ferrari will hold a post-Italian Grand Prix inquest involving Lewis Hamilton and Charles Leclerc after their disastrous Sunday at Monza.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-09T06:15:00.000Z",
+    "fetchedAt": "2026-09-09T06:39:13.913Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fred-vasseur-1788936176275.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/09/stats-antonelli-scores-first-home-win-for-an-italian-formula-1-driver-in-36-years/",
+    "title": "Stats: Antonelli scores first home win for an Italian Formula 1 driver in 36 years | 2026 Italian Grand Prix stats and facts",
+    "summary": "Andrea Kimi Antonelli scored the first home win for an Italian F1 driver since 1990 and moved Mercedes closer to beating a Ferrari benchmark.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-09T06:16:56.000Z",
+    "fetchedAt": "2026-09-09T06:39:14.168Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-kimi-antonelli-1788936230765.png",
+    "storySkipReason": null
   }
 ]
