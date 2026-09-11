@@ -23611,5 +23611,44 @@
     "dismissed": false,
     "storyPath": "articles/racefans-kimi-antonelli-1789082088660.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090112/f1-news-today-ferrari-boss-rejects-lewis-hamilton-request-leclerc-could-miss-spanish-gp/",
+    "title": "F1 News Today: Ferrari boss rejects Hamilton request as Leclerc could miss Spanish GP",
+    "summary": "Lewis Hamilton has revealed that his Ferrari team have not made any movement towards introducing 'rules of engagement' despite his recent frustrations.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-11T06:30:00.000Z",
+    "fetchedAt": "2026-09-11T05:57:55.004Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ferrari-1789106423040.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090088/f1-practice-today-spanish-grand-prix-2026-madring-schedule-times-tv-channel-live-stream/",
+    "title": "F1 Practice Today: Madring schedule, times and TV channel for the 2026 Spanish Grand Prix",
+    "summary": "F1 comes to Madrid for the first time today (Friday September 11) as the new Madring circuit makes its official bow with the 2026 Spanish Grand Prix.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-11T05:45:00.000Z",
+    "fetchedAt": "2026-09-11T05:57:55.004Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-madring-1789106599304.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-world-endurance-championship",
+    "title": "New Fernando Alonso option emerges as final Aston Martin decision looms",
+    "summary": "Fernando Alonso has an alternate option with Aston Martin outside of Formula 1.",
+    "author": null,
+    "publishedAt": "2026-09-11T04:59:46.000Z",
+    "fetchedAt": "2026-09-11T05:57:55.171Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fernando-alonso-1789106684189.png",
+    "storySkipReason": null
   }
 ]
