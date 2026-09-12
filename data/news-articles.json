@@ -24924,5 +24924,57 @@
     "dismissed": false,
     "storyPath": "articles/motorsport-com-f1-kimi-antonelli-1789168881695.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/f1-data/madring-data-spanish-grand-prix-friday",
+    "title": "Madring data offers first clues ahead of Spanish Grand Prix",
+    "summary": "The initial data from the Madring has landed, offering clues and highlighting the main enemy at the Spanish Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-09-12T05:47:54.000Z",
+    "fetchedAt": "2026-09-12T05:55:15.258Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-ferrari-1789192733138.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/george-russell-mercedes-f1-2026-engine-penalty",
+    "title": "George Russell drops biggest hint yet over Mercedes engine penalty",
+    "summary": "George Russell's engine penalty is still to come.",
+    "author": null,
+    "publishedAt": "2026-09-12T04:53:28.000Z",
+    "fetchedAt": "2026-09-12T05:55:15.258Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-george-russell-1789192844425.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090152/f1-news-today-lewis-hamilton-blasted-max-verstappen-names-red-bull-replacement/",
+    "title": "F1 News Today: Lewis Hamilton blasted by F1 rival as Max Verstappen names potential Red Bull replacement",
+    "summary": "Lewis Hamilton has been criticised – not for the first time – for his driving in an F1 practice session.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-12T06:45:00.000Z",
+    "fetchedAt": "2026-09-12T05:55:15.275Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1789192911632.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090130/f1-qualifying-today-madring-schedule-times-tv-channel-live-stream-2026-spanish-grand-prix/",
+    "title": "F1 Qualifying Today: Madring schedule, times and TV channel for the 2026 Spanish Grand Prix",
+    "summary": "The crucial battle for pole position has top billing at the Madring today (Saturday September 12) as F1 qualifying for the 2026 Spanish Grand Prix takes centre stage.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-12T05:45:00.000Z",
+    "fetchedAt": "2026-09-12T05:55:15.275Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ferrari-1789193026817.png",
+    "storySkipReason": null
   }
 ]
