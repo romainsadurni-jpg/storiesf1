@@ -28577,5 +28577,44 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-lando-norris-1789418182875.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090285/f1-mclaren-oscar-piastri-andrea-stella-improvements-lando-norris-2026/",
+    "title": "McLaren F1 boss warns Oscar Piastri that he must improve in Lando Norris battle",
+    "summary": "McLaren F1 boss Andrea Stella admits that Oscar Piastri needs to improve his form after a tough 2026 season so far.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-14T21:27:00.000Z",
+    "fetchedAt": "2026-09-14T23:18:24.753Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-oscar-piastri-1789428125553.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/15/on-this-day-zanardi-loses-legs-in-lausitzring-horror-crash/",
+    "title": "On This Day: Zanardi loses legs in Lausitzring horror crash | Brief",
+    "summary": "Zanardi lost both his legs in a horrific crash at the Lausitzring",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-14T23:01:24.000Z",
+    "fetchedAt": "2026-09-14T23:18:25.091Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-alex-zanardi-1789428189810.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/14/pictures-norris-tests-mclarens-mcl-hy-wec-hypercar-at-algarve/",
+    "title": "Pictures: Norris tests McLaren’s MCL-HY WEC hypercar at Algarve | Other Motorsport",
+    "summary": "Lando Norris had his first run in McLaren's new World Endurance Championship hypercar following the Spanish Grand Prix.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-14T20:40:14.000Z",
+    "fetchedAt": "2026-09-14T23:18:25.091Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-lando-norris-1789428278410.png",
+    "storySkipReason": null
   }
 ]
