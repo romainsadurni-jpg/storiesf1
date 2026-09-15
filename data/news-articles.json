@@ -28616,5 +28616,83 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lando-norris-1789428278410.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/formula-1/bad-luck-or-mistake-what-really-robbed-norris-of-spanish-gp-win/",
+    "title": "Bad luck or mistake? What really robbed Norris of Spanish GP win",
+    "summary": "There is little doubt, even from eventual winner Kimi Antonelli, that without the \"insanely unlucky\" timing of the virtual safety car, Lando Norris would have won the Spanish Grand Prix. The reigning Formula 1 world champion had built up a comfortable advantage at the head of the Madring field when Lance Stroll&#x2019;s Aston Martin stopped in the run off at Turn 20 as the leaders were on lap 14 of 57. Norris was around five seconds past the pitlane entry, and well around the final corner, when race control called for a VSC to allow Stroll&#x2019;s car to be recovered. At that point it was too",
+    "author": "Jon Noble",
+    "publishedAt": "2026-09-15T04:10:17.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.269Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-mclaren-1789454787662.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090291/christian-horner-f1-return-major-opportunity-triggered-alpine-deadline-otro-stake/",
+    "title": "Christian Horner F1 return latest as crucial deadline triggers major opportunity",
+    "summary": "A key deadline has passed which triggers a major opportunity for Christian Horner in his quest to return to F1.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-15T07:15:00.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.376Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1789454876722.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090292/f1-news-today-lewis-hamilton-charles-leclerc-ferrari-fallout-toto-wolff-weighs-in/",
+    "title": "F1 News Today: 'Lewis will never trust Charles again' as Wolff weighs in on Ferrari fallout",
+    "summary": "F1 insider Peter Windsor believes Lewis Hamilton will struggle to trust Ferrari team-mate Charles Leclerc again.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-15T06:30:00.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.376Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-toto-wolff-1789454958602.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/nico-rosberg-carlos-sainz-2026-spanish-grand-prix-madring",
+    "title": "Nico Rosberg points finger at Carlos Sainz as Madring underwhelms",
+    "summary": "Nico Rosberg: \"Carlos Sainz was the ambassador, so we need to criticise Carlos Sainz...\"",
+    "author": null,
+    "publishedAt": "2026-09-15T06:04:45.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.408Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-carlos-sainz-1789455071105.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/2026-spanish-grand-prix-lewis-hamilton-ferrari-dnf",
+    "title": "Vasseur explains Lewis Hamilton Spanish Grand Prix DNF",
+    "summary": "Lewis Hamilton was forced to retire from the Spanish Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-09-15T05:00:32.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.408Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fred-vasseur-1789455159077.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/15/realistically-im-not-in-the-fight-for-the-drivers-championship-admits-russell/",
+    "title": "‘Realistically I’m not in the fight for the drivers’ championship’ admits Russell | Formula 1",
+    "summary": "Andrea Kimi Antonelli's closest championship rival admits he does not have a realistic chance of beating him to the title this year.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-15T06:17:07.000Z",
+    "fetchedAt": "2026-09-15T06:41:56.529Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-george-russell-1789455273288.png",
+    "storySkipReason": null
   }
 ]
