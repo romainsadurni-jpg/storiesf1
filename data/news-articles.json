@@ -29305,5 +29305,44 @@
     "dismissed": false,
     "storyPath": "articles/motorsport-com-f1-andrea-stella-1789521135869.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090342/f1-news-today-lewis-hamilton-wants-ferrari-changes-golden-opportunity-beckons-for-horner/",
+    "title": "F1 News Today: Hamilton 'wants Ferrari changes' as golden opportunity beckons for Horner",
+    "summary": "Lewis Hamilton reportedly wants more changes made at Ferrari as the seven-time world champion tries to return the Scuderia back to the summit of F1.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-16T06:15:00.000Z",
+    "fetchedAt": "2026-09-16T06:04:07.707Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1789538746502.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/2026-spanish-grand-prix-lewis-hamilton-ferrari-investigation",
+    "title": "Ferrari launches investigation after Lewis Hamilton Spanish GP DNF",
+    "summary": "Lewis Hamilton was forced to retire from the Spanish Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-09-16T05:01:14.000Z",
+    "fetchedAt": "2026-09-16T06:04:07.790Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-ferrari-1789538811964.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-madring-spanish-grand-prix-f1-2027",
+    "title": "Madring to make changes after Max Verstappen branded excuses ‘BS’",
+    "summary": "The Madring saw fewer overtakes than the Monaco Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-09-15T07:32:36.000Z",
+    "fetchedAt": "2026-09-16T06:04:07.790Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-madring-1789538882439.png",
+    "storySkipReason": null
   }
 ]
