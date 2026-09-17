@@ -30007,5 +30007,18 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-max-verstappen-1789596869858.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-investigation-honda",
+    "title": "Alonso requests Aston Martin review over ‘very bad’ Honda issues at Spanish GP",
+    "summary": "Fernando Alonso: \"The engine was very bad...\"",
+    "author": null,
+    "publishedAt": "2026-09-17T04:59:40.000Z",
+    "fetchedAt": "2026-09-17T05:16:12.678Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fernando-alonso-1789622324676.png",
+    "storySkipReason": null
   }
 ]
