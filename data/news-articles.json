@@ -31424,5 +31424,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-fred-vasseur-1789760998306.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090457/f1-star-alex-albon-pet-cat-death-moomoo-instagram-tribute/",
+    "title": "Heartbreaking Instagram post reveals death of F1 star's beloved pet",
+    "summary": "A member of F1 star Alex Albon's famous menagerie passed away on Thursday morning, it was announced on Friday.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-18T21:26:00.000Z",
+    "fetchedAt": "2026-09-18T21:55:33.176Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-alexander-albon-1789768689711.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090451/f1-nico-rosberg-lance-stroll-fernando-alonso-aston-martin-problem-star/",
+    "title": "Nico Rosberg reveals the Lance Stroll problem Aston Martin have with Fernando Alonso decision",
+    "summary": "Nico Rosberg has identified an issue Aston Martin currently have with their driver lineup of Fernando Alonso and Lance Stroll.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-18T20:44:00.000Z",
+    "fetchedAt": "2026-09-18T21:55:33.176Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-aston-martin-1789768768871.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/the-extra-gear-constructors-championship-title-battle-heating-up-for-f1-bettors.7JNLTSWlH3AFNUvOoJMW1T",
+    "title": "Constructors' title battle heating up for F1 bettors",
+    "summary": "There are just nine races left to decide who will win the 2026 Constructors’ title, so we look at where the value could be for F1 betting fans.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-09-18T21:55:33.212Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-les-ecuries-1789768816197.png",
+    "storySkipReason": null
   }
 ]
