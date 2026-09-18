@@ -31372,5 +31372,57 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-jack-doohan-1789752929810.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/williams-shares-behind-the-scenes-look-at-alex-albons-life-away-from-f1/10856966/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Williams shares behind-the-scenes look at Alex Albon’s life away from F1",
+    "summary": "The Williams Formula 1 team has released a behind-the-scenes look at the off-track life of Alex Albon. Filmed on a Tuesday following a race weekend alongside his fiancée, professional golfer Lily Muni He, Albon offered a look at the reality of living in Monaco and what he gets up to on a day off. With the majority of drivers living in the principality, Albon shared that it is difficult to ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-09-18T17:38:49.000Z",
+    "fetchedAt": "2026-09-18T19:43:42.199Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-alexander-albon-1789760766779.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/ferrari-lewis-hamilton-announcement-scrutiny",
+    "title": "Hamilton delusion, Antonelli opens door to Ferrari future, Alonso’s $5m buy – roundup",
+    "summary": "Friday's fast-paced F1 news is go, go, go!",
+    "author": null,
+    "publishedAt": "2026-09-18T18:06:10.000Z",
+    "fetchedAt": "2026-09-18T19:43:42.388Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1789760856300.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090455/f1-toto-wolff-george-russell-mercedes-new-contract-huge-truth/",
+    "title": "Toto Wolff reveals huge truth about George Russell contract situation at Mercedes",
+    "summary": "George Russell's Mercedes future? Don't worry about it, says Toto Wolff. He's actually already signed a contract.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-18T19:55:00.000Z",
+    "fetchedAt": "2026-09-18T19:43:42.423Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-toto-wolff-1789760920069.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090402/f1-lewis-hamilton-ferrari-title-boost-fred-vasseur-2026-2027-development/",
+    "title": "Lewis Hamilton receives major F1 title boost from Ferrari chief who refuses to give up",
+    "summary": "Ferrari chief Fred Vasseur has offered a small peek behind the curtain of the team's development plans - and it is good news at last for Lewis Hamilton.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-18T18:42:00.000Z",
+    "fetchedAt": "2026-09-18T19:43:42.423Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fred-vasseur-1789760998306.png",
+    "storySkipReason": null
   }
 ]
