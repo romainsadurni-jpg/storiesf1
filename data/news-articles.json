@@ -32009,5 +32009,44 @@
     "dismissed": false,
     "storyPath": "articles/the-race-jorge-martin-1789843614055.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090469/f1-ferrari-decision-prospect-driver-academy-dino-beganovic/",
+    "title": "Ferrari make big decision on exciting F1 prospect",
+    "summary": "Long-time Ferrari Driver Academy prospect Dino Beganovic will leave the programme in 2027, according to reports.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-19T21:27:00.000Z",
+    "fetchedAt": "2026-09-19T21:00:56.915Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-dino-beganovic-1789851753682.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090467/f1-max-verstappen-red-bull-mercedes-gap-engine-aduo-upgrades/",
+    "title": "Max Verstappen admits 'very hard to know' about Red Bull gap to Mercedes",
+    "summary": "Max Verstappen has weighed in on the gap in perception and production between his Red Bull team's power unit and Mercedes' championship-leading effort.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-19T20:43:00.000Z",
+    "fetchedAt": "2026-09-19T21:00:56.915Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1789851808998.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090470/f1-christian-horners-renault-alpine-blocked-otro-capital-unwanted-buyer/",
+    "title": "Christian Horner's blocked Alpine takeover allows 'unwanted' mystery buyer to step in",
+    "summary": "Renault could be left with a headache following their move to block Christian Horner buying the Alpine team.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-19T19:55:00.000Z",
+    "fetchedAt": "2026-09-19T21:00:56.915Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1789851865755.png",
+    "storySkipReason": null
   }
 ]
