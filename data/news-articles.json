@@ -32386,5 +32386,70 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-andrew-shovlin-1789914382592.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-red-bull-adrian-newey-team-radio",
+    "title": "Verstappen feedback sparks Red Bull RB22 investigation, Newey team radio reaction – roundup",
+    "summary": "Sunday's fast-paced F1 news is go, go, go!",
+    "author": null,
+    "publishedAt": "2026-09-20T15:56:57.000Z",
+    "fetchedAt": "2026-09-20T17:30:55.966Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1789925523876.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/cadillac-relocation-rumours-marcin-budkowski-us-move",
+    "title": "Cadillac addresses major relocation rumours as Marcin Budkowski insists ‘all’ claims are unfounded",
+    "summary": "Rumours of a major Cadillac relocation have been circulating — now the team boss has directly addressed them.",
+    "author": null,
+    "publishedAt": "2026-09-20T14:16:11.000Z",
+    "fetchedAt": "2026-09-20T17:30:55.966Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-marcin-budkowski-1789925598238.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090483/lewis-hamilton-f1-kim-kardashian-la-gala-lucas-museum-of-narrative-art/",
+    "title": "Lewis Hamilton smiles again as F1 star escapes Ferrari tension with girlfriend Kim Kardashian",
+    "summary": "Seven-time world champion Lewis Hamilton and girlfriend Kim Kardashian were all smiles as they embraced for the cameras at a star-studded gala in Los Angeles over the weekend, with the F1 star having served an important role for the evening.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-20T17:45:00.000Z",
+    "fetchedAt": "2026-09-20T17:30:56.091Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1789925636796.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090481/michael-schumacher-ally-f1-alessandro-benetton-kimi-antonelli-analysis/",
+    "title": "Close Schumacher ally compares current star to F1 great: 'He reminds me of Michael'",
+    "summary": "F1 star Kimi Antonelli has once again drawn comparisons to the legendary Michael Schumacher, this time from a former ally of the seven-time world champion.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-20T16:27:00.000Z",
+    "fetchedAt": "2026-09-20T17:30:56.091Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-alessandro-benetton-1789925679645.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/motogp/marc-marquez-explains-his-austrian-gp-slump/",
+    "title": "Marc Marquez explains his Austrian GP slump",
+    "summary": "Marc Marquez revealed that \"many, many problems with the front brake\" were the cause of his slump to fifth in MotoGP's Austrian Grand Prix.&#xa0; Marquez dropped to fourth from second on the grid on the opening lap of Sunday's race, and fell as low as seventh after running well wide at Turn 1 while chasing fourth-placed Ai Ogura. The Ducati rider recovered to finish inside the top five at the chequered flag, and revealed his issue came with the front brake lever point being inconsistent throughout the first half of the race. \"The problem is that the first part of the race I had many, many prob",
+    "author": "Eden Hannigan",
+    "publishedAt": "2026-09-20T14:41:59.000Z",
+    "fetchedAt": "2026-09-20T17:30:56.334Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-marc-marquez-1789925722013.png",
+    "storySkipReason": null
   }
 ]
