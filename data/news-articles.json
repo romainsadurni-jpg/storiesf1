@@ -32048,5 +32048,31 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-christian-horner-1789851865755.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/adrian-newey-fernando-alonso-aston-martin-team-radio",
+    "title": "Aston Martin lifts lid on rare Newey, Alonso team radio exchange after ‘double step’",
+    "summary": "\"It means a lot.\"",
+    "author": null,
+    "publishedAt": "2026-09-20T05:02:40.000Z",
+    "fetchedAt": "2026-09-20T05:28:28.402Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-aston-martin-1789882287759.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090476/f1-news-today-christian-horner-decision-tipped-to-cause-trouble-as-mercedes-chief-reveals-secret-codes/",
+    "title": "F1 News Today: Christian Horner decision tipped to cause trouble as Mercedes chief reveals 'secret codes'",
+    "summary": "Renault could be left with a headache following their move to block Christian Horner buying the Alpine team.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-20T06:27:00.000Z",
+    "fetchedAt": "2026-09-20T05:28:28.588Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1789882363680.png",
+    "storySkipReason": null
   }
 ]
