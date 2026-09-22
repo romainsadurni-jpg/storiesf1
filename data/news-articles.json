@@ -33335,5 +33335,70 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-peter-windsor-1790032580357.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/features/kimi-antonelli-f1-2026-imola-world-champion",
+    "title": "Why wait? Imola is the perfect place to crown Kimi Antonelli",
+    "summary": "Why hesitate on a decision on Qatar and Abu Dhabi? F1 has the perfect 2026 season finale ready and waiting at Imola.",
+    "author": null,
+    "publishedAt": "2026-09-22T06:01:37.000Z",
+    "fetchedAt": "2026-09-22T06:48:36.535Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1790059842499.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/fia-azerbaijan-grand-prix-2026-baku-active-aero",
+    "title": "FIA makes key Baku decision for Azerbaijan Grand Prix",
+    "summary": "Baku is back, on a Saturday...",
+    "author": null,
+    "publishedAt": "2026-09-22T05:13:58.000Z",
+    "fetchedAt": "2026-09-22T06:48:36.535Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-fia-1790059906083.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090527/f1-insider-marc-surer-fernando-alonso-aston-martin-exit-analysis/",
+    "title": "Aston Martin rivals don't want to sign Fernando Alonso - F1 insider",
+    "summary": "Former F1 driver Marc Surer believes that Fernando Alonso will continue to race at Aston Martin next season, partly due to the fact that his options to drive elsewhere are limited.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-22T07:15:00.000Z",
+    "fetchedAt": "2026-09-22T06:48:36.580Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fernando-alonso-1790059971874.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090530/f1-news-today-lewis-hamilton-set-for-ferrari-boost-as-major-rule-change-gets-approval/",
+    "title": "F1 News Today: Lewis Hamilton set for Ferrari boost as major rule change gets approval",
+    "summary": "Lewis Hamilton's F1 title hopes have taken an almost fatal hit over the last month, but Ferrari are looking to finish the season strongly as they eye bringing further upgrades to the SF-26 in October.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-22T06:30:00.000Z",
+    "fetchedAt": "2026-09-22T06:48:36.580Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1790060024893.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/22/saturday-race-title-fight-fades-williams-big-upgrade-and-more-azerbaijan-gp-talking-points/",
+    "title": "Saturday race, title fight fades, Williams’ big upgrade and more Azerbaijan GP talking points | Formula 1",
+    "summary": "Formula 1 embarks upon nine rounds in just eleven weeks to conclude its season. Here are the six talking points for the Azerbaijan Grand Prix.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-22T06:15:14.000Z",
+    "fetchedAt": "2026-09-22T06:48:37.201Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-fia-1790060126987.png",
+    "storySkipReason": null
   }
 ]
