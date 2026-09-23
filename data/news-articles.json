@@ -35246,5 +35246,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-esteban-ocon-1790191527293.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090588/lewis-hamilton-puppy-halo-kim-kardashian-london-date/",
+    "title": "Lewis Hamilton shares adorable photos of puppy Halo and Kim Kardashian London date",
+    "summary": "There may be tension at Ferrari right now, but Lewis Hamilton has found the perfect way to get away from all that - dates with girlfriend Kim Kardashian and time with their adorable puppy Halo.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-23T21:27:00.000Z",
+    "fetchedAt": "2026-09-23T22:22:44.786Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1790202228124.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090586/f1-red-bull-liam-lawson-statement-racing-bulls-2026/",
+    "title": "Red Bull F1 issue Liam Lawson statement",
+    "summary": "Red Bull have released a statement on New Zealand F1 star Liam Lawson following his three-race stint at the team in place of Isack Hadjar.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-09-23T20:44:00.000Z",
+    "fetchedAt": "2026-09-23T22:22:44.786Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-liam-lawson-1790202276620.png",
+    "storySkipReason": null
   }
 ]
