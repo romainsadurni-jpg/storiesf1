@@ -36715,5 +36715,44 @@
     "dismissed": false,
     "storyPath": "articles/racefans-liam-lawson-1790281392298.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090638/f1-on-us-tv-how-to-watch-the-azerbaijan-grand-prix-this-weekend-live-free/",
+    "title": "F1 on TV: How US fans watch the Azerbaijan Grand Prix this weekend live and FREE",
+    "summary": "F1 heads to the Azerbaijan Grand Prix this weekend and US fans can watch all the live action for free.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-24T23:27:00.000Z",
+    "fetchedAt": "2026-09-24T22:41:55.498Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-us-fans-1790289876759.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090657/f1-lewis-hamilton-instagram-ai-video-max-verstappen-kimi-antonelli-charles-leclerc-migos/",
+    "title": "Lewis Hamilton reposts bizarre AI video of rapping car ride with Max Verstappen and co",
+    "summary": "We know that Lewis Hamilton is a fan of AI, with his Perplexity partnership and the like, but we didn't expect to see him reposting AI videos of himself on Instagram like your weird uncle.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-24T21:30:00.000Z",
+    "fetchedAt": "2026-09-24T22:41:55.498Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1790289938166.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090651/cadillac-f1-triple-signing-craig-skinner-eric-blandin-tim-lean/",
+    "title": "Cadillac announce huge triple signing as top Red Bull star joins US F1 team",
+    "summary": "Cadillac have announced a major F1 coup with a trio of signings which they believe will help really announce their arrival in the sport.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-24T20:45:00.000Z",
+    "fetchedAt": "2026-09-24T22:41:55.498Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-cadillac-1790289995847.png",
+    "storySkipReason": null
   }
 ]
