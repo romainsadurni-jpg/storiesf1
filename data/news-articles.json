@@ -35272,5 +35272,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-liam-lawson-1790202276620.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090603/f1-practice-today-azerbaijan-grand-prix-thursday-schedule-times-tv-channel/",
+    "title": "F1 Practice Today: New Azerbaijan Grand Prix Thursday schedule, times and TV channel",
+    "summary": "F1 arrives in Baku for the 2026 Azerbaijan Grand Prix today (Thursday September 24) with a new-look schedule that is 24 hours earlier than usual.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-24T05:30:00.000Z",
+    "fetchedAt": "2026-09-24T05:29:04.066Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1790227996917.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/home-page/lewis-hamilton-fia-f1-2027-shorter-races",
+    "title": "Lewis Hamilton calls out F1 2027 decision which ‘makes no sense’",
+    "summary": "Lewis Hamilton: \"This is supposed to be the sport that's the most physically demanding. Mentally and physically...\"",
+    "author": null,
+    "publishedAt": "2026-09-24T04:48:51.000Z",
+    "fetchedAt": "2026-09-24T05:29:04.131Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1790228096833.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/south-africa-formula-1-grand-prix-circuit-2031",
+    "title": "South Africa F1 dream gets major boost with $410m circuit project targeting 2031",
+    "summary": "A new privately funded project has entered the race to bring Formula 1 back to South Africa",
+    "author": null,
+    "publishedAt": "2026-09-24T04:02:56.000Z",
+    "fetchedAt": "2026-09-24T05:29:04.131Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-blue-mountain-racing-1790228213873.png",
+    "storySkipReason": null
   }
 ]
