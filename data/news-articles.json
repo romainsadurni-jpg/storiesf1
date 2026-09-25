@@ -36754,5 +36754,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-cadillac-1790289995847.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/kimi-antonelli-warned-title-pressure-f1-2026",
+    "title": "‘Unfazed’ Antonelli warned title pressure could take its toll despite impressive form",
+    "summary": "Kimi Antonelli has been warned the pressure of fighting for the F1 title could mount the closer he gets to the finish line.",
+    "author": null,
+    "publishedAt": "2026-09-25T05:25:05.000Z",
+    "fetchedAt": "2026-09-25T05:52:07.368Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1790315599453.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/charles-leclerc-david-coulthard-formula-1",
+    "title": "Leclerc told F1 not a ‘picnic’ as former driver speaks out",
+    "summary": "Charles Leclerc was told \"that's all a bit too much, quite frankly...\"",
+    "author": null,
+    "publishedAt": "2026-09-25T04:52:55.000Z",
+    "fetchedAt": "2026-09-25T05:52:07.368Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-charles-leclerc-1790315656345.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090630/f1-qualifying-today-azerbaijan-grand-prix-2026-schedule-times-and-tv-channel/",
+    "title": "F1 Qualifying Today: Azerbaijan Grand Prix schedule, times and TV channel",
+    "summary": "The battle for pole position takes top billing at the Azerbaijan Grand Prix today (Friday September 25) with a thrilling Qualifying session in prospect.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-25T06:30:00.000Z",
+    "fetchedAt": "2026-09-25T05:52:07.394Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-l-azerbaijan-grand-prix-1790315721854.png",
+    "storySkipReason": null
   }
 ]
