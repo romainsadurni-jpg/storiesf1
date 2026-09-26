@@ -39601,5 +39601,57 @@
     "dismissed": false,
     "storyPath": "articles/racefans-franco-colapinto-1790451813271.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090663/michael-schumacher-wife-corinna-new-netflix-documentary-admission/",
+    "title": "Michael Schumacher's wife makes devastating admission: 'I have to cry'",
+    "summary": "The new Michael Schumacher documentary is about to hit Netflix, and fans of the German legend should prepare themselves for some emotional moments.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-26T20:30:00.000Z",
+    "fetchedAt": "2026-09-26T21:31:43.176Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-corinna-schumacher-1790458366081.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090654/f1-haas-boss-ayao-komatsu-2027-driver-lineup-decision-deadline-rafael-camara-esteban-ocon/",
+    "title": "F1 team boss sets driver lineup deadline with grand prix winner facing the axe",
+    "summary": "Haas team principal Ayao Komatsu has denied that the American team has made a decision on their driver lineup for 2027 yet.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-26T19:45:00.000Z",
+    "fetchedAt": "2026-09-26T21:31:43.176Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ayao-komatsu-1790458419276.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/oscar-piastri-weird-turn-1-lock-up-azerbaijan-gp",
+    "title": "‘Weird’ – Oscar Piastri baffled by race-wrecking Azerbaijan GP mistake",
+    "summary": "\"It was a bit weird just locking up both fronts instantly.\"",
+    "author": null,
+    "publishedAt": "2026-09-26T19:00:10.000Z",
+    "fetchedAt": "2026-09-26T21:31:43.205Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-oscar-piastri-1790458464384.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/5-key-betting-lessons-learnt-after-george-russell-wins-the-azerbaijan-grand-prix.47nlYW5ylDY8AZ3EupXmrO",
+    "title": "5 betting lessons after Russell wins in Azerbaijan",
+    "summary": "The Mercedes star has cut the deficit in the Drivers' Championship to 66 points after his third win of the season.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-09-26T21:31:43.646Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-valtteri-bottas-1790458504889.png",
+    "storySkipReason": null
   }
 ]
