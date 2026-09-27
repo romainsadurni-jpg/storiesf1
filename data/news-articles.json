@@ -40407,5 +40407,57 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lando-norris-1790533689413.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090744/f1-george-russell-mercedes-issue-azerbaijan-grand-prix-max-verstappen-battle/",
+    "title": "George Russell reveals Mercedes issue that nearly saw Max Verstappen steal Azerbaijan GP victory",
+    "summary": "F1 star George Russell has revealed a Mercedes car issue nearly cost him the victory in Saturday's Azerbaijan Grand Prix after a tense late battle with Red Bull star Max Verstappen.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-27T20:30:00.000Z",
+    "fetchedAt": "2026-09-27T21:30:17.099Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-george-russell-1790544792797.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090774/f1-kimi-antonelli-mercedes-azerbaijan-grand-prix-huge-crash-damage-car/",
+    "title": "F1 star reveals massive damage after Azerbaijan Grand Prix moment - 'I was driving like my grandmother'",
+    "summary": "Mercedes F1 star Kimi Antonelli has revealed that the tail end of his Azerbaijan Grand Prix comeback was stymied somewhat by heavy damage to his car.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-09-27T19:45:00.000Z",
+    "fetchedAt": "2026-09-27T21:30:17.099Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-kimi-antonelli-1790544866824.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090721/horner-reveals-how-marko-thought-about-verstappen-that-father-is-a-nightmare/",
+    "title": "What Marko really thought about Max Verstappen, Christian Horner's stunning revelations",
+    "summary": "The new blockbuster Christian Horner memoir reveals stunning criticism of former team advisor Helmut Marko and offers fresh revelations about Max Verstappen’s early days with the Red Bull F1 team.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-09-27T18:55:00.000Z",
+    "fetchedAt": "2026-09-27T21:30:17.099Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1790544950681.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/27/featured-comment-abusive-element-in-colapintos-fanbase-are-a-liability-to-him/",
+    "title": "Featured Comment: Abusive element in Colapinto’s fanbase are a liability to him | Brief",
+    "summary": "Some of Colapinto's supporters have become a liability to him",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-27T18:50:34.000Z",
+    "fetchedAt": "2026-09-27T21:30:17.259Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-franco-colapinto-1790545011228.png",
+    "storySkipReason": null
   }
 ]
