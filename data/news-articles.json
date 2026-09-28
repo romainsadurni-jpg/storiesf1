@@ -41252,5 +41252,83 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-lando-norris-1790623783769.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/mclaren-racing-reportedly-set-for-historic-1billion-revenue-milestone/10859918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "McLaren Racing reportedly set for historic $1billion revenue milestone",
+    "summary": "McLaren Racing is projected to become the first Formula 1 team to surpass $1billion in annual revenue, according to a report by Sky News. The report states that McLaren Racing Ltd's accounts for the 2025 calendar year will be filed this week. Sources indicate the Woking outfit will declare revenue of £588million ($779.6million). While the figures include McLaren's IndyCar operations, F1 ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-09-28T22:00:26.000Z",
+    "fetchedAt": "2026-09-28T23:31:30.149Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-mclaren-racing-1790638401427.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090829/f1-lewis-hamilton-roscoe-heartbreaking-tribute-bulldog-pet-family/",
+    "title": "Lewis Hamilton shares heartbreaking tribute to beloved bulldog Roscoe",
+    "summary": "Anybody who has lost a pet knows the sheer heartbreak Lewis Hamilton went through when his beloved bulldog Roscoe sadly passed away last year.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-28T20:30:00.000Z",
+    "fetchedAt": "2026-09-28T23:31:30.287Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1790638452534.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090825/f1-max-verstappen-red-bull-laurent-mekies-at-odds-fia-grid-penalty-power-unit-engine-changes/",
+    "title": "Max Verstappen and Red Bull at odds over FIA penalty",
+    "summary": "Max Verstappen and Red Bull Racing team principal Laurent Mekies were at odds when speaking to the media about a potential FIA penalty later this season.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-28T19:43:00.000Z",
+    "fetchedAt": "2026-09-28T23:31:30.287Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-et-red-bull-1790638508230.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1090816/christian-horner-f1-ferrari-wife-geri-haliwell-open-italy-move-maranello-oxfordshire-london/",
+    "title": "Christian Horner to Ferrari: Wife Geri 'open to Italy move'",
+    "summary": "Christian Horner's recent comments on Ferrari have sparked huge speculation he could soon make the move to Italy, and his wife Geri is reportedly open to the switch.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-09-28T18:54:00.000Z",
+    "fetchedAt": "2026-09-28T23:31:30.287Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1790638563848.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/bahrain-grand-prix-race-betting-guide-and-what-the-markets-predict-will-happen-in-malaysia.v5kxOheftCqJ3Wf7mijEr",
+    "title": "Bahrain Grand Prix betting guide and latest odds",
+    "summary": "Our experts bring you all the important betting information you need before making your predictions as the rescheduled Bahrain Grand Prix heads to Sepang.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-09-28T23:31:30.505Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-bahrain-grand-prix-1790638603293.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/09/29/on-this-day-mansell-and-senna-thrill-in-first-spanish-grand-prix-at-catalunya/",
+    "title": "On This Day: Mansell and Senna thrill in first Spanish Grand Prix at Catalunya | Brief",
+    "summary": "Mansell wins Spanish GP after wheel-to-wheel dice with Senna",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-09-28T23:01:20.000Z",
+    "fetchedAt": "2026-09-28T23:31:30.813Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-nigel-mansell-1790638643977.png",
+    "storySkipReason": null
   }
 ]
