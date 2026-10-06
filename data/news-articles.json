@@ -50235,5 +50235,57 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lance-stroll-1791314814166.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/the-5-drivers-most-likely-to-win-the-singapore-grand-prix-according-to-betting-markets.5f1rjP6QXQ69LOmLDTGZ9H",
+    "title": "The 5 drivers most likely to win the Singapore GP",
+    "summary": "We’ve looked at the betting markets to predict the most likely drivers to win at Marina Bay.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-10-06T23:02:42.203Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-formula1-com-officiel-1791327905700.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091177/f1-fia-bahrain-grand-prix-in-malaysia-comms-strategy-race-delay/",
+    "title": "F1 and FIA called out over major failure during chaotic Malaysia GP delay",
+    "summary": "The Bahrain Grand Prix turned into a chaotic disaster for F1 in Malaysia on Sunday, but it really did not have to be that way.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-06T20:29:00.000Z",
+    "fetchedAt": "2026-10-06T23:02:42.296Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1791328045060.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091175/f1-oscar-piastri-fernando-alonso-master-of-chaos-bahrain-grand-prix-sepang/",
+    "title": "F1 star Oscar Piastri brands rival Fernando Alonso 'master of chaos'",
+    "summary": "Fernando Alonso produced one of his finest recent performances at the Bahrain Grand Prix, shocking many up and down the pitlane.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-10-06T19:45:00.000Z",
+    "fetchedAt": "2026-10-06T23:02:42.296Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-oscar-piastri-1791328138723.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/10/05/that-was-a-big-mess-how-all-22-drivers-saw-f1s-formation-lap-fiasco-in-sepang/",
+    "title": "“That was a big mess”: How all 22 drivers saw F1’s formation lap fiasco in Sepang | Formula 1",
+    "summary": "Confusion reigned when Max Verstappen, Lewis Hamilton, Charles Leclerc, Lando Norris and others suddenly lost power during the formation lap at Sepang.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-10-05T11:05:12.000Z",
+    "fetchedAt": "2026-10-06T23:02:42.771Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-fia-1791328541096.png",
+    "storySkipReason": null
   }
 ]
