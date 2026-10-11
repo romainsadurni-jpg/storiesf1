@@ -56774,5 +56774,83 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lewis-hamilton-1791748037945.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/charles-leclercs-private-jet-drama-sparked-last-minute-change-of-plans/10864489/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Charles Leclerc's private jet drama sparked last-minute change of plans",
+    "summary": "Charles Leclerc's preparations for the Singapore Grand Prix got off to an unusual start after his private jet was forced to turn back to Malaysia, leaving the Ferrari driver to take the journey by road instead. The trip between two of F1's Asian races is usually a short transfer, and it's made even easier if they are able to get their hands on a private jet. With roughly 185 miles separating ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-10-11T21:57:51.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.547Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-charles-leclerc-1791758587266.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/liam-lawson-f1-2026-singapore-grand-prix",
+    "title": "Liam Lawson reacts after Singapore Grand Prix statement drive",
+    "summary": "As Racing Bulls plots out its F1 2027 line-up, Liam Lawson delivered a statement drive.",
+    "author": null,
+    "publishedAt": "2026-10-11T19:06:51.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.917Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-liam-lawson-1791758666498.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lando-norris-oscar-piastri-singapore-grand-prix-crash",
+    "title": "Norris revises stance on Piastri Singapore GP Sprint clash",
+    "summary": "Was Lando Norris in the wrong for that collision with Oscar Piastri?",
+    "author": null,
+    "publishedAt": "2026-10-11T18:54:56.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.917Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lando-norris-1791758756916.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091388/williams-f1-driver-luke-browning-super-formula-fuji-pit-lane-crash/",
+    "title": "Williams F1 driver caught up in four-car pit lane pileup",
+    "summary": "For all that F1 cars are in incredibly close quarters in the pit lane, with plenty of complaints about unsafe releases, it's actually pretty rare to see an actual accident.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-11T20:30:00.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.991Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-luke-browning-1791758815881.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091416/f1-fia-singapore-grand-prix-pop-up-window-nikolas-tombazis-human-error/",
+    "title": "FIA reveal computer 'pop-up window' issue that caused chaos at Singapore Grand Prix",
+    "summary": "The FIA have revealed a transparent explanation as to the carnage that struck the Singapore Grand Prix weekend on track.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-10-11T19:45:00.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.991Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1791758897025.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091404/f1-lewis-hamilton-admits-fault-ferrari-singapore-grand-prix-strategy-mistake/",
+    "title": "Lewis Hamilton 'let down' Ferrari team with disastrous Singapore Grand Prix strategy error",
+    "summary": "Lewis Hamilton apologised to his Ferrari team after the end of the Singapore Grand Prix on Sunday.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-11T18:56:00.000Z",
+    "fetchedAt": "2026-10-11T22:40:46.991Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1791758959257.png",
+    "storySkipReason": null
   }
 ]
