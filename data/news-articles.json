@@ -58633,5 +58633,83 @@
     "dismissed": false,
     "storyPath": "articles/motorsport-com-f1-ayrton-senna-1791944235420.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091507/max-verstappen-gt3-portimao-media-crackdown/",
+    "title": "Max Verstappen GT3 appearance triggers strict media crackdown",
+    "summary": "Max Verstappen's GT World Challenge appearance at Portimao this weekend has prompted strict media restrictions, with no interviews planned and journalists warned they risk losing accreditation for breaching garage access rules.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-14T06:58:00.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.373Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1791964261995.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091500/early-f1-2027-odds-verstappen-ferrari-alonso/",
+    "title": "Early F1 2027 Odds: Verstappen shock, Ferrari pecking order and Alonso long shot",
+    "summary": "With the 2026 F1 title race almost over it is already time to look ahead to the 2027 championship and we have the very early odds for you.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-14T06:15:00.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.373Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1791964411317.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091510/f1-news-today-ferrari-lewis-hamilton-warning-christian-horner-makes-shock-admission/",
+    "title": "Ferrari given Lewis Hamilton warning as Horner makes shock admission - F1 News Today",
+    "summary": "Ferrari have been warned they risk 'collective chaos' if they do not resolve the issues arising from Sunday's Singapore Grand Prix at Marina Bay.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-14T05:30:00.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.373Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1791964516079.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/charles-leclerc-sergio-perez-singapore-grand-prix-2026-team-radio",
+    "title": "‘Is Perez still driving for Red Bull?’ – Untelevised Charles Leclerc team radio after Singapore GP",
+    "summary": "Charles Leclerc could not contain his frustration with Sergio Perez.",
+    "author": null,
+    "publishedAt": "2026-10-14T07:11:51.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.412Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-charles-leclerc-1791964641699.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/christian-horner-max-verstappen-red-bull-powertrains",
+    "title": "Christian Horner felt ‘robbed’ as Verstappen achieves Red Bull landmark",
+    "summary": "Christian Horner: \"I felt particularly hurt and robbed...\"",
+    "author": null,
+    "publishedAt": "2026-10-14T06:40:32.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.412Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-christian-horner-1791964721951.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-strategy-f1-2026-singapore-grand-prix-martin-brundle",
+    "title": "Lewis Hamilton decision challenged by Brundle after Singapore GP",
+    "summary": "Lewis Hamilton took strategy into his own hands in Singapore.",
+    "author": null,
+    "publishedAt": "2026-10-14T06:11:41.000Z",
+    "fetchedAt": "2026-10-14T07:45:21.412Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1791964806679.png",
+    "storySkipReason": null
   }
 ]
