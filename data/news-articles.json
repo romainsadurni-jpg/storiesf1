@@ -60128,5 +60128,57 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-rafael-camara-1792090738471.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091587/f1-cadillac-valtteri-bottas-better-than-mercedes-claim-new-factory/",
+    "title": "Cadillac star claims team facilities 'better than Mercedes' despite on-track disappointment",
+    "summary": "Cadillac star Valtteri Bottas might not have scored a single point this season, but he's optimistic for the future of his team.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-15T20:27:00.000Z",
+    "fetchedAt": "2026-10-15T21:40:46.481Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-valtteri-bottas-1792100499023.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091591/f1-qatar-abu-dhabi-grand-prix-cancellation-decision-no-announcement-imola/",
+    "title": "F1 set to push ahead with Qatar and Abu Dhabi races despite missile strikes",
+    "summary": "F1 team principals told us last month that the sport was intending to make a final decision on its Qatar and Abu Dhabi races in the middle of October.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-15T19:44:00.000Z",
+    "fetchedAt": "2026-10-15T21:40:46.481Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fia-1792100531290.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091585/f1-lewis-hamilton-ferrari-singapore-grand-prix-radio-pit-safety-car/",
+    "title": "Lewis Hamilton's radio to pit under Singapore safety car 'revealed' but all is not as it seems",
+    "summary": "One of the biggest stories coming out of the Singapore Grand Prix was the fallout in Ferrari's strategy with Lewis Hamilton.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-10-15T18:55:00.000Z",
+    "fetchedAt": "2026-10-15T21:40:46.481Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1792100570329.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/10/15/f1-could-make-call-to-move-finale-to-imola-as-late-as-mid-november-report/",
+    "title": "F1 could make call to move finale to Imola as late as ‘mid-November’ – report | Briefs",
+    "summary": "F1 could wait to \"mid-November\" to move finale to Imola",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-10-15T21:23:47.000Z",
+    "fetchedAt": "2026-10-15T21:40:47.187Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-fia-1792100595592.png",
+    "storySkipReason": null
   }
 ]
