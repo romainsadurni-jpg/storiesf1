@@ -61597,5 +61597,83 @@
     "dismissed": false,
     "storyPath": "articles/planetf1-racing-bulls-1792262974547.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091619/max-verstappen-vs-alex-palou-f1-vs-indycar/",
+    "title": "F1 superstar Max Verstappen wants to take on five-time IndyCar champion: 'Hope it happens'",
+    "summary": "Max Verstappen and Álex Palou are both in top form in their respective championships and one day they could yet meet on a racetrack.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-17T20:57:00.000Z",
+    "fetchedAt": "2026-10-17T21:00:16.973Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1792270941457.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091677/f1-liam-lawson-announces-surprise-us-grand-prix-live-music-performance-guitar/",
+    "title": "F1 star Liam Lawson announces surprise new role ahead of US Grand Prix",
+    "summary": "There is a lot of pressure on F1 star Liam Lawson to perform at the US Grand Prix next weekend.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-17T19:57:00.000Z",
+    "fetchedAt": "2026-10-17T21:00:16.973Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-liam-lawson-1792271004025.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091680/max-verstappen-gt-world-challenge-results-times-positions-from-portimao/",
+    "title": "Max Verstappen GT World Challenge results: Times and positions from Portimao",
+    "summary": "Saturday's GT World Challenge Endurance Cup season-ender at Portimao was won excellently by the Mercedes-AMG Team GetSpeed No. 17 car, driven by Maximilian Gotz, Ralf Aron and Fabian Schiller.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-17T19:13:13.000Z",
+    "fetchedAt": "2026-10-17T21:00:16.973Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-max-verstappen-1792271095926.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/full-race-results-gt-world-challenge-portimao",
+    "title": "Full Race Results: GT World Challenge Portimao",
+    "summary": "Full race results from GT World Challenge Europe at Portimao",
+    "author": null,
+    "publishedAt": "2026-10-17T19:59:26.000Z",
+    "fetchedAt": "2026-10-17T21:00:17.009Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-gt-world-challenge-portimao-1792271314079.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-gt-world-challenge-portimao-penalty",
+    "title": "Penalty derails Max Verstappen victory bid at Portimao",
+    "summary": "What might have been for Max Verstappen after a costly mid-race penalty cost the Dutchman any hope of victory in Portimao.",
+    "author": null,
+    "publishedAt": "2026-10-17T19:24:22.000Z",
+    "fetchedAt": "2026-10-17T21:00:17.009Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1792271415082.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/gt/penalty-sets-up-epic-verstappen-charge-in-his-gt-return/",
+    "title": "Penalty sets up epic Verstappen charge in his GT return",
+    "summary": "Max Verstappen's return to GT racing in the pause between Formula 1 grands prix featured plenty of drama, an eventual top-10 finish, and brought a huge audience (both online and at the track) to the Portimao GT World Challenge event. A set-up miscue had left the Verstappen team's 2 Seas Motorsport-run Mercedes scraping its way to just 15th on the grid in a shower of sparks during Friday evening's qualifying session. Verstappen's team-mates Ben Barnicoat and Chris Lulham made rapid progress forward as they took the first two stints, with Barnicoat soon into the top 10 and Lulham charging toward",
+    "author": "Matt Beer",
+    "publishedAt": "2026-10-17T19:09:29.000Z",
+    "fetchedAt": "2026-10-17T21:00:17.086Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-max-verstappen-1792271462562.png",
+    "storySkipReason": null
   }
 ]
