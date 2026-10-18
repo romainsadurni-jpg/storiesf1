@@ -62052,5 +62052,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-max-verstappen-1792331655475.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-delta-explained-different-contexts-meanings",
+    "title": "F1 delta: What does it mean and what different contexts are there?",
+    "summary": "All you need to know about what 'delta' means in F1, and in its contexts.",
+    "author": null,
+    "publishedAt": "2026-10-18T13:45:58.000Z",
+    "fetchedAt": "2026-10-18T16:59:12.820Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-delta-1792342805278.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091688/lewis-hamilton-ferrari-replacement-battle-heats-up-as-two-f1-stars-emerge/",
+    "title": "Lewis Hamilton Ferrari replacement battle heats up as two F1 stars emerge",
+    "summary": "The battle to one day replace Lewis Hamilton at Ferrari is really starting to hot up.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-18T16:45:00.000Z",
+    "fetchedAt": "2026-10-18T16:59:12.861Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lewis-hamilton-1792342852178.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091691/f1-charles-leclerc-monaco-blow-controversial-decision-confirmed-track-sprint/",
+    "title": "F1 star Charles Leclerc dealt Monaco blow as controversial decision confirmed",
+    "summary": "The track layout for the Monaco Grand Prix will NOT be changing in a bid to promote more overtaking.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-18T15:45:00.000Z",
+    "fetchedAt": "2026-10-18T16:59:12.861Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-automobile-club-of-monaco-1792342886256.png",
+    "storySkipReason": null
   }
 ]
