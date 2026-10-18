@@ -62130,5 +62130,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-ayao-komatsu-1792351686618.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091696/f1-circuit-of-the-americas-theme-park-headlines-rollercoaster-stuck/",
+    "title": "F1 circuit's extraordinary new theme park makes headlines for unexpected reasons",
+    "summary": "Fantastic news for everyone wanting a little extra thrill at the United States Grand Prix next weekend: COTALAND is open!",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-18T20:31:00.000Z",
+    "fetchedAt": "2026-10-18T21:40:18.135Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-cotaland-1792359705057.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091689/f1-lando-norris-cringe-singapore-grand-prix-mclaren-oscar-piastri-offer/",
+    "title": "Lando Norris mocked by F1 insider over 'cringe' Oscar Piastri moment",
+    "summary": "Former F1 team principal Guenther Steiner has mocked Lando Norris for some radio messages during the Singapore Grand Prix that many saw as performative.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-18T19:45:00.000Z",
+    "fetchedAt": "2026-10-18T21:40:18.135Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-lando-norris-1792359757502.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/10/18/spotlight-fornaroli-tests-for-mclaren-again-alongside-hughes-at-paul-ricard/",
+    "title": "Spotlight: Fornaroli tests for McLaren again alongside Hughes at Paul Ricard | Spotlight",
+    "summary": "Fornaroli and Hughes test for McLaren at Paul Ricard",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-10-18T19:36:53.000Z",
+    "fetchedAt": "2026-10-18T21:40:18.751Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-null-1792359799295.png",
+    "storySkipReason": null
   }
 ]
