@@ -62091,5 +62091,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-automobile-club-of-monaco-1792342886256.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-verdict-f1-future",
+    "title": "Liam Lawson lauds Racing Bulls ahead of F1 2027 decision",
+    "summary": "Liam Lawson is feeling good, but will Racing Bulls retain him?",
+    "author": null,
+    "publishedAt": "2026-10-18T18:02:55.000Z",
+    "fetchedAt": "2026-10-18T19:24:24.779Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-liam-lawson-1792351563475.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091697/f1-rwanda-grand-prix-government-officials-sports-minister-controversial-tourism/",
+    "title": "Rwanda reveals billion-dollar ambition behind controversial F1 Grand Prix deal",
+    "summary": "Two key government officials in Rwanda have laid out the reasoning for their successful push to bring F1 to the country.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-18T18:45:00.000Z",
+    "fetchedAt": "2026-10-18T19:24:24.909Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-rwanda-1792351626499.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091694/f1-haas-toyota-blunt-message-bought-seat-rafael-camara-ayao-komatsu/",
+    "title": "Toyota sent blunt message as F1 boss insists seat cannot be bought",
+    "summary": "Haas team principal Ayao Komatsu has opened up on the process which led to Rafael Camara being named the team's new driver for 2027.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-18T17:47:00.000Z",
+    "fetchedAt": "2026-10-18T19:24:24.909Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-ayao-komatsu-1792351686618.png",
+    "storySkipReason": null
   }
 ]
