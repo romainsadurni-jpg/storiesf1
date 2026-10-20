@@ -63664,5 +63664,83 @@
     "dismissed": false,
     "storyPath": "articles/racefans-haas-1792520657235.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091763/f1-daniel-ricciardo-united-states-grand-prix-tease-enchante-2026/",
+    "title": "Daniel Ricciardo teases intriguing plans ahead of US Grand Prix",
+    "summary": "Daniel Ricciardo used to rank the US Grand Prix among his favourites on the calendar and, while he's not on the grid anymore, he's still making the most of the circus being in town.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-20T20:33:00.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.426Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-daniel-ricciardo-1792531447553.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091745/f1-odds-us-grand-prix-2026-oscar-piastri-mclaren/",
+    "title": "Oscar Piastri faces stark McLaren verdict ahead of US Grand Prix",
+    "summary": "The odds for this weekend's 2026 F1 United States Grand Prix make for grim reading if you are a fan of McLaren's Australian star Oscar Piastri.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-10-20T19:45:00.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.426Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-oscar-piastri-1792531486108.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091742/f1-helmut-marko-christian-horner-row-red-bull-sacking-untruths/",
+    "title": "Helmut Marko issues stinging rebuke in fresh Red Bull F1 row",
+    "summary": "Helmut Marko has delivered a curt response to a recent claim made by Christian Horner about the breakdown of their relationship.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-20T18:58:00.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.426Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-helmut-marko-1792531515345.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/oscar-piastri-mclaren-mercedes-f1-deficit-magic-answers",
+    "title": "Piastri’s blunt ‘no magic’ verdict as he accepts season-long limitations",
+    "summary": "\"When you start giving yourself evidence of being able to drive a bit differently and in ways that aren't that natural...\"",
+    "author": null,
+    "publishedAt": "2026-10-20T19:01:40.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.471Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-oscar-piastri-1792531560601.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/f1-legal-battle-erupts-toto-wolff-predicts-full-on-red-bull-fight-round-up",
+    "title": "F1 legal battle erupts; Toto Wolff predicts ‘full-on’ Red Bull fight – round-up",
+    "summary": "Things are getting busy ahead of the United States Grand Prix.",
+    "author": null,
+    "publishedAt": "2026-10-20T18:32:52.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.471Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-toto-wolff-1792531596873.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/christian-horner-liam-lawson-red-bull-demotion",
+    "title": "Horner addresses Liam Lawson and Co. in telling Red Bull admission",
+    "summary": "Liam Lawson suffered a particularly brutal Red Bull demotion in 2025.",
+    "author": null,
+    "publishedAt": "2026-10-20T17:57:19.000Z",
+    "fetchedAt": "2026-10-20T21:23:16.471Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-christian-horner-1792531650936.png",
+    "storySkipReason": null
   }
 ]
