@@ -64678,5 +64678,31 @@
     "dismissed": false,
     "storyPath": "articles/racefans-indycar-1792630157019.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/features/united-states-grand-prix-2026-predictions",
+    "title": "US GP Predictions: Hamilton magic or misery, Verstappen glory and an apology to Antonelli",
+    "summary": "What's your prediction for the United States Grand Prix?",
+    "author": null,
+    "publishedAt": "2026-10-22T05:01:35.000Z",
+    "fetchedAt": "2026-10-22T05:28:36.811Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1792647123014.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091796/f1-news-today-toto-wolff-choosing-mercedes-replacements-fia-boss-doubles-down-season-ending-races/",
+    "title": "Toto Wolff choosing Mercedes replacements as FIA boss doubles down on season ending races - F1 News Today",
+    "summary": "Mercedes are currently romping their way to the drivers' and constructors' world championships, but team chief Toto Wolff has an eye on the future, revealing that he is already vetting successors to take over his roles and responsibilities as head of the team.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-10-22T05:28:00.000Z",
+    "fetchedAt": "2026-10-22T05:28:37.143Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-toto-wolff-1792647213152.png",
+    "storySkipReason": null
   }
 ]
