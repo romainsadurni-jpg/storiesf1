@@ -66121,5 +66121,57 @@
     "dismissed": false,
     "storyPath": "articles/the-race-mercedes-1792718029238.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/kimi-antonelli-michael-schumacher-comparison-nico-rosberg",
+    "title": "Kimi Antonelli receives ‘Michael Schumacher-level’ comparison from Rosberg",
+    "summary": "Kimi Antonelli in F1 2026: Shades of Michael Schumacher?",
+    "author": null,
+    "publishedAt": "2026-10-23T05:53:52.000Z",
+    "fetchedAt": "2026-10-23T05:58:07.676Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1792735253656.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-african-grand-prix-extend-f1-career",
+    "title": "Lewis Hamilton reveals African Grand Prix dream as he vows to extend F1 career",
+    "summary": "Lewis Hamilton says Formula 1's planned return to Africa has given him fresh motivation to prolong his career, with Rwanda targeting a debut in 2032...",
+    "author": null,
+    "publishedAt": "2026-10-23T05:18:52.000Z",
+    "fetchedAt": "2026-10-23T05:58:07.676Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1792735384589.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091835/christian-horner-makes-financial-reveal-as-red-bull-star-prepared-to-exit-f1-news-today/",
+    "title": "Christian Horner makes financial reveal as Red Bull star prepared to exit - F1 News Today",
+    "summary": "Christian Horner has revealed that he and Red Bull Racing played a key role in securing a full-time return to the sport for one of their axed F1 stars.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-10-23T05:30:00.000Z",
+    "fetchedAt": "2026-10-23T05:58:07.722Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-christian-horner-1792735463023.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.the-race.com/motogp/bezzecchi-has-bizarre-collision-then-tops-practice/",
+    "title": "Bezzecchi has bizarre collision then tops practice",
+    "summary": "Marco Bezzecchi and a wallaby both caused red flags in Friday afternoon practice for MotoGP's last Australian Grand Prix at Phillip Island, but Bezzecchi at least managed to end the session on top. Bezzecchi ran into the back of Alex Marquez's Gresini Ducati as they went towards the slow Miller corner early in the session, with the brush between them at just the right angle to instantly wrap the majority of side bodywork off the Aprilia. As the bodywork section fluttered into the air, Bezzecchi came close to hitting Marc Marquez's Ducati ahead as he slewed into the corner out of control before",
+    "author": "Matt Beer",
+    "publishedAt": "2026-10-23T05:22:02.000Z",
+    "fetchedAt": "2026-10-23T05:58:07.850Z",
+    "source": "The Race",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/the-race-marco-bezzecchi-1792735529606.png",
+    "storySkipReason": null
   }
 ]
