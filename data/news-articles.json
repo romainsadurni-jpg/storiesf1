@@ -69826,5 +69826,70 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-nos-experts-de-paris-1792947522073.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091920/mercedes-bradley-lord-kimi-antonelli-title-us-grand-prix-circuit-of-the-americas/",
+    "title": "Mercedes chief admits team doesn't want Antonelli to win F1 title at US Grand Prix",
+    "summary": "This weekend's US Grand Prix in Austin, Texas, marks Mercedes star Kimi Antonelli's first chance to wrap up the 2026 F1 world championship.",
+    "author": "Simmey Hannifin Donaldson",
+    "publishedAt": "2026-10-25T18:27:00.000Z",
+    "fetchedAt": "2026-10-25T19:24:33.575Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-bradley-lord-1792956430588.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1091919/f1-cadillac-marcin-budkowski-valtteri-bottas-sergio-perez-esteban-ocon-contracts-austin/",
+    "title": "Cadillac F1 boss refuses to confirm Bottas and Perez 2027 contracts as rival drivers make contact",
+    "summary": "Cadillac have hinted that their drivers for the 2027 season are not quite decided yet as rivals seek to grab an F1 seat.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-10-25T17:27:00.000Z",
+    "fetchedAt": "2026-10-25T19:24:33.575Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-marcin-budkowski-1792956535635.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/ralf-schumacher-warns-kimi-antonelli-prove-himself-f1-title",
+    "title": "Schumacher issues Antonelli warning despite backing him for F1 greatness",
+    "summary": "Ralf Schumacher has warned Kimi Antonelli that while he may celebrate a maiden F1 world title this season, he still has a lot to prove in the years to come. Antonelli is on the cusp...",
+    "author": null,
+    "publishedAt": "2026-10-25T14:52:05.000Z",
+    "fetchedAt": "2026-10-25T19:24:33.618Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-kimi-antonelli-1792956611989.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-united-states-grand-prix.3eD3xBDo1wI0V0VIWo2wMY",
+    "title": "OFFICIAL GRID: Who starts where for the United States Grand Prix",
+    "summary": "The full official starting order for the 2026 United States Grand Prix in Austin.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-10-25T19:24:33.706Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-kimi-antonelli-1792956663039.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.formula1.com/en/latest/article/live-coverage-formula-1-msc-cruises-united-states-grand-prix-2026.62QsaPaMCCAdaEfWYAmuGL",
+    "title": "LIVE COVERAGE: All the action from the United States Grand Prix",
+    "summary": "Live coverage of the Formula 1 MSC Cruises United States Grand Prix 2026 in Austin.",
+    "author": " Formula 1 ",
+    "publishedAt": null,
+    "fetchedAt": "2026-10-25T19:24:33.706Z",
+    "source": "Formula1.com (officiel)",
+    "sourceCategory": "official",
+    "dismissed": false,
+    "storyPath": "articles/formula1-com-officiel-msc-cruises-united-states-grand-prix-2026-1792956709824.png",
+    "storySkipReason": null
   }
 ]
