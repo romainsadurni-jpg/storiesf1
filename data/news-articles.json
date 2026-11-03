@@ -80486,5 +80486,83 @@
     "dismissed": false,
     "storyPath": "articles/racefans-george-russell-1793668355290.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-fia-mexican-grand-prix-2026-team-radio",
+    "title": "‘What a f**king joke’ – Untelevised Max Verstappen team radio after Mexican Grand Prix",
+    "summary": "\"That's so f**ked. Beautiful.\"",
+    "author": null,
+    "publishedAt": "2026-11-03T07:38:47.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.088Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1793692541431.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/lewis-hamilton-mexican-grand-prix-2026-reaction-honest",
+    "title": "Lewis Hamilton ‘can’t pretend’ as Ferrari told to ‘be honest’ after Mexican GP",
+    "summary": "Lewis Hamilton was forced to settle for second in Mexico.",
+    "author": null,
+    "publishedAt": "2026-11-03T06:49:08.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.088Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-lewis-hamilton-1793692589586.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/george-russell-mexican-grand-prix-2026-team-radio",
+    "title": "‘I’m gonna shut the f**k up’ – Untelevised George Russell team radio after Mexican GP ‘s**tshow’",
+    "summary": "George Russell did not face the media after the race in Mexico.",
+    "author": null,
+    "publishedAt": "2026-11-03T06:19:28.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.088Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-george-russell-1793692662637.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1092390/f1-george-russell-mexican-grand-prix-statement-2026-championship/",
+    "title": "George Russell releases F1 statement after no-show at Mexican Grand Prix",
+    "summary": "George Russell has broken his silence after his F1 title dreams for 2026 officially came down at Sunday's Mexican Grand Prix.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-11-03T07:16:00.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.205Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-george-russell-1793692715735.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1092389/f1-news-today-ferrari-lewis-hamilton-charles-leclerc-ayao-komatsu-haas-2027-lineup/",
+    "title": "Ferrari inquest starts over Hamilton and Leclerc as F1 boss drops huge hint on 2027 lineup - F1 News Today",
+    "summary": "Ferrari boss Fred Vasseur has raged at the 'huge disrespect' for the iconic F1 team after the Lewis Hamilton vs Charles Leclerc rivalry boiled over once again during Sunday's Mexican Grand Prix.",
+    "author": "Dan Ripley",
+    "publishedAt": "2026-11-03T06:30:00.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.205Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-fred-vasseur-1793692763059.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/11/03/antonelli-says-doubters-added-fuel-to-the-fire-in-his-world-championship-pursuit/",
+    "title": "Antonelli says doubters “added fuel to the fire” in his world championship pursuit | Formula 1",
+    "summary": "New wold champion Andrea Kimi Antonelli said he was driven to disprove those who said he wasn't ready for Formula 1.",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-11-03T07:15:05.000Z",
+    "fetchedAt": "2026-11-03T07:54:09.527Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-kimi-antonelli-1793692816026.png",
+    "storySkipReason": null
   }
 ]
