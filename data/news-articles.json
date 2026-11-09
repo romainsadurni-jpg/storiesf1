@@ -88598,5 +88598,31 @@
     "dismissed": false,
     "storyPath": "articles/formula1-com-officiel-max-verstappen-1794185325368.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/f1-data/max-verstappen-data-2026-brazilian-gp-comparison",
+    "title": "Telemetry reveals secrets behind Max Verstappen’s Brazilian GP charge",
+    "summary": "Max Verstappen put in a Driver of the Day performance at Interlagos, but data tells the story of just how he managed his recovery.",
+    "author": null,
+    "publishedAt": "2026-11-09T04:09:23.000Z",
+    "fetchedAt": "2026-11-09T04:43:54.177Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1794199566064.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/brazilian-gp-george-russell-incident-oscar-piastri",
+    "title": "Oscar Piastri reveals ‘scary’ Brazilian GP moment",
+    "summary": "Oscar Piastri found an unusual sight as he left the pit lane at Interlagos.",
+    "author": null,
+    "publishedAt": "2026-11-09T00:04:24.000Z",
+    "fetchedAt": "2026-11-09T04:43:54.177Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-oscar-piastri-1794199694127.png",
+    "storySkipReason": null
   }
 ]
