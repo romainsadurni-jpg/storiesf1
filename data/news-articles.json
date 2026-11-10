@@ -89547,5 +89547,57 @@
     "dismissed": false,
     "storyPath": "articles/racefans-aston-martin-1794267935990.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/f1-las-vegas-grand-prix-announces-pre-race-music-line-up/10873488/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "F1 Las Vegas Grand Prix announces pre-race music line-up",
+    "summary": "American DJ Steve Aoki will return to the Las Vegas Grand Prix grid this year for a performance before the race on 21 November. He will be joined by fellow DJ MORTEN and singer Jordin Sparks as part of the pre-race line-up. MORTEN will perform ahead of the driver introductions, which have become a fan-favourite part of the Las Vegas Grand Prix weekend after the viral moment between Sergio ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-11-09T23:57:29.000Z",
+    "fetchedAt": "2026-11-10T04:38:28.027Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-las-vegas-grand-prix-1794285645195.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.motorsport.com/f1/news/lewis-hamilton-to-share-flight-with-mercedes-after-former-teams-f1-title-triumph/10873483/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+    "title": "Lewis Hamilton to share flight with Mercedes after former team's F1 title triumph",
+    "summary": "Seven-time Formula 1 champion Lewis Hamilton's trip back from Interlagos could have been an awkward one after Mercedes team principal Toto Wolff revealed that the Ferrari driver would be travelling with the newly crowned constructors' champions. Mercedes secured its ninth constructors' title at the Brazilian Grand Prix on Sunday, with George Russell and Kimi Antonelli finishing fourth and ...Keep reading",
+    "author": null,
+    "publishedAt": "2026-11-09T23:30:48.000Z",
+    "fetchedAt": "2026-11-10T04:38:28.027Z",
+    "source": "Motorsport.com — F1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/motorsport-com-f1-lewis-hamilton-1794285711687.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/mercedes-w17-investigation-f1-2026-brazilian-grand-prix",
+    "title": "Mercedes to launch W17 investigation after drastic Brazilian GP issues",
+    "summary": "Both Mercedes drivers were hamstrung by issues with the balance of their cars in Sao Paulo.",
+    "author": null,
+    "publishedAt": "2026-11-10T04:01:56.000Z",
+    "fetchedAt": "2026-11-10T04:38:28.263Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-toto-wolff-1794285799189.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-johnny-herbert-liam-lawson-threat-claim",
+    "title": "Max Verstappen hits back at Johnny Herbert over Liam Lawson ‘threat’ claim",
+    "summary": "Johnny Herbert took aim at Max Verstappen over his comments about Liam Lawson.",
+    "author": null,
+    "publishedAt": "2026-11-10T00:05:34.000Z",
+    "fetchedAt": "2026-11-10T04:38:28.263Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1794285871838.png",
+    "storySkipReason": null
   }
 ]
