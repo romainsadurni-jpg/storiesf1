@@ -91939,5 +91939,44 @@
     "dismissed": false,
     "storyPath": "articles/gpfans-lewis-hamilton-1794528364597.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/red-bull-max-verstappen-isack-hadjar-team-radio",
+    "title": "Red Bull lifts lid on Max Verstappen team orders decision after Hadjar radio exhange",
+    "summary": "Red Bull elected to not invert its two cars in Brazil, despite Max Verstappen being unable to catch Lando Norris.",
+    "author": null,
+    "publishedAt": "2026-11-13T04:02:01.000Z",
+    "fetchedAt": "2026-11-13T05:30:52.293Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1794547947901.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-f1-2027-decision-reaction",
+    "title": "First Liam Lawson reaction as Racing Bulls makes final F1 2027 decision",
+    "summary": "Liam Lawson's future has been decided.",
+    "author": null,
+    "publishedAt": "2026-11-13T00:03:40.000Z",
+    "fetchedAt": "2026-11-13T05:30:52.293Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-liam-lawson-1794548006335.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.racefans.net/2026/11/13/on-this-day-brazilian-grand-prix-2/",
+    "title": "On This Day: Verstappen stars as Hamilton wins soaked Brazilian Grand Prix | Brief",
+    "summary": "Hamilton wins, Verstappen stars in rain-lashed Brazilian Grand Prix",
+    "author": "Keith Collantine",
+    "publishedAt": "2026-11-13T00:01:00.000Z",
+    "fetchedAt": "2026-11-13T05:30:52.478Z",
+    "source": "RaceFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/racefans-max-verstappen-1794548022802.png",
+    "storySkipReason": null
   }
 ]
