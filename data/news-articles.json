@@ -92693,5 +92693,70 @@
     "dismissed": false,
     "storyPath": "articles/racefans-lewis-hamilton-1794618643912.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/adrian-newey-christian-horner-red-bull-salary-book",
+    "title": "‘That’s obscene’ – Adrian Newey Red Bull salary demand revealed in Horner book claim",
+    "summary": "\"I felt like I'd been kicked.\"",
+    "author": null,
+    "publishedAt": "2026-11-14T07:22:42.000Z",
+    "fetchedAt": "2026-11-14T07:34:20.340Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-adrian-newey-1794641818834.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-named-mercedes-biggest-2027-threat",
+    "title": "Max Verstappen resurgence puts Mercedes on high alert for F1 2027",
+    "summary": "No driver has scored more points than Max Verstappen since the summer break, including champion Kimi Antonelli.",
+    "author": null,
+    "publishedAt": "2026-11-14T06:02:33.000Z",
+    "fetchedAt": "2026-11-14T07:34:20.340Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1794641890518.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/felipe-massa-ferrari-not-right",
+    "title": "‘Something not right’ at Ferrari in telling Felipe Massa verdict",
+    "summary": "Felipe Massa believes something is going awry within Ferrari.",
+    "author": null,
+    "publishedAt": "2026-11-14T03:00:35.000Z",
+    "fetchedAt": "2026-11-14T07:34:20.340Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-felipe-massa-1794641977735.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1092900/f1-madring-jackpot-money-spanish-grand-prix-uncomfortable-truth/",
+    "title": "€544m Madring jackpot proves the uncomfortable truth about F1 in 2026",
+    "summary": "You know what's been in short supply since September? Good news for the organisers of the Spanish Grand Prix. Well not any more.",
+    "author": "Chris Deeley",
+    "publishedAt": "2026-11-14T07:14:00.000Z",
+    "fetchedAt": "2026-11-14T07:34:20.417Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-madrid-1794642034860.png",
+    "storySkipReason": null
+  },
+  {
+    "url": "https://www.gpfans.com/en/f1-news/1092903/f1-news-today-christian-horner-return-boost-hamilton-heartbreak-journalist-banned/",
+    "title": "Christian Horner return boost, Hamilton heartbreak and journalist BANNED - F1 News Today",
+    "summary": "Christian Horner might just have been handed a potential route back into F1 following a significant development involving team ownership.",
+    "author": "Graham Shaw",
+    "publishedAt": "2026-11-14T06:30:00.000Z",
+    "fetchedAt": "2026-11-14T07:34:20.417Z",
+    "source": "GPFans",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/gpfans-otro-capital-1794642110944.png",
+    "storySkipReason": null
   }
 ]
