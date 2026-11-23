@@ -102534,5 +102534,18 @@
     "dismissed": false,
     "storyPath": "articles/racefans-racefans-1795389584018.png",
     "storySkipReason": null
+  },
+  {
+    "url": "https://www.planetf1.com/news/max-verstappen-compares-vegas-mayhem-to-mario-kart",
+    "title": "Max Verstappen compares Vegas mayhem to Mario Kart",
+    "summary": "Does Verstappen have a point?",
+    "author": null,
+    "publishedAt": "2026-11-23T00:01:40.000Z",
+    "fetchedAt": "2026-11-23T03:18:51.319Z",
+    "source": "PlanetF1",
+    "sourceCategory": "news",
+    "dismissed": false,
+    "storyPath": "articles/planetf1-max-verstappen-1795404022377.png",
+    "storySkipReason": null
   }
 ]
